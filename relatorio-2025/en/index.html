@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2025 Annual Report - Favela Brass</title>
+<meta name="description" content="The Favela Brass 2025 annual report: results, numbers and performances from a record year of free music education in Rio de Janeiro.">
+<style>
+:root{--purple:#5A0E7A;--dark-purple:#3E0B59;--yellow:#FEF100;--green:#62CC3C;--red:#E74C3C;--white:#FFF;--muted:rgba(255,255,255,.6);--card-bg:rgba(255,255,255,.05);--card-border:rgba(255,255,255,.1)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--dark-purple);color:var(--white);line-height:1.6;overflow-x:hidden}
+section.alt{background:transparent}
+
+.lang-toggle{position:fixed;top:20px;right:20px;z-index:100;background:rgba(62,11,89,.85);border:1px solid var(--card-border);border-radius:8px;padding:8px 14px;font-size:.8rem;color:var(--white);text-decoration:none;backdrop-filter:blur(8px);font-weight:500;letter-spacing:.05em}
+.lang-toggle:hover{background:rgba(62,11,89,.95);border-color:var(--yellow)}
+
+.hero{position:relative;min-height:100vh;display:flex;align-items:flex-end;justify-content:center;overflow:hidden}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center center}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(62,11,89,.1) 0%,rgba(62,11,89,.4) 50%,rgba(62,11,89,.95) 100%)}
+.hero-content{position:relative;z-index:2;text-align:center;padding:60px 20px 80px;max-width:800px}
+.hero-content h1{font-size:clamp(2.5rem,6vw,4.5rem);font-weight:800;letter-spacing:-.02em;line-height:1.1;margin-bottom:8px}
+.hero-content h1 .accent{color:var(--yellow)}
+.hero-content .subtitle{font-size:clamp(1.2rem,3vw,1.8rem);color:var(--muted);font-weight:300;margin-bottom:24px}
+.hero-content .tagline{font-size:1rem;color:var(--muted);max-width:500px;margin:0 auto}
+.scroll-ind{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);z-index:2;animation:bounce 2s infinite;opacity:.5}
+.scroll-ind svg{width:24px;height:24px;fill:var(--white)}
+@keyframes bounce{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(8px)}}
+
+section{max-width:1100px;margin:0 auto;padding:80px 24px}
+.section-full{max-width:100%;padding:0}
+.section-header{text-align:center;margin-bottom:48px}
+.section-header h2{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:700;margin-bottom:8px}
+.section-header .label{color:var(--yellow);font-size:.85rem;font-weight:600;text-transform:uppercase;letter-spacing:.15em;margin-bottom:8px;display:block}
+.section-header p{color:var(--muted);max-width:600px;margin:0 auto;font-size:1.05rem}
+
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin:40px 0}
+.stat-card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:16px;padding:28px 24px;text-align:center}
+.stat-card .number{font-size:2.8rem;font-weight:800;line-height:1;margin-bottom:4px;background:linear-gradient(135deg,var(--yellow),var(--green));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.stat-card .label{font-size:.9rem;color:var(--muted)}
+
+.founder{display:grid;grid-template-columns:280px 1fr;gap:40px;align-items:start;background:var(--card-bg);border:1px solid var(--card-border);border-radius:20px;padding:40px}
+.founder-img{width:100%;border-radius:12px;object-fit:cover;aspect-ratio:3/4}
+.founder-text h3{font-size:1.4rem;margin-bottom:4px}
+.founder-text .role{color:var(--yellow);font-size:.85rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;margin-bottom:16px;display:block}
+.founder-text p{color:rgba(255,255,255,.85);margin-bottom:12px;font-size:.95rem}
+.founder-text .signature{font-style:italic;color:var(--muted);margin-top:16px}
+
+.highlight{display:grid;grid-template-columns:1fr 1fr;gap:0;min-height:500px;margin-bottom:2px}
+.highlight.reverse{direction:rtl}
+.highlight.reverse>*{direction:ltr}
+.highlight-img{width:100%;height:100%;object-fit:cover;min-height:300px;max-height:500px}
+.highlight-text{display:flex;flex-direction:column;justify-content:center;padding:32px 48px;background:rgba(62,11,89,.7)}
+.highlight-text .event-label{color:var(--yellow);font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.15em;margin-bottom:8px}
+.highlight-text h3{font-size:clamp(1.5rem,3vw,2.2rem);font-weight:700;margin-bottom:12px;line-height:1.2}
+.highlight-text p{color:rgba(255,255,255,.8);font-size:.95rem;margin-bottom:8px}
+.highlight-text .stat-inline{display:inline-block;background:rgba(254,241,0,.15);color:var(--yellow);padding:4px 16px;border-radius:20px;font-size:.85rem;font-weight:600;margin-top:8px;align-self:flex-start}
+
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:4px}
+.gallery img{width:100%;aspect-ratio:1;object-fit:cover;transition:transform .3s}
+.gallery img:hover{transform:scale(1.03);z-index:2;position:relative}
+
+.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:40px 0}
+.edu-card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:16px;overflow:hidden}
+.edu-card img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.edu-card-body{padding:24px}
+.edu-card-body h4{font-size:1.1rem;margin-bottom:8px}
+.edu-card-body p{color:var(--muted);font-size:.9rem}
+
+.finance-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:40px 0}
+.finance-card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:16px;padding:28px}
+.finance-card h4{font-size:1rem;color:var(--yellow);margin-bottom:16px;text-transform:uppercase;letter-spacing:.1em;font-weight:600}
+.finance-row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.05);font-size:.9rem}
+.finance-row:last-child{border-bottom:none}
+.finance-row .label{color:var(--muted)}
+.finance-row .value{font-weight:600}
+.finance-row.total{border-top:2px solid rgba(255,255,255,.15);margin-top:8px;padding-top:12px;font-size:1rem}
+.finance-row.total .label{color:var(--white);font-weight:600}
+.income{color:var(--green)}.expense{color:var(--red)}
+
+.bar-chart{margin:16px 0}
+.bar-row{display:flex;align-items:center;gap:12px;margin-bottom:10px;font-size:.85rem}
+.bar-label{width:140px;text-align:right;color:var(--muted);flex-shrink:0}
+.bar-track{flex:1;height:24px;background:rgba(255,255,255,.05);border-radius:12px;overflow:hidden}
+.bar-fill{height:100%;border-radius:12px;background:var(--purple);transition:width .8s ease}
+.bar-fill.green{background:var(--green)}
+.bar-value{width:90px;font-weight:600;flex-shrink:0}
+
+.access-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin:40px 0}
+.access-card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:16px;padding:24px}
+.access-card .icon{font-size:2rem;margin-bottom:12px}
+.access-card h4{font-size:1rem;margin-bottom:8px}
+.access-card p{color:var(--muted);font-size:.85rem}
+
+.logo-bar{text-align:center;padding:40px 24px;border-top:1px solid var(--card-border)}
+.logo-bar img{max-width:600px;width:100%;opacity:.9}
+.logo-bar p{color:var(--muted);font-size:.8rem;margin-top:12px}
+
+footer{text-align:center;padding:40px 24px 60px;color:var(--muted);font-size:.85rem}
+footer a{color:var(--yellow);text-decoration:none}
+footer a:hover{text-decoration:underline}
+
+.quote-block{font-style:italic;color:var(--muted);font-size:.9rem;margin-top:6px}
+.quote-translation{font-style:normal;color:rgba(255,255,255,.65);font-size:.85rem;margin-top:4px;display:block}
+
+@media(max-width:768px){
+  .founder{grid-template-columns:1fr}
+  .founder-img{max-width:200px;margin:0 auto}
+  .highlight{grid-template-columns:1fr}
+  .highlight.reverse{direction:ltr}
+  .highlight-img{min-height:300px}
+  .highlight-text{padding:32px 24px}
+  .finance-grid{grid-template-columns:1fr}
+  .edu-grid{grid-template-columns:1fr}
+  .gallery{grid-template-columns:repeat(2,1fr)}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .bar-label{width:80px;font-size:.75rem}
+  .bar-value{width:70px;font-size:.8rem}
+  section{padding:60px 20px}
+}
+</style>
+</head>
+<body>
+
+<a href="../" class="lang-toggle">PT</a>
+
+<!-- HERO -->
+<div class="hero">
+  <img class="hero-img" src="../photos/hero-paraty-stage.jpg" alt="Favela Brass on the main stage of Bourbon Festival Paraty">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Annual Report <span class="accent">2025</span></h1>
+    <div class="subtitle">Associação Musical Favela Brass</div>
+    <p class="tagline">11 years of free music education in the favelas and public schools of Rio de Janeiro</p>
+  </div>
+  <div class="scroll-ind"><svg viewBox="0 0 24 24"><path d="M12 16l-6-6h12z"/></svg></div>
+</div>
+
+<!-- WHO WE ARE -->
+<section>
+  <div style="display:flex;gap:32px;align-items:center;flex-wrap:wrap;max-width:1100px;margin:0 auto">
+    <img src="../photos/logo-fb-white.png" alt="Favela Brass logo" style="width:min(240px,100%);flex-shrink:0">
+    <div style="flex:1;min-width:280px">
+      <span class="label" style="color:var(--yellow);font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.15em;display:block;margin-bottom:8px">Who we are</span>
+      <h2 style="font-size:1.8rem;font-weight:700;margin-bottom:16px">Associação Musical Favela Brass</h2>
+      <p style="color:rgba(255,255,255,.85);font-size:.95rem;line-height:1.7">Favela Brass offers free music education to children and teenagers from the favelas and public schools of Rio de Janeiro. Founded in 2014, the organisation teaches brass and percussion instruments using its own curriculum and an internationally recognised certification. Students form bands that perform at festivals, theatres and events across Rio state and beyond.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BY THE NUMBERS -->
+<section class="alt">
+  <div class="section-header">
+    <span class="label">2025 in numbers</span>
+    <h2>A year of consolidation</h2>
+  </div>
+  <div class="stats-grid">
+    <div class="stat-card">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="margin:0 auto 10px;display:block"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      <div class="number">203</div>
+      <div class="label">Active students (avg.)</div>
+    </div>
+    <div class="stat-card">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="margin:0 auto 10px;display:block"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>
+      <div class="number">63</div>
+      <div class="label">Performances</div>
+    </div>
+    <div class="stat-card">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="margin:0 auto 10px;display:block"><path d="M18 21a8 8 0 0 0-16 0"/><circle cx="10" cy="8" r="5"/><path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"/></svg>
+      <div class="number">27,410</div>
+      <div class="label">Audience members</div>
+    </div>
+    <div class="stat-card">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="margin:0 auto 10px;display:block"><path d="M14 22v-4a2 2 0 1 0-4 0v4"/><path d="m18 10 3.447 1.724a1 1 0 0 1 .553.894V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-7.382a1 1 0 0 1 .553-.894L6 10"/><path d="M18 5v17"/><path d="m4 6 7.106-3.553a2 2 0 0 1 1.788 0L20 6"/><path d="M6 5v17"/><circle cx="12" cy="9" r="2"/></svg>
+      <div class="number">8</div>
+      <div class="label">Partner schools</div>
+    </div>
+    <div class="stat-card">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="margin:0 auto 10px;display:block"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+      <div class="number">16</div>
+      <div class="label">Teachers</div>
+    </div>
+    <div class="stat-card">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="margin:0 auto 10px;display:block"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+      <div class="number">810</div>
+      <div class="label">Classes delivered</div>
+    </div>
+    <div class="stat-card">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="margin:0 auto 10px;display:block"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg>
+      <div class="number">96%</div>
+      <div class="label">Practical exam pass rate</div>
+    </div>
+    <div class="stat-card">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="margin:0 auto 10px;display:block"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+      <div class="number">282k</div>
+      <div class="label">Social media reach</div>
+    </div>
+  </div>
+  <div class="finance-card" style="margin-top:24px;padding:24px">
+    <h4 style="margin-bottom:16px">Digital presence</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
+      <div>
+        <p style="font-size:.85rem;color:var(--yellow);font-weight:600;margin-bottom:8px">Instagram @favela_brass</p>
+        <div class="finance-row"><span class="label">Followers</span><span class="value">11,358</span></div>
+        <div class="finance-row"><span class="label">Reach in 2025</span><span class="value" style="color:var(--green)">282,464</span></div>
+        <div class="finance-row"><span class="label">Posts in 2025</span><span class="value">161</span></div>
+      </div>
+      <div>
+        <p style="font-size:.85rem;color:var(--yellow);font-weight:600;margin-bottom:8px">YouTube /favelabrass</p>
+        <div class="finance-row"><span class="label">Subscribers</span><span class="value">5,760</span></div>
+        <div class="finance-row"><span class="label">Total views</span><span class="value" style="color:var(--green)">765,408</span></div>
+        <div class="finance-row"><span class="label">Videos published</span><span class="value">288</span></div>
+        <div class="finance-row"><span class="label">Free online curriculum</span><span class="value"><a href="https://curriculofavelabrass.org" style="color:var(--yellow)">curriculofavelabrass.org</a></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDER LETTER -->
+<section class="alt">
+  <div class="section-header">
+    <span class="label">A note from the founder</span>
+  </div>
+  <div class="founder">
+    <img class="founder-img" src="../photos/tom-portrait.png" alt="Tom Ashe with trumpet">
+    <div class="founder-text">
+      <h3>Tom Ashe</h3>
+      <span class="role">Executive Director and Founder</span>
+      <p>2025 was the year Favela Brass came of age as an institution. With an average of 203 active students between our base in the Pereira da Silva favela and 8 municipal schools across Rio, we played 63 performances to over 27,000 people, from neighbourhood shows in the favela to stages like Bourbon Festival Paraty, the Copacabana Palace and the Rio International Film Festival.</p>
+      <p>The year was about more than the numbers. We took part in Impulso, an accelerator programme run by our main sponsor PRIO, which gave us concrete tools for governance and long-term sustainability. We restructured the team, renewed our partnership with PRIO, and ended the year with something we'd been chasing for a long time: a wing of a colonial mansion in the Largo do Curvelo, in Santa Teresa, where we'll have a new space for rehearsals, classes and events from 2026.</p>
+      <p>None of this would have happened without PRIO, our teachers and admin team, the students who turn up and put the work in, the families who trust us with them, and the donors, partners and volunteers who have walked alongside us. To all of you, our deepest thanks.</p>
+      <p class="signature">Tom Ashe, April 2026</p>
+    </div>
+  </div>
+</section>
+
+<!-- HIGHLIGHTS -->
+<section class="section-full">
+  <div style="max-width:1100px;margin:0 auto;padding:0 24px 48px">
+    <div class="section-header">
+      <span class="label">Highlights</span>
+      <h2>The moments that defined 2025</h2>
+    </div>
+  </div>
+
+  <div class="highlight">
+    <img class="highlight-img" src="../photos/highlight-cortejo.jpg" alt="Favela Brass Carnaval street parade">
+    <div class="highlight-text">
+      <div class="event-label">5 March</div>
+      <h3>Carnaval Street Parade</h3>
+      <p>Our annual <em>cortejo</em> through the lanes of the Pereira da Silva favela has been a tradition since 2014. Students come out in costume alongside their families and neighbours.</p>
+      <span class="stat-inline">A tradition since 2014</span>
+    </div>
+  </div>
+
+  <div class="highlight reverse">
+    <img class="highlight-img" src="../photos/highlight-paraty.jpg" alt="Favela Brass marching through the streets of Paraty">
+    <div class="highlight-text">
+      <div class="event-label">13 to 15 June</div>
+      <h3>Bourbon Festival Paraty</h3>
+      <p>Our students played the main stage at one of Brazil's biggest jazz festivals, to an audience of more than 10,000 people. They also led a procession through the colonial streets of the town and spent three days immersed in music.</p>
+      <span class="stat-inline">4th consecutive year at the festival</span>
+    </div>
+  </div>
+
+  <div class="highlight">
+    <img class="highlight-img" src="../photos/highlight-itaipava.jpg" alt="Band performing at Bosque dos Vales in Itaipava">
+    <div class="highlight-text">
+      <div class="event-label">13 to 14 December</div>
+      <h3>Itaipava: Bosque dos Vales</h3>
+      <p>A new partnership took our Banda Preta and Banda Roxa up into the mountains north of Rio. The students played open-air at Bosque dos Vales as part of an end-of-year tour that also passed through Resende and Teresópolis.</p>
+      <span class="stat-inline">New partnership</span>
+    </div>
+  </div>
+
+  <div class="highlight reverse">
+    <img class="highlight-img" src="../photos/highlight-copa.jpg" alt="Banda das Meninas in the ballroom of the Copacabana Palace">
+    <div class="highlight-text">
+      <div class="event-label">7 December</div>
+      <h3>Copacabana Palace</h3>
+      <p>For the ELA Verões event at the Copacabana Palace, we put together our Banda das Meninas (Girls' Band), made up exclusively of female students. The invitation was made possible by PRIO, our principal sponsor.</p>
+      <span class="stat-inline">PRIO invitation</span>
+    </div>
+  </div>
+
+  <div class="highlight">
+    <img class="highlight-img" src="../photos/highlight-festival-rio.jpg" alt="Audience applauding at the Rio International Film Festival">
+    <div class="highlight-text">
+      <div class="event-label">October</div>
+      <h3><em>O Som do Morro</em> at the Rio Film Festival</h3>
+      <p>The short film <em>O Som do Morro</em> (22'), directed by Taylor Segrest, premiered at Latin America's biggest film festival. It documents a decade of Favela Brass through a vibrant collage of live music and interviews, culminating in a celebration at Circo Voador with a battle of bands featuring 10 brass blocos and fanfares from around Rio.</p>
+      <p class="quote-block">"Chorei o filme todo. Esse momento foi meio mágico, pois reconecta a gente com o nosso propósito. O que isso move nas pessoas é mágico!" <span style="font-style:normal">- Raffaella Goi, conductor of Banda Amarela</span><span class="quote-translation">"I cried the whole way through. That moment was magical, because it reconnects you with your purpose. What it moves in people is magical."</span></p>
+      <span class="stat-inline">Rio Film Festival 2025</span>
+    </div>
+  </div>
+
+  <div style="max-width:900px;margin:0 auto;padding:48px 24px 0">
+    <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:16px">
+      <iframe src="https://www.youtube.com/embed/p9rNCI81UW0" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p style="text-align:center;color:var(--muted);font-size:.85rem;margin:12px 0 0"><em>O Som do Morro</em> (22'), directed by Taylor Segrest. Portuguese with English subtitles available.</p>
+  </div>
+
+  <div style="max-width:900px;margin:0 auto;padding:32px 24px 48px;display:flex;align-items:center;gap:24px;flex-wrap:wrap;justify-content:center">
+    <img src="../photos/hero-paraty-joy.jpg" alt="Lúcia, trumpet student" style="width:120px;height:120px;border-radius:50%;object-fit:cover;object-position:center 35%;flex-shrink:0">
+    <div style="flex:1;min-width:250px">
+      <p style="font-size:1.05rem;font-style:italic;color:rgba(255,255,255,.85)">"Achei emocionante e acho que a história da Favela Brass está só começando. Estou desde pequena no projeto e é muito bonito ver o projeto crescer."</p>
+      <p style="color:rgba(255,255,255,.65);margin-top:6px;font-size:.95rem">"It moved me, and I think the story of Favela Brass is only just beginning. I've been in the project since I was little, and it's beautiful to see it grow."</p>
+      <p style="color:var(--yellow);margin-top:8px;font-size:.85rem">Lúcia, trumpet student in Banda Preta, from the Pereira da Silva favela</p>
+    </div>
+  </div>
+
+  <div class="highlight reverse">
+    <img class="highlight-img" src="../photos/highlight-11anos.jpg" alt="11-year anniversary celebration at Clube dos Democráticos">
+    <div class="highlight-text">
+      <div class="event-label">21 June</div>
+      <h3>11-Year Anniversary</h3>
+      <p>We celebrated 11 years of Favela Brass at Clube dos Democráticos, in Rio's Lapa neighbourhood, with every band in the project on stage and guest brass bands Bloco Sofridão, Biquínis de Ogodô and Amigos da Cacilda.</p>
+      <span class="stat-inline">350 people</span>
+    </div>
+  </div>
+
+  <div class="highlight">
+    <img class="highlight-img" src="../photos/highlight-impulso.jpg" alt="Wesley presenting at the Impulso I Love PRIO programme">
+    <div class="highlight-text">
+      <div class="event-label">2025</div>
+      <h3>Impulso I&#9829;PRIO</h3>
+      <p>We were selected for Impulso, PRIO's accelerator programme for the social organisations they already support. The programme included training and mentoring on management, financial sustainability and leadership development.</p>
+      <span class="stat-inline">Accelerator programme</span>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section-full" style="padding-top:0">
+  <div class="gallery">
+    <img src="../photos/paraty-crowd.jpg" alt="Packed crowd at Bourbon Festival Paraty">
+    <img src="../photos/copa-huddle.jpg" alt="Banda das Meninas backstage huddle">
+    <img src="../photos/bourbon-sp-masp.jpg" alt="Favela Brass in front of MASP in São Paulo">
+    <img src="../photos/cortejo-sax-clown.jpg" alt="Saxophonist in costume during the Carnaval procession">
+    <img src="../photos/santa-teresa.jpg" alt="Performance in Santa Teresa">
+    <img src="../photos/itaipava-bus.jpg" alt="Students on the bus to Itaipava">
+    <img src="../photos/baile-brass-band.jpg" alt="Band playing at Baile Brass">
+    <img src="../photos/paraty-smile.jpg" alt="Student smiling in Paraty">
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="alt">
+  <div class="section-header">
+    <span class="label">Education programme</span>
+    <h2>Training musicians, raising citizens</h2>
+    <p>Free weekly brass and percussion lessons in 8 municipal schools and at our Centro Assunção base, using our own 8-level curriculum.</p>
+  </div>
+  <div class="edu-grid">
+    <div class="edu-card">
+      <img src="../photos/classroom-recorders.jpg" alt="Class at Pereira Passos primary school">
+      <div class="edu-card-body">
+        <h4>Lessons in municipal schools</h4>
+        <p>An average of 149 active students across 8 primary schools, with weekly classes held outside regular school hours. Each school receives instruments, teaching materials and a specialist teacher.</p>
+      </div>
+    </div>
+    <div class="edu-card">
+      <img src="../photos/classroom-percussion.jpg" alt="Band rehearsal in the Pereira da Silva favela">
+      <div class="edu-card-body">
+        <h4>Lessons in the Pereira da Silva favela</h4>
+        <p>An average of 84 active students across 3 spaces in the favela, with advanced training including theory classes, instrument practice, band rehearsals and luthiery classes for deaf students.</p>
+      </div>
+    </div>
+  </div>
+  <div class="stats-grid" style="margin-top:32px">
+    <div class="stat-card"><div class="number">4</div><div class="label">Active bands</div></div>
+    <div class="stat-card"><div class="number">12.5k</div><div class="label">Monthly views of our teaching videos</div></div>
+    <div class="stat-card"><div class="number">75</div><div class="label">Individual lessons / week</div></div>
+  </div>
+  <div class="finance-card" style="margin-top:32px;padding:24px;text-align:center">
+    <p style="font-size:1.1rem;margin:0"><strong style="color:var(--green)">3 former students returned as teachers:</strong> Henri, Nathan and Vinício.</p>
+  </div>
+</section>
+
+<!-- ASSESSMENTS -->
+<section>
+  <div class="section-header">
+    <span class="label">Assessments</span>
+    <h2>Externally examined</h2>
+    <p style="max-width:600px;margin:16px auto 0">Advanced students sit international certifications with the MTB (Music Teachers' Board, UK). Beginners sit internal exams in the same format. In 2025 we introduced music theory exams to prepare students for university entrance and military band competitions.</p>
+  </div>
+
+  <img src="../photos/mtb-certificates.jpg" alt="Students receiving MTB certificates" style="width:100%;border-radius:16px;margin-bottom:32px">
+
+  <div class="stats-grid" style="margin-bottom:32px">
+    <div class="stat-card"><div class="number">85</div><div class="label">Practical exams passed</div></div>
+    <div class="stat-card"><div class="number" style="-webkit-text-fill-color:var(--green)">96.6%</div><div class="label">Pass rate (practical)</div></div>
+    <div class="stat-card"><div class="number" style="-webkit-text-fill-color:var(--green)">77%</div><div class="label">With distinction (practical)</div></div>
+    <div class="stat-card"><div class="number">60</div><div class="label">Theory exams</div></div>
+  </div>
+
+  <div class="finance-card" style="padding:24px;overflow-x:auto">
+    <h4 style="margin-bottom:16px">Practical exams passed, by level and instrument</h4>
+    <table style="width:100%;border-collapse:collapse;font-size:.85rem">
+      <thead>
+        <tr style="border-bottom:1px solid rgba(255,255,255,.15)">
+          <th style="text-align:left;padding:8px;color:var(--yellow)">Level</th>
+          <th style="text-align:center;padding:8px">Trumpet</th>
+          <th style="text-align:center;padding:8px">Trombone</th>
+          <th style="text-align:center;padding:8px">Saxophone</th>
+          <th style="text-align:center;padding:8px">Percussion</th>
+          <th style="text-align:center;padding:8px">Tuba</th>
+          <th style="text-align:center;padding:8px;color:var(--yellow)">Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom:1px solid rgba(255,255,255,.05)">
+          <td style="padding:8px">1 (internal)</td>
+          <td style="text-align:center;padding:8px">7</td>
+          <td style="text-align:center;padding:8px">3</td>
+          <td style="text-align:center;padding:8px">3</td>
+          <td style="text-align:center;padding:8px">8</td>
+          <td style="text-align:center;padding:8px"></td>
+          <td style="text-align:center;padding:8px;color:var(--yellow)">21</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(255,255,255,.05)">
+          <td style="padding:8px">2 (internal)</td>
+          <td style="text-align:center;padding:8px">4</td>
+          <td style="text-align:center;padding:8px">7</td>
+          <td style="text-align:center;padding:8px">5</td>
+          <td style="text-align:center;padding:8px">4</td>
+          <td style="text-align:center;padding:8px"></td>
+          <td style="text-align:center;padding:8px;color:var(--yellow)">20</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(255,255,255,.05)">
+          <td style="padding:8px">3 (MTB)</td>
+          <td style="text-align:center;padding:8px">11</td>
+          <td style="text-align:center;padding:8px">3</td>
+          <td style="text-align:center;padding:8px">3</td>
+          <td style="text-align:center;padding:8px">1</td>
+          <td style="text-align:center;padding:8px"></td>
+          <td style="text-align:center;padding:8px;color:var(--yellow)">18</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(255,255,255,.05)">
+          <td style="padding:8px">4 (MTB)</td>
+          <td style="text-align:center;padding:8px">6</td>
+          <td style="text-align:center;padding:8px">4</td>
+          <td style="text-align:center;padding:8px">3</td>
+          <td style="text-align:center;padding:8px"></td>
+          <td style="text-align:center;padding:8px"></td>
+          <td style="text-align:center;padding:8px;color:var(--yellow)">13</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(255,255,255,.05)">
+          <td style="padding:8px">5 (MTB)</td>
+          <td style="text-align:center;padding:8px">4</td>
+          <td style="text-align:center;padding:8px">3</td>
+          <td style="text-align:center;padding:8px">1</td>
+          <td style="text-align:center;padding:8px"></td>
+          <td style="text-align:center;padding:8px">1</td>
+          <td style="text-align:center;padding:8px;color:var(--yellow)">9</td>
+        </tr>
+        <tr>
+          <td style="padding:8px">6 (MTB)</td>
+          <td style="text-align:center;padding:8px">3</td>
+          <td style="text-align:center;padding:8px">1</td>
+          <td style="text-align:center;padding:8px"></td>
+          <td style="text-align:center;padding:8px"></td>
+          <td style="text-align:center;padding:8px"></td>
+          <td style="text-align:center;padding:8px;color:var(--yellow)">4</td>
+        </tr>
+        <tr style="border-top:1px solid rgba(255,255,255,.15)">
+          <td style="padding:8px;color:var(--yellow);font-weight:600">Total</td>
+          <td style="text-align:center;padding:8px;color:var(--yellow);font-weight:600">35</td>
+          <td style="text-align:center;padding:8px;color:var(--yellow);font-weight:600">21</td>
+          <td style="text-align:center;padding:8px;color:var(--yellow);font-weight:600">15</td>
+          <td style="text-align:center;padding:8px;color:var(--yellow);font-weight:600">13</td>
+          <td style="text-align:center;padding:8px;color:var(--yellow);font-weight:600">1</td>
+          <td style="text-align:center;padding:8px;color:var(--yellow);font-weight:600">85</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="color:var(--muted);font-size:.8rem;margin-top:12px"><a href="https://www.mtbexams.com" style="color:var(--yellow)">MTB</a> = Music Teachers' Board (UK). Regulated by Ofqual (England's official qualifications regulator), with over 4,000 exam centres in 50+ countries. The system has 8 progressive levels, with level 8 equivalent to the entry requirement for university music courses. Exams are graded by specialists in the student's instrument.</p>
+  </div>
+
+  <div class="finance-card" style="margin-top:24px;padding:24px">
+    <h4 style="margin-bottom:16px">External MTB exams: 100% pass rate</h4>
+    <p>All 22 students who sat external MTB exams passed. No failures in international exams since the programme began.</p>
+    <div class="stats-grid" style="margin-top:16px">
+      <div class="stat-card"><div class="number" style="font-size:1.5rem">22</div><div class="label">MTB exams sat</div></div>
+      <div class="stat-card"><div class="number" style="font-size:1.5rem;-webkit-text-fill-color:var(--green)">100%</div><div class="label">Pass rate</div></div>
+      <div class="stat-card"><div class="number" style="font-size:1.5rem">55%</div><div class="label">With distinction</div></div>
+    </div>
+  </div>
+
+  <div class="finance-card" style="margin-top:24px;padding:24px">
+    <h4 style="margin-bottom:16px">Music theory exams</h4>
+    <p style="margin-bottom:16px">In 2025 we introduced music theory exams to prepare students for university entrance and military band competitions. The results below exclude diagnostic tests, which were used to stream students into classes.</p>
+    <table style="width:100%;border-collapse:collapse;font-size:.85rem">
+      <thead>
+        <tr style="border-bottom:1px solid rgba(255,255,255,.15)">
+          <th style="text-align:left;padding:8px;color:var(--yellow)">Round</th>
+          <th style="text-align:center;padding:8px">Total</th>
+          <th style="text-align:center;padding:8px;color:var(--green)">Distinction</th>
+          <th style="text-align:center;padding:8px;color:var(--green)">Merit</th>
+          <th style="text-align:center;padding:8px">Pass</th>
+          <th style="text-align:center;padding:8px;color:var(--red)">Fail</th>
+          <th style="text-align:center;padding:8px;color:var(--yellow)">Pass rate</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom:1px solid rgba(255,255,255,.05)">
+          <td style="padding:8px">Level 1 (Jul 2025)</td>
+          <td style="text-align:center;padding:8px">24</td>
+          <td style="text-align:center;padding:8px">11</td>
+          <td style="text-align:center;padding:8px">6</td>
+          <td style="text-align:center;padding:8px">3</td>
+          <td style="text-align:center;padding:8px">4</td>
+          <td style="text-align:center;padding:8px;color:var(--green)">83%</td>
+        </tr>
+        <tr>
+          <td style="padding:8px">Level 2 (Feb 2026)</td>
+          <td style="text-align:center;padding:8px">36</td>
+          <td style="text-align:center;padding:8px">8</td>
+          <td style="text-align:center;padding:8px">18</td>
+          <td style="text-align:center;padding:8px">7</td>
+          <td style="text-align:center;padding:8px">3</td>
+          <td style="text-align:center;padding:8px;color:var(--green)">92%</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="color:var(--muted);font-size:.8rem;margin-top:12px">Students who trained throughout the year posted strong results: 83% pass rate at level 1 and 92% at level 2.</p>
+  </div>
+</section>
+
+<!-- SOCIAL IMPACT -->
+<section class="alt">
+  <div class="section-header">
+    <span class="label">Social impact</span>
+    <h2>Who our students are</h2>
+  </div>
+  <div class="stats-grid">
+    <div class="stat-card"><div class="number">69%</div><div class="label">Live in a favela</div></div>
+    <div class="stat-card"><div class="number">51%</div><div class="label">Household income up to one minimum wage</div></div>
+    <div class="stat-card"><div class="number">58%</div><div class="label">Girls</div></div>
+    <div class="stat-card"><div class="number">8 to 18</div><div class="label">Age range</div></div>
+  </div>
+  <div class="finance-card" style="margin-top:32px">
+    <h4>What we provide free of charge</h4>
+    <div class="finance-row"><span class="label">Weekly lessons</span><span class="value">810 classes in 2025</span></div>
+    <div class="finance-row"><span class="label">Musical instruments on long-term loan</span><span class="value">256 instruments</span></div>
+    <div class="finance-row"><span class="label">Original teaching materials</span><span class="value">Favela Brass curriculum</span></div>
+    <div class="finance-row"><span class="label">Meals at every activity</span><span class="value">Rehearsals, classes and shows</span></div>
+    <div class="finance-row"><span class="label">Transport to performances</span><span class="value">63 events</span></div>
+    <div class="finance-row"><span class="label">Uniforms and t-shirts</span><span class="value">For every student</span></div>
+    <div class="finance-row"><span class="label">Exams and certification</span><span class="value">Internal and international (MTB)</span></div>
+  </div>
+</section>
+
+
+<!-- FINANCES -->
+<section>
+  <div class="section-header">
+    <span class="label">Transparency</span>
+    <h2>Financial accountability</h2>
+    <p style="max-width:680px;margin:16px auto 0">Figures are in Brazilian Reais (R$). Public cultural funding came through Lei Rouanet, Brazil's federal cultural incentive law, which lets companies and individuals direct a portion of their tax to approved cultural projects.</p>
+  </div>
+
+  <div class="finance-grid">
+    <div class="finance-card">
+      <h4>Association account</h4>
+      <div class="finance-row"><span class="label">Opening balance (1 Jan 2025)</span><span class="value">R$ 134,706</span></div>
+      <div class="finance-row"><span class="label">Own revenue</span><span class="value income">R$ 230,540</span></div>
+      <div class="finance-row"><span class="label">Own expenses</span><span class="value expense">R$ 152,553</span></div>
+      <div class="finance-row"><span class="label">Investment income (CDB)</span><span class="value income">R$ 19,146</span></div>
+      <div class="finance-row total"><span class="label">Closing balance (31 Dec 2025)</span><span class="value income">R$ 231,839</span></div>
+    </div>
+    <div class="finance-card">
+      <h4>Rouanet project (2025 annual plan)</h4>
+      <div class="finance-row"><span class="label">PRIO sponsorship</span><span class="value income">R$ 1,000,000</span></div>
+      <div class="finance-row"><span class="label">Individual donations (Rouanet)</span><span class="value income">R$ 14,000</span></div>
+      <div class="finance-row"><span class="label">Investment income</span><span class="value income">R$ 14,855</span></div>
+      <div class="finance-row total"><span class="label">Total funds</span><span class="value income">R$ 1,028,855</span></div>
+      <div class="finance-row"><span class="label">Project execution</span><span class="value expense">R$ 1,028,855</span></div>
+      <p style="color:var(--muted);font-size:.85rem;margin-top:12px">Funds were ring-fenced for the project under Lei Rouanet rules, and fully executed in 2025.</p>
+    </div>
+  </div>
+
+  <div class="finance-card" style="margin-top:24px">
+    <h4>Rouanet execution: where it went</h4>
+    <div class="finance-row"><span class="label">Admin team</span><span class="value expense">R$ 385,578</span></div>
+    <div class="finance-row"><span class="label">Teachers</span><span class="value expense">R$ 300,372</span></div>
+    <div class="finance-row"><span class="label">Administration</span><span class="value expense">R$ 98,648</span></div>
+    <div class="finance-row"><span class="label">Meals</span><span class="value expense">R$ 74,973</span></div>
+    <div class="finance-row"><span class="label">Communications</span><span class="value expense">R$ 70,542</span></div>
+    <div class="finance-row"><span class="label">Instruments and equipment</span><span class="value expense">R$ 20,587</span></div>
+    <div class="finance-row"><span class="label">Venue rental</span><span class="value expense">R$ 19,183</span></div>
+    <div class="finance-row"><span class="label">Transport</span><span class="value expense">R$ 17,204</span></div>
+    <div class="finance-row"><span class="label">Accountancy and insurance</span><span class="value expense">R$ 15,188</span></div>
+    <div class="finance-row"><span class="label">Uniforms</span><span class="value expense">R$ 14,243</span></div>
+    <div class="finance-row"><span class="label">Other (consumables, accessibility, year-end adjustments)</span><span class="value expense">R$ 12,337</span></div>
+    <div class="finance-row total"><span class="label">Total executed</span><span class="value expense">R$ 1,028,855</span></div>
+  </div>
+
+</section>
+
+<!-- 2026 -->
+<section class="alt">
+  <div class="section-header">
+    <span class="label">2026</span>
+    <h2>Largo do Curvelo</h2>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px">
+    <img src="../photos/curvelo-rehearsal.jpg" alt="Favela Brass rehearsal at the Largo do Curvelo mansion" style="width:100%;height:400px;object-fit:cover;border-radius:16px">
+    <img src="../photos/curvelo-exterior.jpg" alt="Colonial mansion at Largo do Curvelo" style="width:100%;height:400px;object-fit:cover;object-position:center top;border-radius:16px">
+  </div>
+  <div style="max-width:700px;margin:0 auto">
+    <p>In 2026, Favela Brass gains a new home at Largo do Curvelo, in the heart of Santa Teresa. The owner, Uwe Fabich (who also runs Pizzaria Zola), offered us a wing of his colonial mansion after watching us play during the Honk!Rio festival in November 2025.</p>
+    <p style="margin-top:12px">The space will host rehearsals, classes and performances at one of the most beautiful and accessible spots in the neighbourhood, alongside our original base in the Pereira da Silva favela.</p>
+  </div>
+</section>
+
+<!-- GOVERNANCE -->
+<section class="alt">
+  <div class="section-header">
+    <span class="label">Governance</span>
+    <h2>Board of Directors</h2>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start;max-width:1100px;margin:0 auto">
+    <div style="color:rgba(255,255,255,.85);font-size:.95rem;line-height:1.7">
+      <p>Associação Musical Favela Brass is governed by a Board of Directors made up of eight volunteer members. The board meets monthly to deliberate on strategy, approve accounts, and ensure the organisation stays true to its mission.</p>
+      <p style="margin-top:12px">Day-to-day management is handled by the staff team, led by founder Tom Ashe, who reports directly to the board. This separation between governance and execution gives Favela Brass the transparency and institutional solidity the project deserves.</p>
+      <p style="margin-top:12px">Board members serve renewable terms of up to six years.</p>
+    </div>
+    <div class="finance-card" style="padding:24px">
+      <div class="finance-row"><span class="label">Rolf Bateman Hippertt Hatje</span><span class="value" style="color:var(--yellow)">President</span></div>
+      <div class="finance-row"><span class="label">Alberto Coralli</span><span class="value" style="color:var(--yellow)">Vice-President</span></div>
+      <div class="finance-row"><span class="label">Norton de Andrade Vieira Fritzsche Junior</span><span class="value">Treasurer</span></div>
+      <div class="finance-row"><span class="label">Joseph Neil Epstein</span><span class="value">Secretary</span></div>
+      <div class="finance-row"><span class="label">Bruna Fatiche Pavani</span><span class="value">Director</span></div>
+      <div class="finance-row"><span class="label">Bruno Pugliese Muniz</span><span class="value">Director</span></div>
+      <div class="finance-row"><span class="label">Fernanda Debora Gomes</span><span class="value">Director</span></div>
+      <div class="finance-row"><span class="label">Lucca Elmôr Rizzo Scognamillo</span><span class="value">Director</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- THANKS -->
+<section>
+  <div class="section-header">
+    <span class="label">Thanks</span>
+    <h2>To everyone who makes this project happen</h2>
+  </div>
+
+  <div class="finance-card" style="padding:32px;text-align:center;margin-bottom:24px">
+    <img src="../photos/iloveprio.png" alt="I Love PRIO" style="height:36px;margin-bottom:16px">
+    <p style="font-size:1rem;color:rgba(255,255,255,.85);max-width:600px;margin:0 auto">Principal sponsor via Lei Rouanet. Thank you for believing in our project and investing in young people's lives through music.</p>
+  </div>
+
+  <div class="finance-card" style="padding:32px;margin-top:24px;text-align:center">
+    <p style="font-size:1rem;color:var(--yellow);font-weight:600;margin-bottom:20px">Special thanks</p>
+    <div style="display:flex;justify-content:center;gap:40px;flex-wrap:wrap;margin-bottom:20px">
+      <div style="text-align:center">
+        <img src="../photos/mirela.jpg" alt="Mirela Rampini" style="width:100px;height:100px;border-radius:50%;object-fit:cover;margin-bottom:8px">
+        <p style="font-weight:600">Mirela Rampini</p>
+        <p style="color:var(--muted);font-size:.85rem">President (2020 to 2026)</p>
+      </div>
+      <div style="text-align:center">
+        <img src="../photos/somulo.jpg" alt="Sômulo Mafra" style="width:100px;height:100px;border-radius:50%;object-fit:cover;margin-bottom:8px">
+        <p style="font-weight:600">Sômulo Mafra</p>
+        <p style="color:var(--muted);font-size:.85rem">Vice-President and Secretary (2020 to 2026)</p>
+      </div>
+    </div>
+    <p style="font-size:.95rem;color:rgba(255,255,255,.85);max-width:600px;margin:0 auto">Mirela and Sômulo have been with Favela Brass since the association was founded in 2020, giving their time and energy as volunteer board members and helping build the organisation that exists today. Thank you for everything.</p>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section class="alt">
+  <div class="section-header">
+    <span class="label">Partners</span>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px">
+    <div class="finance-card" style="padding:24px">
+      <h4 style="color:var(--yellow);margin-bottom:12px">In the Pereira da Silva favela</h4>
+      <p>Pereira da Silva Residents' Association</p>
+      <p>Centro Assunção, Santa Teresa</p>
+      <p>Lanchonete do Mazinho e Silvia</p>
+      <p>Lanchonete Galinhão da Mata</p>
+      <p>Padaria Le Petit Pain</p>
+      <p>Pizzaria do Hedi</p>
+      <p>Restaurante ABCD</p>
+    </div>
+    <div class="finance-card" style="padding:24px">
+      <h4 style="color:var(--yellow);margin-bottom:12px">Brazilian partners</h4>
+      <p>Atados</p>
+      <p>Bourbon Street Music Club, São Paulo</p>
+      <p>Centro Assunção, Teresópolis</p>
+      <p>Donna Natureza</p>
+      <p>Mattos Filho</p>
+      <p>Pizzaria Zola / Uwe Fabich</p>
+      <p>Rio de Janeiro Municipal Department of Education</p>
+      <p>British Society of Rio de Janeiro</p>
+    </div>
+    <div class="finance-card" style="padding:24px">
+      <h4 style="color:var(--yellow);margin-bottom:12px">International partners</h4>
+      <p>Friends of Favela Brass (United Kingdom)</p>
+      <p>Jugendmusikkorps der Stadt Bad Kissingen (Germany)</p>
+      <p>Music Teachers' Board (United Kingdom)</p>
+      <p>Taylor Segrest (USA)</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<div class="logo-bar">
+  <img src="../photos/logos-parceiros.png" alt="Partner logos: Rio City Hall, Lei Rouanet, Ministry of Culture, Federal Government of Brazil">
+</div>
+
+<footer>
+  <p style="font-size:1.1rem;color:var(--white);margin-bottom:8px"><strong>Associação Musical Favela Brass</strong></p>
+  <p>CNPJ 37.332.605/0001-90</p>
+  <p>Rua Pau da Bandeira, 19B, Laranjeiras, Rio de Janeiro, CEP 22221-140</p>
+  <p style="margin-top:12px">
+    <a href="https://favelabrass.org">favelabrass.org</a> ·
+    <a href="https://instagram.com/favela_brass">@favela_brass</a> ·
+    <a href="https://curriculofavelabrass.org">curriculofavelabrass.org</a>
+  </p>
+  <p style="margin-top:16px"><a href="../">Versão em português &rarr;</a></p>
+</footer>
+
+</body>
+</html>
