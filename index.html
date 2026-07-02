@@ -1,297 +1,375 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Favela Brass - Favela Brass</title>
-    <meta name="description" content="Programa de educação musical gratuito para jovens das favelas e escolas públicas do Rio de Janeiro.">
-    <meta property="og:title" content="Favela Brass - Favela Brass">
-    <meta property="og:description" content="Programa de educação musical gratuito para jovens das favelas e escolas públicas do Rio de Janeiro.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="img/01-paraty-street-humanacamila.jpg">
-    <link rel="stylesheet" href="shared/fb-common.css">
-    <link rel="stylesheet" href="shared/fb-website.css">
-    <link rel="icon" type="image/png" href="img/logo3coresWEB.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Favela Brass · Escola de música gratuita nas favelas do Rio</title>
+<meta name="description" content="Programa de educação musical gratuito para jovens das favelas e escolas públicas do Rio de Janeiro.">
+<meta property="og:title" content="Favela Brass · Escola de música gratuita nas favelas do Rio">
+<meta property="og:description" content="Programa de educação musical gratuito para jovens das favelas e escolas públicas do Rio de Janeiro.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://favelabrass.org/img/01-paraty-street-humanacamila.jpg">
+<meta property="og:url" content="https://favelabrass.org/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300..1000&family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add("js")</script>
+<link rel="stylesheet" href="shared/fb-website.css">
+<link rel="icon" type="image/png" href="img/logo3coresWEB.png">
 </head>
 <body>
-<nav class="site-nav" id="siteNav">
-    <a href="index.html"><img src="img/Logo FB White.png" alt="Favela Brass" class="site-nav-logo"></a>
-    <button class="nav-hamburger" onclick="document.querySelector('.site-nav-links').classList.toggle('open')" aria-label="Menu">
-        <svg viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
-    </button>
-    <div class="site-nav-links">
-        <a href="index.html" class="active"><span class="lang-pt">Início</span><span class="lang-en">Home</span></a><a href="sobre.html"><span class="lang-pt">Sobre</span><span class="lang-en">About</span></a><a href="equipe.html"><span class="lang-pt">Equipe</span><span class="lang-en">Team</span></a><a href="colaborar.html"><span class="lang-pt">Colaborar</span><span class="lang-en">Donate</span></a><a href="contato.html"><span class="lang-pt">Contato</span><span class="lang-en">Contact</span></a><a href="colaborar.html" class="nav-cta"><span class="lang-pt">Apoie</span><span class="lang-en">Donate</span></a><a href="#" class="nav-lang" onclick="toggleLang();return false;" title="English / Português">EN/PT</a>
-    </div>
+
+<div class="grain" aria-hidden="true"></div>
+
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav-logo"><img src="img/Logo FB White.png" alt="Favela Brass"></a>
+  <button class="nav-burger" id="navBurger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html" class="active"><span class="lang-pt">Início</span><span class="lang-en">Home</span></a>
+    <a href="sobre.html"><span class="lang-pt">Sobre</span><span class="lang-en">About</span></a>
+    <a href="equipe.html"><span class="lang-pt">Equipe</span><span class="lang-en">Team</span></a>
+    <a href="colaborar.html"><span class="lang-pt">Colaborar</span><span class="lang-en">Get Involved</span></a>
+    <a href="contato.html"><span class="lang-pt">Contato</span><span class="lang-en">Contact</span></a>
+    <a href="colaborar.html" class="nav-cta"><span class="lang-pt">Apoie</span><span class="lang-en">Donate</span></a>
+    <a href="#" class="nav-lang" onclick="toggleLang();return false;" title="English / Português">EN/PT</a>
+  </div>
 </nav>
 
-<!-- Hero -->
-<section class="hero">
-    <div class="hero-bg" style="background-image: url('img/01-paraty-street-humanacamila.jpg')"></div>
-    <div class="hero-content">
-        <img src="img/Logo FB White.png" alt="Favela Brass" class="hero-logo">
-        <h1>
-            <span class="lang-pt"><em>Música</em> transforma vidas nas favelas do Rio</span>
-            <span class="lang-en"><em>Music</em> transforms lives in Rio's favelas</span>
-        </h1>
+<!-- ===================== HERO ===================== -->
+<header class="hero">
+  <div class="hero-photo" style="background-image: url('img/01-paraty-street-humanacamila.jpg')" role="img" aria-label="Banda da Favela Brass tocando nas ruas de Paraty"></div>
+  <div class="hero-scrim" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <p class="hero-kicker anim a1">
+      <span class="lang-pt"><span class="nb">Associação Musical Favela Brass &middot;</span> <span class="nb">Rio de Janeiro &middot; desde 2014</span></span>
+      <span class="lang-en"><span class="nb">Associação Musical Favela Brass &middot;</span> <span class="nb">Rio de Janeiro &middot; since 2014</span></span>
+    </p>
+    <h1 class="anim a2">
+      <span class="lang-pt"><em>Música</em> transforma vidas<br class="br-desk"> nas favelas do Rio</span>
+      <span class="lang-en"><em>Music</em> transforms lives<br class="br-desk"> in Rio's favelas</span>
+    </h1>
+    <p class="hero-lede anim a3">
+      <span class="lang-pt">Somos uma escola de música gratuita para jovens das favelas e escolas públicas do Rio de Janeiro. Ensinamos instrumentos de sopro e percussão através de um programa estruturado que abre portas pela cultura.</span>
+      <span class="lang-en">We are a free music school for young people from Rio de Janeiro's favelas and public schools. We teach brass and percussion through a structured programme that opens doors through culture.</span>
+    </p>
+    <div class="hero-ctas anim a4">
+      <a href="colaborar.html" class="btn btn-yellow"><span class="lang-pt">Apoie o Projeto</span><span class="lang-en">Support the Project</span></a>
+      <a href="sobre.html" class="btn btn-ghost"><span class="lang-pt">Conheça Nossa História</span><span class="lang-en">Our Story</span></a>
+    </div>
+  </div>
+  <div class="hero-credit anim a5">
+    <span class="photo-cap">Bourbon Festival Paraty</span>
+  </div>
+</header>
+
+<!-- ===================== VENUE TICKER ===================== -->
+<section class="venues" aria-label="Palcos onde a Favela Brass já se apresentou">
+  <div class="venues-inner">
+    <span>Circo Voador</span><span class="dot" aria-hidden="true">&middot;</span>
+    <span>Theatro Municipal</span><span class="dot" aria-hidden="true">&middot;</span>
+    <span>Copacabana Palace</span><span class="dot" aria-hidden="true">&middot;</span>
+    <span>Bourbon Festival Paraty</span><span class="dot" aria-hidden="true">&middot;</span>
+    <span>TV Globo</span><span class="dot" aria-hidden="true">&middot;</span>
+    <span><span class="lang-pt">Carnaval do Rio</span><span class="lang-en">Rio Carnival</span></span>
+  </div>
+</section>
+
+<!-- ===================== NUMBERS ===================== -->
+<section class="numbers" aria-label="Números de impacto">
+  <p class="numbers-cap">
+    <span class="lang-pt">Dados verificados em julho de 2026</span>
+    <span class="lang-en">Data verified July 2026</span>
+  </p>
+  <div class="numbers-grid">
+    <div class="num reveal">
+      <span class="num-fig">197</span>
+      <span class="num-label"><span class="lang-pt">alunos ativos</span><span class="lang-en">active students</span></span>
+    </div>
+    <div class="num reveal">
+      <span class="num-fig">800<i>+</i></span>
+      <span class="num-label"><span class="lang-pt">jovens atendidos desde 2014</span><span class="lang-en">young people reached since 2014</span></span>
+    </div>
+    <div class="num reveal">
+      <span class="num-fig">256</span>
+      <span class="num-label"><span class="lang-pt">instrumentos no acervo</span><span class="lang-en">instruments in our collection</span></span>
+    </div>
+    <div class="num reveal">
+      <span class="num-fig">12</span>
+      <span class="num-label"><span class="lang-pt">anos de atuação</span><span class="lang-en">years of operation</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 01 PROGRAMAS ===================== -->
+<section class="section" id="programas">
+  <div class="section-head reveal">
+    <div class="section-no"><span>01</span><hr></div>
+    <div class="section-titles">
+      <h2><span class="lang-pt">Três pilares, uma banda só</span><span class="lang-en">Three pillars, one band</span></h2>
+      <p>
+        <span class="lang-pt">Um programa musical completo, desde as primeiras notas nas escolas até o palco.</span>
+        <span class="lang-en">A complete music programme, from first notes in school to the stage.</span>
+      </p>
+    </div>
+  </div>
+
+  <div class="prog-grid">
+    <article class="prog reveal">
+      <figure class="prog-img">
+        <img src="img/08-young-percussionists-bezerra.jpg" alt="Jovens percussionistas em aula">
+      </figure>
+      <div class="prog-body">
+        <span class="prog-stat">116 <small><span class="lang-pt">alunos</span><span class="lang-en">students</span></small></span>
+        <h3><span class="lang-pt">Oficinas nas Escolas</span><span class="lang-en">School Workshops</span></h3>
         <p>
-            <span class="lang-pt">Somos uma escola de música gratuita para jovens das favelas e escolas públicas do Rio de Janeiro. Ensinamos instrumentos de sopro e percussão através de um programa estruturado que abre portas pela cultura.</span>
-            <span class="lang-en">We are a free music school for young people from Rio de Janeiro's favelas and public schools. We teach brass and percussion through a structured programme that opens doors through culture.</span>
+          <span class="lang-pt">Aulas de iniciação musical em 5 escolas municipais parceiras. Os alunos aprendem instrumentos de sopro e percussão, tocando repertório de fanfarras e blocos populares.</span>
+          <span class="lang-en">Introductory music classes in 5 partner municipal schools. Students learn brass and percussion, playing repertoire from street bands and popular blocos.</span>
         </p>
-        <div class="hero-ctas">
-            <a href="colaborar.html" class="btn btn-primary">
-                <span class="lang-pt">Apoie o Projeto</span>
-                <span class="lang-en">Support the Project</span>
-            </a>
-            <a href="sobre.html" class="btn btn-secondary">
-                <span class="lang-pt">Conheça Nossa História</span>
-                <span class="lang-en">Our Story</span>
-            </a>
-        </div>
-    </div>
+      </div>
+    </article>
+    <article class="prog prog-mid reveal">
+      <figure class="prog-img">
+        <img src="img/06-tom-teaching-brass.jpg" alt="Tom Ashe ensinando instrumento de sopro">
+      </figure>
+      <div class="prog-body">
+        <span class="prog-stat">81 <small><span class="lang-pt">alunos</span><span class="lang-en">students</span></small></span>
+        <h3><span class="lang-pt">Curso Avançado</span><span class="lang-en">Advanced Course</span></h3>
+        <p>
+          <span class="lang-pt">Oficinas de banda e aulas particulares na comunidade Pereira da Silva. Programa estruturado em níveis com foco em música popular brasileira e jazz.</span>
+          <span class="lang-en">Band workshops and private lessons in the Pereira da Silva community. Structured, levelled programme focused on Brazilian popular music and jazz.</span>
+        </p>
+      </div>
+    </article>
+    <article class="prog reveal">
+      <figure class="prog-img">
+        <img src="img/02-copa-palace-bezerra.jpg" alt="Banda da Favela Brass no salão do Copacabana Palace">
+      </figure>
+      <div class="prog-body">
+        <span class="prog-stat">50<i>+</i> <small><span class="lang-pt">por ano</span><span class="lang-en">per year</span></small></span>
+        <h3><span class="lang-pt">Apresentações</span><span class="lang-en">Performances</span></h3>
+        <p>
+          <span class="lang-pt">Apresentações em espaços públicos da cidade, do carnaval de rua ao Copacabana Palace. Nossos alunos são músicos, não apenas estudantes.</span>
+          <span class="lang-en">Performances in public spaces across the city, from street carnival to the Copacabana Palace. Our students are musicians, not just students.</span>
+        </p>
+      </div>
+    </article>
+  </div>
 </section>
 
-<!-- Impact Numbers -->
-<section class="impact-strip">
-    <div class="impact-grid">
-        <div class="impact-item reveal">
-            <div class="impact-number">209</div>
-            <div class="impact-label">
-                <span class="lang-pt">Alunos ativos</span>
-                <span class="lang-en">Active students</span>
-            </div>
-        </div>
-        <div class="impact-item reveal">
-            <div class="impact-number">829+</div>
-            <div class="impact-label">
-                <span class="lang-pt">Jovens atendidos desde 2014</span>
-                <span class="lang-en">Young people reached since 2014</span>
-            </div>
-        </div>
-        <div class="impact-item reveal">
-            <div class="impact-number">176</div>
-            <div class="impact-label">
-                <span class="lang-pt">Instrumentos em uso</span>
-                <span class="lang-en">Instruments in use</span>
-            </div>
-        </div>
-        <div class="impact-item reveal">
-            <div class="impact-number">12</div>
-            <div class="impact-label">
-                <span class="lang-pt">Anos de atuação</span>
-                <span class="lang-en">Years of operation</span>
-            </div>
-        </div>
+<!-- ===================== PHOTO BREAK ===================== -->
+<figure class="break">
+  <img src="img/04-carnaval-favela-alley-bezerra.jpg" alt="Cortejo de carnaval em um beco da favela">
+  <figcaption class="photo-cap">
+    <span class="lang-pt">Carnaval de rua &middot; Rio de Janeiro</span>
+    <span class="lang-en">Street carnival &middot; Rio de Janeiro</span>
+  </figcaption>
+</figure>
+
+<!-- ===================== 02 JULHO 2026 ===================== -->
+<section class="section feature" id="turne">
+  <div class="section-head reveal">
+    <div class="section-no"><span>02</span><hr></div>
+    <div class="section-titles">
+      <h2><span class="lang-pt">Julho de 2026</span><span class="lang-en">July 2026</span></h2>
+      <p>
+        <span class="lang-pt">Um mês histórico para a Favela Brass, dentro e fora do Brasil.</span>
+        <span class="lang-en">A historic month for Favela Brass, in Brazil and beyond.</span>
+      </p>
     </div>
+  </div>
+
+  <div class="feature-grid">
+    <div class="feature-photos reveal">
+      <span class="stamp"><span class="lang-pt">1ª turnê internacional</span><span class="lang-en">1st international tour</span></span>
+      <figure class="feature-photo-main">
+        <img src="img/05-night-rehearsal-favela.jpg" alt="Ensaio noturno da banda na favela">
+        <figcaption class="photo-cap">
+          <span class="lang-pt">Ensaio noturno</span>
+          <span class="lang-en">Night rehearsal</span>
+        </figcaption>
+      </figure>
+      <figure class="feature-photo-small">
+        <img src="img/10-bourbon-sp-group-humanacamila.jpg" alt="Banda da Favela Brass reunida após apresentação">
+      </figure>
+    </div>
+    <div class="feature-text reveal">
+      <h3>
+        <span class="lang-pt">Do ensaio no beco<br>ao palco na Alemanha</span>
+        <span class="lang-en">From the alley rehearsal<br>to a stage in Germany</span>
+      </h3>
+      <p>
+        <span class="lang-pt">Em julho de 2026, a Favela Brass realiza sua primeira turnê internacional: um intercâmbio com a cidade de Bad Kissingen, na Alemanha, onde nossos alunos se apresentam ao lado de jovens músicos alemães.</span>
+        <span class="lang-en">In July 2026, Favela Brass makes its first international tour: an exchange with the town of Bad Kissingen, Germany, where our students perform alongside young German musicians.</span>
+      </p>
+      <p>
+        <span class="lang-pt">No mesmo mês, a banda sobe ao palco do Palácio Capanema, no Rio, para um concerto na conferência mundial da WASBE, a associação internacional de bandas sinfônicas.</span>
+        <span class="lang-en">In the same month, the band takes the stage at Palácio Capanema in Rio for a concert at the world conference of WASBE, the international association for symphonic bands.</span>
+      </p>
+      <ul class="feature-dates">
+        <li>
+          <span class="fd-when"><span class="lang-pt">Julho de 2026</span><span class="lang-en">July 2026</span></span>
+          <span class="fd-what"><span class="lang-pt">Intercâmbio em Bad Kissingen, Alemanha</span><span class="lang-en">Exchange in Bad Kissingen, Germany</span></span>
+        </li>
+        <li>
+          <span class="fd-when"><span class="lang-pt">23 de julho de 2026</span><span class="lang-en">23 July 2026</span></span>
+          <span class="fd-what"><span class="lang-pt">Concerto WASBE no Palácio Capanema, Rio</span><span class="lang-en">WASBE concert at Palácio Capanema, Rio</span></span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </section>
 
-<!-- Programme Cards -->
-<section class="section section-light">
-    <div class="section-inner">
-        <div class="section-header reveal">
-            <h2>
-                <span class="lang-pt">O Que Fazemos</span>
-                <span class="lang-en">What We Do</span>
-            </h2>
-            <p>
-                <span class="lang-pt">Três pilares de um programa musical completo, desde a iniciação até a performance profissional.</span>
-                <span class="lang-en">Three pillars of a complete music programme, from first notes to professional performance.</span>
-            </p>
-        </div>
-        <div class="cards-grid cards-grid-3">
-            <div class="programme-card reveal">
-                <div class="programme-card-img" style="background-image: url('img/08-young-percussionists-bezerra.jpg')"></div>
-                <div class="programme-card-body">
-                    <h3>
-                        <span class="lang-pt">Oficinas nas Escolas</span>
-                        <span class="lang-en">School Workshops</span>
-                    </h3>
-                    <p>
-                        <span class="lang-pt">Aulas de iniciação musical em 8 escolas municipais parceiras. Os alunos aprendem instrumentos de sopro e percussão, tocando repertório de fanfarras e blocos populares.</span>
-                        <span class="lang-en">Introductory music classes in 8 partner municipal schools. Students learn brass and percussion, playing repertoire from street bands and popular blocos.</span>
-                    </p>
-                    <span class="programme-card-stat">124 alunos</span>
-                </div>
-            </div>
-            <div class="programme-card reveal">
-                <div class="programme-card-img" style="background-image: url('img/06-tom-teaching-brass.jpg')"></div>
-                <div class="programme-card-body">
-                    <h3>
-                        <span class="lang-pt">Curso Avançado</span>
-                        <span class="lang-en">Advanced Course</span>
-                    </h3>
-                    <p>
-                        <span class="lang-pt">Oficinas de banda e aulas particulares na comunidade Pereira da Silva. Programa estruturado em níveis com foco em música popular brasileira e jazz.</span>
-                        <span class="lang-en">Band workshops and private lessons in the Pereira da Silva community. Structured, levelled programme focused on Brazilian popular music and jazz.</span>
-                    </p>
-                    <span class="programme-card-stat">85 alunos</span>
-                </div>
-            </div>
-            <div class="programme-card reveal">
-                <div class="programme-card-img" style="background-image: url('img/02-copa-palace-bezerra.jpg')"></div>
-                <div class="programme-card-body">
-                    <h3>
-                        <span class="lang-pt">Apresentações</span>
-                        <span class="lang-en">Performances</span>
-                    </h3>
-                    <p>
-                        <span class="lang-pt">Apresentações em espaços públicos da cidade, do carnaval de rua ao Copacabana Palace. Nossos alunos são músicos, não apenas estudantes.</span>
-                        <span class="lang-en">Performances in public spaces across the city, from street carnival to the Copacabana Palace. Our students are musicians, not just students.</span>
-                    </p>
-                    <span class="programme-card-stat">
-                        <span class="lang-pt">Mais de 50 shows/ano</span>
-                        <span class="lang-en">50+ shows/year</span>
-                    </span>
-                </div>
-            </div>
-        </div>
+<!-- ===================== 03 VOZES (light interlude) ===================== -->
+<section class="interlude" id="vozes">
+  <div class="interlude-inner">
+    <div class="section-head reveal">
+      <div class="section-no"><span>03</span><hr></div>
+      <div class="section-titles">
+        <h2><span class="lang-pt">Na voz de quem toca</span><span class="lang-en">In their own words</span></h2>
+      </div>
     </div>
+
+    <div class="quotes">
+      <blockquote class="quote reveal">
+        <p>
+          <span class="lang-pt">Achei emocionante e acho que a história da Favela Brass está só começando. Estou desde pequena no projeto e é muito bonito ver o projeto crescer.</span>
+          <span class="lang-en">I found it so moving, and I think Favela Brass's story is only just beginning. I've been in the project since I was little and it's beautiful to see it grow.</span>
+        </p>
+        <cite>
+          <strong>Lúcia</strong> &middot;
+          <span class="lang-pt">aluna de trompete, Banda Preta &middot; Favela Pereira da Silva</span>
+          <span class="lang-en">trumpet student, Banda Preta &middot; Pereira da Silva favela</span>
+        </cite>
+      </blockquote>
+      <blockquote class="quote reveal">
+        <p>
+          <span class="lang-pt">Primeira vez na minha vida que eu subi num palco foi no Circo Voador, e eu achei o máximo! Aquela batalha das bandas com aquelas músicas todas foi muito bom!</span>
+          <span class="lang-en">The first time in my life I went on stage was at Circo Voador, and I thought it was amazing! That battle of the bands with all those songs was so good!</span>
+        </p>
+        <cite>
+          <strong>Arthur</strong> &middot;
+          <span class="lang-pt">trompetista</span>
+          <span class="lang-en">trumpet player</span>
+        </cite>
+      </blockquote>
+    </div>
+  </div>
 </section>
 
-<!-- Testimonials -->
-<section class="section section-white">
-    <div class="section-inner">
-        <div class="section-header reveal">
-            <h2>
-                <span class="lang-pt">Quem Faz a Favela Brass</span>
-                <span class="lang-en">The People of Favela Brass</span>
-            </h2>
-        </div>
-        <div class="cards-grid cards-grid-2 reveal">
-            <div class="testimonial-card">
-                <blockquote>
-                    <p>
-                        <span class="lang-pt">&ldquo;Achei emocionante e acho que a história da Favela Brass está só começando. Estou desde pequena no projeto e é muito bonito ver o projeto crescer.&rdquo;</span>
-                        <span class="lang-en">&ldquo;I found it so moving, and I think Favela Brass's story is only just beginning. I've been in the project since I was little and it's beautiful to see it grow.&rdquo;</span>
-                    </p>
-                    <cite>
-                        <strong>Lúcia</strong><br>
-                        <span class="lang-pt">Aluna de trompete, Banda Preta &mdash; Favela Pereira da Silva</span>
-                        <span class="lang-en">Trumpet student, Banda Preta &mdash; Pereira da Silva favela</span>
-                    </cite>
-                </blockquote>
-            </div>
-            <div class="testimonial-card">
-                <blockquote>
-                    <p>
-                        <span class="lang-pt">&ldquo;Primeira vez na minha vida que eu subi num palco foi no Circo Voador, e eu achei o máximo! Aquela batalha das bandas com aquelas músicas todas foi muito bom!&rdquo;</span>
-                        <span class="lang-en">&ldquo;The first time I ever went on stage was at Circo Voador, and I thought it was amazing! That battle of the bands with all those songs was so good!&rdquo;</span>
-                    </p>
-                    <cite>
-                        <strong>Arthur</strong><br>
-                        <span class="lang-pt">Trompetista, Banda 2</span>
-                        <span class="lang-en">Trumpet player, Band 2</span>
-                    </cite>
-                </blockquote>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Photo break -->
-<div class="photo-section" style="background-image: url('img/04-carnaval-favela-alley-bezerra.jpg')"></div>
-
-<!-- CTA Banner -->
-<section class="cta-banner">
+<!-- ===================== CTA ===================== -->
+<section class="cta">
+  <div class="cta-inner reveal">
     <h2>
-        <span class="lang-pt">Faça Parte Dessa História</span>
-        <span class="lang-en">Be Part of This Story</span>
+      <span class="lang-pt">Faça parte<br>dessa história.</span>
+      <span class="lang-en">Be part<br>of this story.</span>
     </h2>
-    <p>
+    <div class="cta-side">
+      <p>
         <span class="lang-pt">Sua contribuição viabiliza o acesso à educação musical para mais jovens do Rio de Janeiro. Colabore como doador, patrocinador ou voluntário.</span>
         <span class="lang-en">Your contribution makes music education accessible to more young people in Rio de Janeiro. Get involved as a donor, sponsor, or volunteer.</span>
+      </p>
+      <div class="cta-actions">
+        <a href="colaborar.html" class="btn btn-purple"><span class="lang-pt">Saiba Como Apoiar</span><span class="lang-en">Learn How to Help</span></a>
+        <a href="mailto:tom@favelabrass.org" class="btn btn-ink-ghost"><span class="lang-pt">Fale com a gente</span><span class="lang-en">Talk to us</span></a>
+      </div>
+      <p class="cta-fine">
+        <span class="lang-pt">Empresas podem patrocinar via Lei Rouanet, com 100% de dedução fiscal &middot; PRONAC 254750</span>
+        <span class="lang-en">Companies can sponsor via the Lei Rouanet, with a 100% tax deduction &middot; PRONAC 254750</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ROUANET ===================== -->
+<section class="rouanet">
+  <p>
+    <span class="lang-pt">Projeto aprovado pela Lei Federal de Incentivo à Cultura &middot; PRONAC 254750</span>
+    <span class="lang-en">Approved under Brazil's Federal Culture Incentive Law &middot; PRONAC 254750</span>
+  </p>
+  <img src="img/logo-bar.png" alt="Lei Rouanet, Patrocínio PRIO, Ministério da Cultura, Governo Federal">
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="img/Logo FB White.png" alt="Favela Brass">
+      <p>
+        <span class="lang-pt">Programa de educação musical para jovens das favelas e escolas públicas do Rio de Janeiro.</span>
+        <span class="lang-en">Music education programme for young people from Rio de Janeiro's favelas and public schools.</span>
+      </p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/favela_brass/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.youtube.com/@favelabrass" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://www.facebook.com/favelabrass" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://wa.me/5521982099863" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4><span class="lang-pt">Navegação</span><span class="lang-en">Navigation</span></h4>
+      <a href="sobre.html"><span class="lang-pt">Sobre Nós</span><span class="lang-en">About Us</span></a>
+      <a href="equipe.html"><span class="lang-pt">Nossa Equipe</span><span class="lang-en">Our Team</span></a>
+      <a href="colaborar.html"><span class="lang-pt">Como Colaborar</span><span class="lang-en">Get Involved</span></a>
+      <a href="contato.html"><span class="lang-pt">Contato</span><span class="lang-en">Contact</span></a>
+    </div>
+    <div class="footer-col">
+      <h4><span class="lang-pt">Recursos</span><span class="lang-en">Resources</span></h4>
+      <a href="https://curriculo.favelabrass.org" target="_blank" rel="noopener"><span class="lang-pt">Currículo Online</span><span class="lang-en">Online Curriculum</span></a>
+      <a href="https://www.youtube.com/@favelabrass" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://bfrass.com/apoie" target="_blank" rel="noopener"><span class="lang-pt">Doação Recorrente</span><span class="lang-en">Monthly Donation</span></a>
+    </div>
+    <div class="footer-col">
+      <h4><span class="lang-pt">Relatórios Anuais</span><span class="lang-en">Annual Reports</span></h4>
+      <a href="relatorio-2025/index.html"><span class="lang-pt">Relatório Anual 2025</span><span class="lang-en">Annual Report 2025</span></a>
+      <a href="https://drive.google.com/file/d/1Xqlo27NKx3EgcMlwlj6rUpvtQ4x1BJ4A/view" target="_blank" rel="noopener"><span class="lang-pt">Relatório Anual 2024</span><span class="lang-en">Annual Report 2024</span></a>
+      <a href="https://drive.google.com/file/d/1FXdgCLobWRX9BtrkZaGXES_Gd0uNosoq/view" target="_blank" rel="noopener"><span class="lang-pt">Relatório Anual 2023</span><span class="lang-en">Annual Report 2023</span></a>
+      <a href="https://favelabrass.org/wp-content/uploads/2023/04/Relatorio-Anual-FB-2022.pdf" target="_blank" rel="noopener"><span class="lang-pt">Relatório Anual 2022</span><span class="lang-en">Annual Report 2022</span></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>Associação Musical Favela Brass &middot; CNPJ 37.332.605/0001-90</p>
+    <p>
+      <span class="lang-pt">Projeto aprovado pela Lei Federal de Incentivo à Cultura (Lei Rouanet) &middot; PRONAC 254750</span>
+      <span class="lang-en">Project approved under Brazil's Federal Culture Incentive Law (Lei Rouanet) &middot; PRONAC 254750</span>
     </p>
-    <a href="colaborar.html" class="btn btn-primary">
-        <span class="lang-pt">Saiba Como Apoiar</span>
-        <span class="lang-en">Learn How to Help</span>
-    </a>
-</section>
-
-<!-- Partners -->
-<section class="partners-strip">
-    <div class="partners-inner">
-        <p>
-            <span class="lang-pt">Projeto aprovado pela Lei Federal de Incentivo à Cultura</span>
-            <span class="lang-en">Approved under Brazil's Federal Culture Incentive Law</span>
-        </p>
-        <img src="img/logo-bar.png" alt="Lei Rouanet / PRIO / MinC / Governo Federal" style="max-width: 500px; width: 100%;">
-    </div>
-</section>
-
-<footer class="site-footer">
-    <div class="footer-inner">
-        <div class="footer-brand">
-            <img src="img/Logo FB White.png" alt="Favela Brass">
-            <p>
-                <span class="lang-pt">Programa de educação musical para jovens das favelas e escolas públicas do Rio de Janeiro.</span>
-                <span class="lang-en">Music education programme for young people from Rio de Janeiro's favelas and public schools.</span>
-            </p>
-            <div class="footer-social">
-                <a href="https://www.instagram.com/favelabrass/" target="_blank" rel="noopener" aria-label="Instagram">&#9834;</a>
-                <a href="https://www.youtube.com/@favelabrass" target="_blank" rel="noopener" aria-label="YouTube">&#9654;</a>
-                <a href="https://www.facebook.com/favelabrass" target="_blank" rel="noopener" aria-label="Facebook">f</a>
-                <a href="https://wa.me/5521982099863" target="_blank" rel="noopener" aria-label="WhatsApp">W</a>
-            </div>
-        </div>
-        <div class="footer-col">
-            <h4><span class="lang-pt">Navegação</span><span class="lang-en">Navigation</span></h4>
-            <a href="sobre.html"><span class="lang-pt">Sobre Nós</span><span class="lang-en">About Us</span></a>
-            <a href="equipe.html"><span class="lang-pt">Nossa Equipe</span><span class="lang-en">Our Team</span></a>
-            <a href="colaborar.html"><span class="lang-pt">Como Colaborar</span><span class="lang-en">Get Involved</span></a>
-            <a href="contato.html"><span class="lang-pt">Contato</span><span class="lang-en">Contact</span></a>
-        </div>
-        <div class="footer-col">
-            <h4><span class="lang-pt">Recursos</span><span class="lang-en">Resources</span></h4>
-            <a href="https://curriculofavelabrass.org" target="_blank" rel="noopener">
-                <span class="lang-pt">Currículo Online</span><span class="lang-en">Online Curriculum</span>
-            </a>
-            <a href="https://www.youtube.com/@favelabrass" target="_blank" rel="noopener">YouTube</a>
-            <a href="https://bfrass.com/apoie" target="_blank" rel="noopener">
-                <span class="lang-pt">Doação Recorrente</span><span class="lang-en">Monthly Donation</span>
-            </a>
-        </div>
-        <div class="footer-col">
-            <h4><span class="lang-pt">Relatórios</span><span class="lang-en">Annual Reports</span></h4>
-            <a href="https://relatorio.favelabrass.org" target="_blank" rel="noopener">Relatório Anual 2025</a>
-            <a href="https://drive.google.com/file/d/1Xqlo27NKx3EgcMlwlj6rUpvtQ4x1BJ4A/view" target="_blank" rel="noopener">Relatório Anual 2024</a>
-            <a href="https://drive.google.com/file/d/1FXdgCLobWRX9BtrkZaGXES_Gd0uNosoq/view" target="_blank" rel="noopener">Relatório Anual 2023</a>
-            <a href="https://favelabrass.org/wp-content/uploads/2023/04/Relatorio-Anual-FB-2022.pdf" target="_blank" rel="noopener">Relatório Anual 2022</a>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>Associação Musical Favela Brass &middot; CNPJ 37.332.605/0001-90</p>
-        <p class="rouanet">
-            <span class="lang-pt">Projeto aprovado pela Lei Federal de Incentivo à Cultura (Lei Rouanet) &middot; PRONAC 254750</span>
-            <span class="lang-en">Project approved under Brazil's Federal Culture Incentive Law (Lei Rouanet) &middot; PRONAC 254750</span>
-        </p>
-        <img src="img/logo-bar.png" alt="Lei Rouanet / PRIO / MinC / Governo Federal" class="logo-bar">
-    </div>
+    <img src="img/logo-bar.png" alt="Lei Rouanet, Patrocínio PRIO, Ministério da Cultura, Governo Federal" class="footer-logobar">
+  </div>
 </footer>
-<script>
-// Nav scroll effect
-const nav = document.getElementById('siteNav');
-window.addEventListener('scroll', () => {
-    nav.classList.toggle('scrolled', window.scrollY > 60);
-});
 
-// Language toggle
+<script>
+// Nav scroll state
+const nav = document.getElementById('nav');
+addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 40), {passive:true});
+
+// Mobile menu
+const burger = document.getElementById('navBurger');
+const links = document.getElementById('navLinks');
+burger.addEventListener('click', () => {
+  links.classList.toggle('open');
+  burger.classList.toggle('open');
+});
+links.querySelectorAll('a:not(.nav-lang)').forEach(a => a.addEventListener('click', () => {
+  links.classList.remove('open'); burger.classList.remove('open');
+}));
+
+// Language toggle (persisted)
 function toggleLang() {
-    document.body.classList.toggle('en');
-    localStorage.setItem('fb-lang', document.body.classList.contains('en') ? 'en' : 'pt');
+  const en = document.body.classList.toggle('en');
+  document.documentElement.lang = en ? 'en' : 'pt-BR';
+  localStorage.setItem('fb-lang', en ? 'en' : 'pt');
 }
-if (localStorage.getItem('fb-lang') === 'en') document.body.classList.add('en');
+if (localStorage.getItem('fb-lang') === 'en') {
+  document.body.classList.add('en');
+  document.documentElement.lang = 'en';
+}
 
 // Reveal on scroll
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
-}, { threshold: 0.1 });
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-// Close mobile menu on link click
-document.querySelectorAll('.site-nav-links a:not(.nav-lang)').forEach(a => {
-    a.addEventListener('click', () => {
-        document.querySelector('.site-nav-links').classList.remove('open');
-    });
-});
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+}), {threshold: 0.12});
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 </script>
 </body>
 </html>
