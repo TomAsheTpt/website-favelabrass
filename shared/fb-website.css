@@ -957,10 +957,10 @@ figure .photo-cap--right { left: auto; right: 1.2rem; }
   margin-bottom: 1.6rem;
 }
 .rouanet img {
-  max-width: 460px;
-  width: 90%;
+  max-width: min(780px, 92vw);
+  width: 100%;
   margin: 0 auto;
-  opacity: 0.92;
+  opacity: 0.95;
 }
 
 .footer {
@@ -1026,12 +1026,6 @@ figure .photo-cap--right { left: auto; right: 1.2rem; }
   font-size: 0.82rem;
   color: var(--text-faint);
   margin-bottom: 0.4rem;
-}
-.footer-logobar {
-  max-width: 420px;
-  width: 86%;
-  margin: 1.6rem auto 0;
-  opacity: 0.85;
 }
 
 /* ==========================================================================
