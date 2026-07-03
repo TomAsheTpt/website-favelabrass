@@ -251,6 +251,19 @@ body.en .lang-en { display: inline; }
 }
 .reveal.visible { opacity: 1; transform: translateY(0); }
 
+.media-line {
+  max-width: var(--w-content);
+  margin: 2.6rem auto 0;
+  padding: 1.1rem var(--pad-x) 0;
+  border-top: 1px solid var(--rule-soft);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  text-align: center;
+}
+
 /* ==========================================================================
    Hero (homepage)
    ========================================================================== */
