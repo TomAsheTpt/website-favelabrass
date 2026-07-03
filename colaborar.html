@@ -132,7 +132,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 1.4rem 2.5rem;
+  gap: 1.8rem 3rem;
   background: var(--white);
   border: 1px solid var(--ink-rule);
   border-radius: 8px;
@@ -156,6 +156,21 @@
   color: var(--purple);
 }
 .pix-copy { padding: 0.7rem 1.6rem; font-size: 0.85rem; }
+.pix-qr {
+  width: 210px;
+  height: 210px;
+  border: 1px solid var(--ink-rule);
+  border-radius: 8px;
+  flex: none;
+}
+.pix-details { flex: 1; min-width: 260px; display: grid; gap: 0.7rem; justify-items: start; }
+.pix-details .pix-label { flex-basis: auto; }
+.pix-bank {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--ink-faint);
+  max-width: 52ch;
+}
 
 /* Links inside dark cards */
 .card p a {
@@ -339,12 +354,21 @@
       </div>
     </div>
     <div class="pix-card reveal">
-      <span class="pix-label"><span class="lang-pt">Chave PIX (CNPJ)</span><span class="lang-en">PIX key (CNPJ)</span></span>
-      <span class="pix-key" id="pixKey">37.332.605/0001-90</span>
-      <button type="button" class="btn btn-purple pix-copy" onclick="copyPix(this)">
-        <span class="lang-pt">Copiar chave</span>
-        <span class="lang-en">Copy key</span>
-      </button>
+      <img class="pix-qr" src="img/pix-qr.png" alt="QR Code Pix para doação à Favela Brass" loading="lazy" decoding="async" width="470" height="470">
+      <div class="pix-details">
+        <span class="pix-label"><span class="lang-pt">Chave PIX (CNPJ)</span><span class="lang-en">PIX key (CNPJ)</span></span>
+        <span class="pix-key">37.332.605/0001-90</span>
+        <div class="pix-actions">
+          <button type="button" class="btn btn-purple pix-copy" onclick="copyPix(this)">
+            <span class="lang-pt">Copiar código Pix</span>
+            <span class="lang-en">Copy Pix code</span>
+          </button>
+        </div>
+        <p class="pix-bank">
+          <span class="lang-pt">Transferência bancária: Associação Musical Favela Brass &middot; Banco do Brasil &middot; Agência 3118-6 &middot; Conta corrente 43386-1 &middot; CNPJ 37.332.605/0001-90</span>
+          <span class="lang-en">Bank transfer: Associação Musical Favela Brass &middot; Banco do Brasil &middot; Agência 3118-6 &middot; Conta corrente 43386-1 &middot; CNPJ 37.332.605/0001-90</span>
+        </p>
+      </div>
     </div>
   </div>
 </section>
@@ -501,10 +525,10 @@ const io = new IntersectionObserver(es => es.forEach(e => {
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
 function copyPix(btn) {
-  navigator.clipboard.writeText('37.332.605/0001-90').then(() => {
-    btn.querySelectorAll('span').forEach(sp => sp.textContent = sp.closest('body').classList.contains('en') ? 'Copied!' : 'Copiada!');
+  navigator.clipboard.writeText('00020126640014br.gov.bcb.pix0114373326050001900224Doacao para Favela Brass5204000053039865802BR5912FAVELA BRASS6014RIO DE JANEIRO622905251XqOu2YOzsguozXfTV3hROJZU630415E1').then(() => {
+    btn.querySelectorAll('span').forEach(sp => sp.textContent = sp.closest('body').classList.contains('en') ? 'Copied!' : 'Copiado!');
     setTimeout(() => {
-      btn.innerHTML = '<span class="lang-pt">Copiar chave</span><span class="lang-en">Copy key</span>';
+      btn.innerHTML = '<span class="lang-pt">Copiar código Pix</span><span class="lang-en">Copy Pix code</span>';
     }, 1800);
   });
 }
