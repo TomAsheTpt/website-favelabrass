@@ -17,7 +17,7 @@
   --lav:           #F3F0FA;
   --ink:           #1F052F;
   --ink-dim:       rgba(31, 5, 47, 0.74);
-  --ink-faint:     rgba(31, 5, 47, 0.52);
+  --ink-faint:     rgba(31, 5, 47, 0.64);
   --ink-rule:      rgba(31, 5, 47, 0.16);
 
   --text:          rgba(255, 255, 255, 0.94);
@@ -36,6 +36,15 @@
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
+
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--yellow);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+.cta a:focus-visible, .cta button:focus-visible {
+  outline-color: var(--purple-ink);
+}
 
 html { scroll-behavior: smooth; }
 
@@ -142,7 +151,11 @@ body.en .lang-en { display: inline; }
 }
 .nav-links a.nav-cta::after { display: none; }
 
-.nav-links a.nav-lang {
+.nav-links a.nav-lang,
+.nav-links button.nav-lang {
+  font-family: var(--font-sans);
+  background: none;
+  cursor: pointer;
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -152,7 +165,7 @@ body.en .lang-en { display: inline; }
   border-radius: 100px;
   transition: color 0.2s, border-color 0.2s;
 }
-.nav-links a.nav-lang:hover { color: var(--yellow); border-color: var(--yellow); }
+.nav-links a.nav-lang:hover, .nav-links button.nav-lang:hover { color: var(--yellow); border-color: var(--yellow); }
 .nav-links a.nav-lang::after { display: none; }
 
 .nav-burger {
@@ -967,7 +980,7 @@ figure .photo-cap--right { left: auto; right: 1.2rem; }
 }
 .footer-social a:hover { color: var(--yellow); border-color: var(--yellow); }
 
-.footer-col h4 {
+.footer-col h3 {
   font-size: 0.74rem;
   font-weight: 700;
   letter-spacing: 0.18em;
@@ -1250,7 +1263,11 @@ figure .photo-cap--right { left: auto; right: 1.2rem; }
   }
   .nav-links.open { opacity: 1; pointer-events: auto; }
   .nav-links a { font-size: 1.3rem; }
-  .nav-links a.nav-lang { font-size: 0.95rem; }
+  .nav-links a.nav-lang,
+.nav-links button.nav-lang {
+  font-family: var(--font-sans);
+  background: none;
+  cursor: pointer; font-size: 0.95rem; }
 
   .hero { min-height: 94svh; }
   .hero-photo { background-position: 30% 18%; }

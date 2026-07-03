@@ -23,7 +23,7 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300..1000&family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&display=swap" rel="stylesheet">
 <script>document.documentElement.classList.add("js")</script>
 <link rel="stylesheet" href="shared/fb-website.css">
-<link rel="icon" type="image/png" href="img/logo3coresWEB.png">
+<link rel="icon" type="image/png" href="img/favicon-48.png">
 <style>
 /* Contato: channel cards */
 .contact-grid {
@@ -146,8 +146,8 @@ a.sponsor-card:hover { transform: translateY(-4px); border-color: rgba(254, 241,
 <div class="grain" aria-hidden="true"></div>
 
 <nav class="nav" id="nav">
-  <a href="index.html" class="nav-logo"><img src="img/Logo FB White.png" alt="Favela Brass"></a>
-  <button class="nav-burger" id="navBurger" aria-label="Menu">
+  <a href="index.html" class="nav-logo"><img src="img/logo-white-nav.png" alt="Favela Brass"></a>
+  <button class="nav-burger" id="navBurger" aria-label="Menu" aria-controls="navLinks" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
   <div class="nav-links" id="navLinks">
@@ -157,7 +157,7 @@ a.sponsor-card:hover { transform: translateY(-4px); border-color: rgba(254, 241,
     <a href="colaborar.html"><span class="lang-pt">Colaborar</span><span class="lang-en">Get Involved</span></a>
     <a href="contato.html" class="active"><span class="lang-pt">Contato</span><span class="lang-en">Contact</span></a>
     <a href="colaborar.html" class="nav-cta"><span class="lang-pt">Apoie</span><span class="lang-en">Donate</span></a>
-    <a href="#" class="nav-lang" onclick="toggleLang();return false;" title="English / Português">EN/PT</a>
+    <button type="button" class="nav-lang" aria-pressed="false" onclick="toggleLang()">EN/PT</button>
   </div>
 </nav>
 
@@ -314,7 +314,7 @@ a.sponsor-card:hover { transform: translateY(-4px); border-color: rgba(254, 241,
 <footer class="footer">
   <div class="footer-grid">
     <div class="footer-brand">
-      <img src="img/Logo FB White.png" alt="Favela Brass">
+      <img src="img/logo-white-nav.png" alt="Favela Brass">
       <p>
         <span class="lang-pt">Programa de educação musical para jovens das favelas e escolas públicas do Rio de Janeiro.</span>
         <span class="lang-en">Music education programme for young people from Rio de Janeiro's favelas and public schools.</span>
@@ -327,20 +327,20 @@ a.sponsor-card:hover { transform: translateY(-4px); border-color: rgba(254, 241,
       </div>
     </div>
     <div class="footer-col">
-      <h4><span class="lang-pt">Navegação</span><span class="lang-en">Navigation</span></h4>
+      <h3><span class="lang-pt">Navegação</span><span class="lang-en">Navigation</span></h3>
       <a href="sobre.html"><span class="lang-pt">Sobre Nós</span><span class="lang-en">About Us</span></a>
       <a href="equipe.html"><span class="lang-pt">Nossa Equipe</span><span class="lang-en">Our Team</span></a>
       <a href="colaborar.html"><span class="lang-pt">Como Colaborar</span><span class="lang-en">Get Involved</span></a>
       <a href="contato.html"><span class="lang-pt">Contato</span><span class="lang-en">Contact</span></a>
     </div>
     <div class="footer-col">
-      <h4><span class="lang-pt">Recursos</span><span class="lang-en">Resources</span></h4>
+      <h3><span class="lang-pt">Recursos</span><span class="lang-en">Resources</span></h3>
       <a href="https://curriculo.favelabrass.org" target="_blank" rel="noopener"><span class="lang-pt">Currículo Online</span><span class="lang-en">Online Curriculum</span></a>
       <a href="https://www.youtube.com/@favelabrass" target="_blank" rel="noopener">YouTube</a>
       <a href="https://bfrass.com/apoie" target="_blank" rel="noopener"><span class="lang-pt">Doação Recorrente</span><span class="lang-en">Monthly Donation</span></a>
     </div>
     <div class="footer-col">
-      <h4><span class="lang-pt">Relatórios Anuais</span><span class="lang-en">Annual Reports</span></h4>
+      <h3><span class="lang-pt">Relatórios Anuais</span><span class="lang-en">Annual Reports</span></h3>
       <a href="relatorio-2025/index.html"><span class="lang-pt">Relatório Anual 2025</span><span class="lang-en">Annual Report 2025</span></a>
       <a href="https://drive.google.com/file/d/1Xqlo27NKx3EgcMlwlj6rUpvtQ4x1BJ4A/view" target="_blank" rel="noopener"><span class="lang-pt">Relatório Anual 2024</span><span class="lang-en">Annual Report 2024</span></a>
       <a href="https://drive.google.com/file/d/1FXdgCLobWRX9BtrkZaGXES_Gd0uNosoq/view" target="_blank" rel="noopener"><span class="lang-pt">Relatório Anual 2023</span><span class="lang-en">Annual Report 2023</span></a>
@@ -368,6 +368,7 @@ const links = document.getElementById('navLinks');
 burger.addEventListener('click', () => {
   links.classList.toggle('open');
   burger.classList.toggle('open');
+  burger.setAttribute('aria-expanded', links.classList.contains('open'));
 });
 links.querySelectorAll('a:not(.nav-lang)').forEach(a => a.addEventListener('click', () => {
   links.classList.remove('open'); burger.classList.remove('open');
