@@ -256,6 +256,9 @@
   margin: 0.35rem 0 0.7rem;
 }
 .video-card > p:last-child { color: var(--text-dim); font-size: 0.98rem; max-width: 56ch; }
+.video-side { display: grid; gap: 2.2rem; align-content: start; }
+.video-side .video-card h3 { font-size: 1.2rem; }
+.video-side .video-card > p:last-child { font-size: 0.92rem; }
 @media (max-width: 820px) {
   .video-grid { grid-template-columns: 1fr; gap: 2.5rem; }
 }
@@ -629,6 +632,19 @@
         <span class="lang-en">In a vibrant collage of live music and interviews, the film tells the story of Favela Brass: ten years of footage culminating in a celebration at Circo Voador, with a huge battle of the bands and unforgettable performances from the students. Screened at the Rio Film Festival in 2025.</span>
       </p>
     </div>
+    <div class="video-side">
+    <div class="video-card reveal">
+      <a class="video-thumb" href="https://youtu.be/1so2WVYAAvs" target="_blank" rel="noopener" data-yt="1so2WVYAAvs" aria-label="Assistir: Jugendmusikkorps e Favela Brass">
+        <img src="img/video-jmk-exchange.jpg" alt="As duas bandas tocando juntas no intercâmbio de 2024" loading="lazy" decoding="async" width="1280" height="720">
+        <span class="video-play" aria-hidden="true"></span>
+      </a>
+      <h3><span class="lang-pt">Jugendmusikkorps &amp; Favela Brass</span><span class="lang-en">Jugendmusikkorps &amp; Favela Brass</span></h3>
+      <p class="video-meta"><span class="lang-pt">Intercâmbio &middot; 5 min &middot; 2024</span><span class="lang-en">Exchange &middot; 5 min &middot; 2024</span></p>
+      <p>
+        <span class="lang-pt">O encontro de 2024 em cinco minutos: a banda alemã no Rio, do ensaio aberto no Coreto Modernista ao desfile conjunto por Santa Teresa.</span>
+        <span class="lang-en">The 2024 encounter in five minutes: the German band in Rio, from the open rehearsal at the Coreto Modernista to the joint parade through Santa Teresa.</span>
+      </p>
+    </div>
     <div class="video-card reveal">
       <a class="video-thumb" href="https://youtu.be/kTQzcW8tNJc" target="_blank" rel="noopener" data-yt="kTQzcW8tNJc" aria-label="Assistir: Coração Verde e Amarelo">
         <img src="img/video-coracao.jpg" alt="Banda da Favela Brass no videoclipe Coração Verde e Amarelo" loading="lazy" decoding="async" width="1280" height="720">
@@ -640,6 +656,7 @@
         <span class="lang-pt">Em plena Copa de 2026, a banda gravou sua versão do tema da seleção brasileira na Copa de 94.</span>
         <span class="lang-en">In the middle of the 2026 World Cup, the band recorded its version of Brazil's 1994 World Cup anthem.</span>
       </p>
+    </div>
     </div>
   </div>
 </section>

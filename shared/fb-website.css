@@ -416,6 +416,24 @@ body.en .lang-en { display: inline; }
   color: var(--text-dim);
 }
 
+.feature-video-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1.6rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--yellow);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(254, 241, 0, 0.35);
+  padding-bottom: 0.3rem;
+  transition: border-color 0.2s;
+}
+.feature-video-link:hover { border-color: var(--yellow); }
+.feature-video-link span[aria-hidden] { font-size: 0.65rem; }
+
 /* ==========================================================================
    Photo caption convention: yellow dot + letterspaced small caps.
    .photo-cap inside a positioned figure = overlay bottom-left.
