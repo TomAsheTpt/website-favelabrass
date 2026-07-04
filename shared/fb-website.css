@@ -75,6 +75,15 @@ body.en .lang-en { display: inline; }
 body.de .lang-pt, body.de .lang-en { display: none; }
 body.de .lang-de { display: inline; }
 
+.media-line a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  transition: color 0.2s;
+}
+.media-line a:hover { color: var(--yellow); }
+
 /* Segmented language control */
 .nav-langs {
   display: inline-flex;
