@@ -54,13 +54,17 @@
     <span></span><span></span><span></span>
   </button>
   <div class="nav-links" id="navLinks">
-    <a href="index.html" class="active"><span class="lang-pt">Início</span><span class="lang-en">Home</span></a>
-    <a href="sobre.html"><span class="lang-pt">Sobre</span><span class="lang-en">About</span></a>
-    <a href="equipe.html"><span class="lang-pt">Equipe</span><span class="lang-en">Team</span></a>
-    <a href="colaborar.html"><span class="lang-pt">Colaborar</span><span class="lang-en">Get Involved</span></a>
-    <a href="contato.html"><span class="lang-pt">Contato</span><span class="lang-en">Contact</span></a>
-    <a href="colaborar.html" class="nav-cta"><span class="lang-pt">Apoie</span><span class="lang-en">Donate</span></a>
-    <button type="button" class="nav-lang" aria-pressed="false" onclick="toggleLang()">EN/PT</button>
+    <a href="index.html" class="active"><span class="lang-pt">Início</span><span class="lang-en">Home</span><span class="lang-de">Start</span></a>
+    <a href="sobre.html"><span class="lang-pt">Sobre</span><span class="lang-en">About</span><span class="lang-de">Über uns</span></a>
+    <a href="equipe.html"><span class="lang-pt">Equipe</span><span class="lang-en">Team</span><span class="lang-de">Team</span></a>
+    <a href="colaborar.html"><span class="lang-pt">Colaborar</span><span class="lang-en">Get Involved</span><span class="lang-de">Mitwirken</span></a>
+    <a href="contato.html"><span class="lang-pt">Contato</span><span class="lang-en">Contact</span><span class="lang-de">Kontakt</span></a>
+    <a href="colaborar.html" class="nav-cta"><span class="lang-pt">Apoie</span><span class="lang-en">Donate</span><span class="lang-de">Spenden</span></a>
+    <div class="nav-langs" role="group" aria-label="Idioma / Language / Sprache">
+      <button type="button" data-lang="pt" class="active" onclick="setLang('pt')">PT</button>
+      <button type="button" data-lang="en" onclick="setLang('en')">EN</button>
+      <button type="button" data-lang="de" onclick="setLang('de')">DE</button>
+    </div>
   </div>
 </nav>
 
@@ -71,19 +75,19 @@
   <div class="hero-inner">
     <p class="hero-kicker anim a1">
       <span class="lang-pt"><span class="nb">Associação Musical Favela Brass &middot;</span> <span class="nb">Rio de Janeiro &middot; desde 2014</span></span>
-      <span class="lang-en"><span class="nb">Associação Musical Favela Brass &middot;</span> <span class="nb">Rio de Janeiro &middot; since 2014</span></span>
+      <span class="lang-en"><span class="nb">Associação Musical Favela Brass &middot;</span> <span class="nb">Rio de Janeiro &middot; since 2014</span></span><span class="lang-de"><span class="nb">Associação Musical Favela Brass &middot;</span> <span class="nb">Rio de Janeiro &middot; seit 2014</span></span>
     </p>
     <h1 class="anim a2">
       <span class="lang-pt"><em>Música</em> transforma vidas<br class="br-desk"> nas favelas do Rio</span>
-      <span class="lang-en"><em>Music</em> transforms lives<br class="br-desk"> in Rio's favelas</span>
+      <span class="lang-en"><em>Music</em> transforms lives<br class="br-desk"> in Rio's favelas</span><span class="lang-de"><em>Musik</em> verändert Leben<br class="br-desk"> in den Favelas von Rio</span>
     </h1>
     <p class="hero-lede anim a3">
       <span class="lang-pt">Somos uma escola de música gratuita para jovens das favelas e escolas públicas do Rio de Janeiro. Ensinamos instrumentos de sopro e percussão através de um programa estruturado que abre portas pela cultura.</span>
-      <span class="lang-en">We are a free music school for young people from Rio de Janeiro's favelas and public schools. We teach brass and percussion through a structured programme that opens doors through culture.</span>
+      <span class="lang-en">We are a free music school for young people from Rio de Janeiro's favelas and public schools. We teach brass and percussion through a structured programme that opens doors through culture.</span><span class="lang-de">Wir sind eine kostenlose Musikschule für junge Menschen aus den Favelas und öffentlichen Schulen von Rio de Janeiro. Wir unterrichten Blechblas- und Schlaginstrumente in einem strukturierten Programm, das durch Kultur Türen öffnet.</span>
     </p>
     <div class="hero-ctas anim a4">
-      <a href="colaborar.html" class="btn btn-yellow"><span class="lang-pt">Apoie o Projeto</span><span class="lang-en">Support the Project</span></a>
-      <a href="sobre.html" class="btn btn-ghost"><span class="lang-pt">Conheça Nossa História</span><span class="lang-en">Our Story</span></a>
+      <a href="colaborar.html" class="btn btn-yellow"><span class="lang-pt">Apoie o Projeto</span><span class="lang-en">Support the Project</span><span class="lang-de">Projekt unterstützen</span></a>
+      <a href="sobre.html" class="btn btn-ghost"><span class="lang-pt">Conheça Nossa História</span><span class="lang-en">Our Story</span><span class="lang-de">Unsere Geschichte</span></a>
     </div>
   </div>
   <div class="hero-credit anim a5">
@@ -99,7 +103,7 @@
     <span>Copacabana Palace</span><span class="dot" aria-hidden="true">&middot;</span>
     <span>Bourbon Festival Paraty</span><span class="dot" aria-hidden="true">&middot;</span>
     <span>TV Globo</span><span class="dot" aria-hidden="true">&middot;</span>
-    <span><span class="lang-pt">Carnaval do Rio</span><span class="lang-en">Rio Carnival</span></span>
+    <span><span class="lang-pt">Carnaval do Rio</span><span class="lang-en">Rio Carnival</span><span class="lang-de">Karneval in Rio</span></span>
   </div>
 </section>
 
@@ -107,28 +111,28 @@
 <section class="numbers" aria-label="Números de impacto">
   <p class="numbers-cap">
     <span class="lang-pt">Dados verificados em julho de 2026</span>
-    <span class="lang-en">Data verified July 2026</span>
+    <span class="lang-en">Data verified July 2026</span><span class="lang-de">Daten geprüft: Juli 2026</span>
   </p>
   <div class="numbers-grid">
     <div class="num reveal">
       <span class="num-fig">197</span>
-      <span class="num-label"><span class="lang-pt">alunos ativos</span><span class="lang-en">active students</span></span>
+      <span class="num-label"><span class="lang-pt">alunos ativos</span><span class="lang-en">active students</span><span class="lang-de">aktive Schüler</span></span>
     </div>
     <div class="num reveal">
       <span class="num-fig">800<i>+</i></span>
-      <span class="num-label"><span class="lang-pt">jovens atendidos desde 2014</span><span class="lang-en">young people reached since 2014</span></span>
+      <span class="num-label"><span class="lang-pt">jovens atendidos desde 2014</span><span class="lang-en">young people reached since 2014</span><span class="lang-de">junge Menschen seit 2014</span></span>
     </div>
     <div class="num reveal">
       <span class="num-fig">256</span>
-      <span class="num-label"><span class="lang-pt">instrumentos no acervo</span><span class="lang-en">instruments in our collection</span></span>
+      <span class="num-label"><span class="lang-pt">instrumentos no acervo</span><span class="lang-en">instruments in our collection</span><span class="lang-de">Instrumente im Bestand</span></span>
     </div>
     <div class="num reveal">
       <span class="num-fig">12</span>
-      <span class="num-label"><span class="lang-pt">anos de atuação</span><span class="lang-en">years of operation</span></span>
+      <span class="num-label"><span class="lang-pt">anos de atuação</span><span class="lang-en">years of operation</span><span class="lang-de">Jahre aktiv</span></span>
     </div>
   </div>
   <p class="media-line reveal">
-    <span class="lang-pt">Na mídia:</span><span class="lang-en">In the media:</span>
+    <span class="lang-pt">Na mídia:</span><span class="lang-en">In the media:</span><span class="lang-de">Aus der Presse:</span>
     TV Globo &middot; BBC &middot; The Guardian &middot; O Globo &middot; ONU Brasil
   </p>
 </section>
@@ -138,10 +142,10 @@
   <div class="section-head reveal">
     <div class="section-no"><span>01</span><hr></div>
     <div class="section-titles">
-      <h2><span class="lang-pt">Três pilares, um caminho</span><span class="lang-en">Three pillars, one path</span></h2>
+      <h2><span class="lang-pt">Três pilares, um caminho</span><span class="lang-en">Three pillars, one path</span><span class="lang-de">Drei Säulen, ein Weg</span></h2>
       <p>
         <span class="lang-pt">Um caminho completo, da primeira nota à carreira profissional: a prova de que jovens das favelas alcançam padrão internacional em música.</span>
-        <span class="lang-en">A complete path from the first note to a professional career: proof that young people from the favelas reach an international standard in music.</span>
+        <span class="lang-en">A complete path from the first note to a professional career: proof that young people from the favelas reach an international standard in music.</span><span class="lang-de">Ein durchgängiger Weg von der ersten Note bis zur Profikarriere: der Beweis, dass junge Menschen aus den Favelas in der Musik internationales Niveau erreichen.</span>
       </p>
     </div>
   </div>
@@ -152,11 +156,11 @@
         <img src="img/21-oficina-em-pereira-passos.jpg" alt="Oficina de percussão da Favela Brass na Escola Municipal Pereira Passos" loading="lazy" decoding="async" width="1200" height="1600">
       </figure>
       <div class="prog-body">
-        <span class="prog-stat">116 <small><span class="lang-pt">alunos</span><span class="lang-en">students</span></small></span>
-        <h3><span class="lang-pt">Oficinas nas Escolas</span><span class="lang-en">School Workshops</span></h3>
+        <span class="prog-stat">116 <small><span class="lang-pt">alunos</span><span class="lang-en">students</span><span class="lang-de">Schüler</span></small></span>
+        <h3><span class="lang-pt">Oficinas nas Escolas</span><span class="lang-en">School Workshops</span><span class="lang-de">Workshops an Schulen</span></h3>
         <p>
           <span class="lang-pt">Aulas de iniciação musical em 5 escolas municipais parceiras. Os alunos aprendem instrumentos de sopro e percussão, tocando repertório de fanfarras e blocos populares.</span>
-          <span class="lang-en">Introductory music classes in 5 partner municipal schools. Students learn brass and percussion, playing repertoire from street bands and popular blocos.</span>
+          <span class="lang-en">Introductory music classes in 5 partner municipal schools. Students learn brass and percussion, playing repertoire from street bands and popular blocos.</span><span class="lang-de">Musikalische Grundausbildung an 5 städtischen Partnerschulen. Die Schülerinnen und Schüler lernen Blechblas- und Schlaginstrumente und spielen Repertoire von Straßenkapellen und populären Karnevalsblocos.</span>
         </p>
       </div>
     </article>
@@ -165,11 +169,11 @@
         <img src="img/06-joe-epstein-teaching-brass.jpg" alt="Professor e alunos do curso avançado tocando trompete" loading="lazy" decoding="async" width="1400" height="933">
       </figure>
       <div class="prog-body">
-        <span class="prog-stat">81 <small><span class="lang-pt">alunos</span><span class="lang-en">students</span></small></span>
-        <h3><span class="lang-pt">Curso Avançado</span><span class="lang-en">Advanced Course</span></h3>
+        <span class="prog-stat">81 <small><span class="lang-pt">alunos</span><span class="lang-en">students</span><span class="lang-de">Schüler</span></small></span>
+        <h3><span class="lang-pt">Curso Avançado</span><span class="lang-en">Advanced Course</span><span class="lang-de">Aufbaukurs</span></h3>
         <p>
           <span class="lang-pt">Oficinas de banda e aulas particulares na comunidade Pereira da Silva, em um programa estruturado em níveis. As turmas de sábado no Curvelo, em Santa Teresa, fazem a ponte entre a iniciação e o curso avançado.</span>
-          <span class="lang-en">Band workshops and private lessons in the Pereira da Silva community, in a structured, levelled programme. The Saturday classes at the Curvelo in Santa Teresa bridge the gap between beginner level and the advanced course.</span>
+          <span class="lang-en">Band workshops and private lessons in the Pereira da Silva community, in a structured, levelled programme. The Saturday classes at the Curvelo in Santa Teresa bridge the gap between beginner level and the advanced course.</span><span class="lang-de">Bandworkshops und Einzelunterricht in der Favela Pereira da Silva, in einem strukturierten Stufenprogramm. Die Samstagsklassen im Curvelo in Santa Teresa schlagen die Brücke zwischen der Grundausbildung und dem Aufbaukurs.</span>
         </p>
       </div>
     </article>
@@ -178,11 +182,11 @@
         <img src="img/02-copa-palace-bezerra.jpg" alt="Banda da Favela Brass no salão do Copacabana Palace" loading="lazy" decoding="async" width="1400" height="933">
       </figure>
       <div class="prog-body">
-        <span class="prog-stat">50<i>+</i> <small><span class="lang-pt">por ano</span><span class="lang-en">per year</span></small></span>
-        <h3><span class="lang-pt">Apresentações</span><span class="lang-en">Performances</span></h3>
+        <span class="prog-stat">50<i>+</i> <small><span class="lang-pt">por ano</span><span class="lang-en">per year</span><span class="lang-de">pro Jahr</span></small></span>
+        <h3><span class="lang-pt">Apresentações</span><span class="lang-en">Performances</span><span class="lang-de">Auftritte</span></h3>
         <p>
           <span class="lang-pt">Do carnaval de rua ao Copacabana Palace, além do Baile Brass, nosso evento mensal que convida fanfarras profissionais para tocar com os alunos. Nossas apresentações alcançam cerca de 50 mil pessoas por ano.</span>
-          <span class="lang-en">From street carnival to the Copacabana Palace, plus Baile Brass, our monthly event where professional brass bands play alongside the students. Our performances reach around 50,000 people a year.</span>
+          <span class="lang-en">From street carnival to the Copacabana Palace, plus Baile Brass, our monthly event where professional brass bands play alongside the students. Our performances reach around 50,000 people a year.</span><span class="lang-de">Vom Straßenkarneval bis zum Copacabana Palace, dazu der Baile Brass, unser monatliches Konzert, bei dem professionelle Brassbands gemeinsam mit den Schülern spielen. Unsere Auftritte erreichen rund 50.000 Menschen im Jahr.</span>
         </p>
       </div>
     </article>
@@ -194,7 +198,7 @@
   <img src="img/27-cortejo-surdos-2025-bezerra.jpg" alt="Alunas da Favela Brass tocam surdo em cortejo de carnaval no Rio" loading="lazy" decoding="async" width="2000" height="1333">
   <figcaption class="photo-cap">
     <span class="lang-pt">Carnaval de rua &middot; Rio de Janeiro</span>
-    <span class="lang-en">Street carnival &middot; Rio de Janeiro</span>
+    <span class="lang-en">Street carnival &middot; Rio de Janeiro</span><span class="lang-de">Straßenkarneval &middot; Rio de Janeiro</span>
   </figcaption>
 </figure>
 
@@ -203,22 +207,22 @@
   <div class="section-head reveal">
     <div class="section-no"><span>02</span><hr></div>
     <div class="section-titles">
-      <h2><span class="lang-pt">O intercâmbio</span><span class="lang-en">The exchange</span></h2>
+      <h2><span class="lang-pt">O intercâmbio</span><span class="lang-en">The exchange</span><span class="lang-de">Der Austausch</span></h2>
       <p>
         <span class="lang-pt">Setembro de 2024: uma banda alemã atravessou o oceano para tocar com a Favela Brass. E o intercâmbio não parou mais.</span>
-        <span class="lang-en">September 2024: a German band crossed the ocean to play with Favela Brass. The exchange has not stopped since.</span>
+        <span class="lang-en">September 2024: a German band crossed the ocean to play with Favela Brass. The exchange has not stopped since.</span><span class="lang-de">September 2024: Eine deutsche Band überquerte den Atlantik, um mit Favela Brass zu spielen. Seitdem reißt der Austausch nicht mehr ab.</span>
       </p>
     </div>
   </div>
 
   <div class="feature-grid">
     <div class="feature-photos reveal">
-      <span class="stamp"><span class="lang-pt">Intercâmbio Brasil &middot; Alemanha</span><span class="lang-en">Brazil &middot; Germany exchange</span></span>
+      <span class="stamp"><span class="lang-pt">Intercâmbio Brasil &middot; Alemanha</span><span class="lang-en">Brazil &middot; Germany exchange</span><span class="lang-de">Austausch Brasilien &middot; Deutschland</span></span>
       <figure class="feature-photo-main">
         <img src="img/17-jmk-fb-parade-santa-teresa-camilaleite3d.jpg" alt="Músicos da Favela Brass e do Jugendmusikkorps de Bad Kissingen tocando juntos em Santa Teresa" loading="lazy" decoding="async" width="1800" height="1013">
         <figcaption class="photo-cap">
           <span class="lang-pt">Favela Brass e Jugendmusikkorps &middot; 2024</span>
-          <span class="lang-en">Favela Brass and Jugendmusikkorps &middot; 2024</span>
+          <span class="lang-en">Favela Brass and Jugendmusikkorps &middot; 2024</span><span class="lang-de">Favela Brass und Jugendmusikkorps &middot; 2024</span>
         </figcaption>
       </figure>
       <figure class="feature-photo-small">
@@ -228,30 +232,30 @@
     <div class="feature-text reveal">
       <h3>
         <span class="lang-pt">O dia em que a Alemanha<br>desfilou com a gente</span>
-        <span class="lang-en">The day Germany<br>paraded with us</span>
+        <span class="lang-en">The day Germany<br>paraded with us</span><span class="lang-de">Der Tag, an dem Deutschland<br>mit uns durch Rio zog</span>
       </h3>
       <p>
         <span class="lang-pt">Em setembro de 2024, recebemos no Rio 73 músicos do Jugendmusikkorps da cidade de Bad Kissingen, na Alemanha. Fizemos um ensaio aberto juntos no Coreto Modernista, no Aterro do Flamengo, e desfilamos lado a lado pelas ruas de Santa Teresa.</span>
-        <span class="lang-en">In September 2024, we welcomed 73 musicians from the Jugendmusikkorps of Bad Kissingen, Germany, to Rio. We held an open rehearsal together at the Coreto Modernista in Flamengo Park and paraded side by side through the streets of Santa Teresa.</span>
+        <span class="lang-en">In September 2024, we welcomed 73 musicians from the Jugendmusikkorps of Bad Kissingen, Germany, to Rio. We held an open rehearsal together at the Coreto Modernista in Flamengo Park and paraded side by side through the streets of Santa Teresa.</span><span class="lang-de">Im September 2024 empfingen wir in Rio 73 Musikerinnen und Musiker des Jugendmusikkorps der Stadt Bad Kissingen. Gemeinsam gaben wir eine offene Probe am Coreto Modernista im Flamengo-Park und zogen Seite an Seite durch die Straßen von Santa Teresa.</span>
       </p>
       <p>
         <span class="lang-pt">Para os nossos alunos, foi a prova de que a música que nasce na favela conversa com o mundo. E a história continua: em julho de 2026, nosso fundador Tom Ashe retribui a visita: uma semana de oficinas com os jovens músicos de Bad Kissingen, preparando as próximas ações conjuntas das duas escolas.</span>
-        <span class="lang-en">For our students, it was proof that music born in the favela speaks to the world. And the story continues: in July 2026 our founder Tom Ashe returns the visit, leading a week of workshops with Bad Kissingen's young musicians and preparing the two schools' next joint steps.</span>
+        <span class="lang-en">For our students, it was proof that music born in the favela speaks to the world. And the story continues: in July 2026 our founder Tom Ashe returns the visit, leading a week of workshops with Bad Kissingen's young musicians and preparing the two schools' next joint steps.</span><span class="lang-de">Für unsere Schülerinnen und Schüler war es der Beweis, dass Musik, die in der Favela entsteht, in der ganzen Welt Gehör findet. Und die Geschichte geht weiter: Im Juli 2026 erwidert unser Gründer Tom Ashe den Besuch und leitet eine Workshopwoche mit den jungen Musikerinnen und Musikern in Bad Kissingen, als Auftakt für die nächsten gemeinsamen Projekte der beiden Schulen.</span>
       </p>
       <ul class="feature-dates">
         <li>
-          <span class="fd-when"><span class="lang-pt">Setembro de 2024</span><span class="lang-en">September 2024</span></span>
-          <span class="fd-what"><span class="lang-pt">A visita ao Rio: ensaio aberto no Coreto Modernista e desfile conjunto por Santa Teresa, no festival Arte de Portas Abertas</span><span class="lang-en">The visit to Rio: open rehearsal at the Coreto Modernista and joint parade through Santa Teresa at the Arte de Portas Abertas festival</span></span>
+          <span class="fd-when"><span class="lang-pt">Setembro de 2024</span><span class="lang-en">September 2024</span><span class="lang-de">September 2024</span></span>
+          <span class="fd-what"><span class="lang-pt">A visita ao Rio: ensaio aberto no Coreto Modernista e desfile conjunto por Santa Teresa, no festival Arte de Portas Abertas</span><span class="lang-en">The visit to Rio: open rehearsal at the Coreto Modernista and joint parade through Santa Teresa at the Arte de Portas Abertas festival</span><span class="lang-de">Der Besuch in Rio: offene Probe am Coreto Modernista und gemeinsamer Umzug durch Santa Teresa beim Festival Arte de Portas Abertas</span></span>
         </li>
         <li>
-          <span class="fd-when"><span class="lang-pt">Julho de 2026</span><span class="lang-en">July 2026</span></span>
-          <span class="fd-what"><span class="lang-pt">Tom Ashe retribui a visita: oficinas com os jovens músicos em Bad Kissingen</span><span class="lang-en">Tom Ashe returns the visit: workshops with the young musicians in Bad Kissingen</span></span>
+          <span class="fd-when"><span class="lang-pt">Julho de 2026</span><span class="lang-en">July 2026</span><span class="lang-de">Juli 2026</span></span>
+          <span class="fd-what"><span class="lang-pt">Tom Ashe retribui a visita: oficinas com os jovens músicos em Bad Kissingen</span><span class="lang-en">Tom Ashe returns the visit: workshops with the young musicians in Bad Kissingen</span><span class="lang-de">Tom Ashe erwidert den Besuch: Workshops mit den jungen Musikerinnen und Musikern in Bad Kissingen</span></span>
         </li>
       </ul>
       <a class="feature-video-link" href="https://youtu.be/1so2WVYAAvs" target="_blank" rel="noopener">
         <span aria-hidden="true">&#9654;</span>
         <span class="lang-pt">Assista ao vídeo do encontro (5 min)</span>
-        <span class="lang-en">Watch the video of the encounter (5 min)</span>
+        <span class="lang-en">Watch the video of the encounter (5 min)</span><span class="lang-de">Video der Begegnung ansehen (5 Min.)</span>
       </a>
     </div>
   </div>
@@ -263,7 +267,7 @@
     <div class="section-head reveal">
       <div class="section-no"><span>03</span><hr></div>
       <div class="section-titles">
-        <h2><span class="lang-pt">Na voz de quem toca</span><span class="lang-en">In their own words</span></h2>
+        <h2><span class="lang-pt">Na voz de quem toca</span><span class="lang-en">In their own words</span><span class="lang-de">Stimmen aus der Band</span></h2>
       </div>
     </div>
 
@@ -271,23 +275,23 @@
       <blockquote class="quote reveal">
         <p>
           <span class="lang-pt">Achei emocionante e acho que a história da Favela Brass está só começando. Estou desde pequena no projeto e é muito bonito ver o projeto crescer.</span>
-          <span class="lang-en">I found it so moving, and I think Favela Brass's story is only just beginning. I've been in the project since I was little and it's beautiful to see it grow.</span>
+          <span class="lang-en">I found it so moving, and I think Favela Brass's story is only just beginning. I've been in the project since I was little and it's beautiful to see it grow.</span><span class="lang-de">Ich fand es total bewegend, und ich glaube, die Geschichte von Favela Brass fängt gerade erst an. Ich bin von klein auf im Projekt dabei und es ist so schön zu sehen, wie es wächst.</span>
         </p>
         <cite>
           <strong>Lúcia</strong> &middot;
           <span class="lang-pt">aluna de trompete, Banda Preta &middot; Favela Pereira da Silva</span>
-          <span class="lang-en">trumpet student, Banda Preta &middot; Pereira da Silva favela</span>
+          <span class="lang-en">trumpet student, Banda Preta &middot; Pereira da Silva favela</span><span class="lang-de">Trompetenschülerin, Banda Preta &middot; Favela Pereira da Silva</span>
         </cite>
       </blockquote>
       <blockquote class="quote reveal">
         <p>
           <span class="lang-pt">Primeira vez na minha vida que eu subi num palco foi no Circo Voador, e eu achei o máximo! Aquela batalha das bandas com aquelas músicas todas foi muito bom!</span>
-          <span class="lang-en">The first time in my life I went on stage was at Circo Voador, and I thought it was amazing! That battle of the bands with all those songs was so good!</span>
+          <span class="lang-en">The first time in my life I went on stage was at Circo Voador, and I thought it was amazing! That battle of the bands with all those songs was so good!</span><span class="lang-de">Das erste Mal in meinem Leben stand ich im Circo Voador auf einer Bühne, und ich fand es mega! Diese Band-Battle mit all den Songs war richtig gut!</span>
         </p>
         <cite>
           <strong>Arthur</strong> &middot;
           <span class="lang-pt">trompetista</span>
-          <span class="lang-en">trumpet player</span>
+          <span class="lang-en">trumpet player</span><span class="lang-de">Trompeter</span>
         </cite>
       </blockquote>
     </div>
@@ -299,20 +303,20 @@
   <div class="cta-inner reveal">
     <h2>
       <span class="lang-pt">Faça parte<br>dessa história.</span>
-      <span class="lang-en">Be part<br>of this story.</span>
+      <span class="lang-en">Be part<br>of this story.</span><span class="lang-de">Werden Sie Teil<br>dieser Geschichte.</span>
     </h2>
     <div class="cta-side">
       <p>
         <span class="lang-pt">Sua contribuição viabiliza o acesso à educação musical para mais jovens do Rio de Janeiro. Colabore como doador, patrocinador ou voluntário.</span>
-        <span class="lang-en">Your contribution makes music education accessible to more young people in Rio de Janeiro. Get involved as a donor, sponsor, or volunteer.</span>
+        <span class="lang-en">Your contribution makes music education accessible to more young people in Rio de Janeiro. Get involved as a donor, sponsor, or volunteer.</span><span class="lang-de">Ihr Beitrag ermöglicht mehr jungen Menschen in Rio de Janeiro den Zugang zu musikalischer Bildung. Unterstützen Sie uns mit einer Spende, als Sponsor oder durch ehrenamtliches Engagement.</span>
       </p>
       <div class="cta-actions">
-        <a href="colaborar.html" class="btn btn-purple"><span class="lang-pt">Saiba Como Apoiar</span><span class="lang-en">Learn How to Help</span></a>
-        <a href="mailto:contato@favelabrass.org" class="btn btn-ink-ghost"><span class="lang-pt">Fale com a gente</span><span class="lang-en">Talk to us</span></a>
+        <a href="colaborar.html" class="btn btn-purple"><span class="lang-pt">Saiba Como Apoiar</span><span class="lang-en">Learn How to Help</span><span class="lang-de">So können Sie helfen</span></a>
+        <a href="mailto:contato@favelabrass.org" class="btn btn-ink-ghost"><span class="lang-pt">Fale com a gente</span><span class="lang-en">Talk to us</span><span class="lang-de">Sprechen Sie uns an</span></a>
       </div>
       <p class="cta-fine">
         <span class="lang-pt">Empresas e pessoas físicas podem apoiar via Lei Rouanet, com 100% de dedução fiscal &middot; PRONAC 254750</span>
-        <span class="lang-en">Companies and individuals can support via the Lei Rouanet, with a 100% tax deduction &middot; PRONAC 254750</span>
+        <span class="lang-en">Companies and individuals can support via the Lei Rouanet, with a 100% tax deduction &middot; PRONAC 254750</span><span class="lang-de">Unternehmen und Privatpersonen können das Projekt über das brasilianische Kulturförderungsgesetz (Lei Rouanet) unterstützen, zu 100 % steuerlich absetzbar &middot; PRONAC 254750</span>
       </p>
     </div>
   </div>
@@ -322,7 +326,7 @@
 <section class="rouanet">
   <p>
     <span class="lang-pt">Projeto aprovado pela Lei Federal de Incentivo à Cultura &middot; PRONAC 254750</span>
-    <span class="lang-en">Approved under Brazil's Federal Culture Incentive Law &middot; PRONAC 254750</span>
+    <span class="lang-en">Approved under Brazil's Federal Culture Incentive Law &middot; PRONAC 254750</span><span class="lang-de">Projekt anerkannt nach dem brasilianischen Kulturförderungsgesetz &middot; PRONAC 254750</span>
   </p>
   <img src="img/logo-bar.png" alt="Lei Rouanet, Patrocínio PRIO, Ministério da Cultura, Governo Federal">
 </section>
@@ -334,7 +338,7 @@
       <img src="img/logo-white-nav.png" alt="Favela Brass">
       <p>
         <span class="lang-pt">Programa de educação musical para jovens das favelas e escolas públicas do Rio de Janeiro.</span>
-        <span class="lang-en">Music education programme for young people from Rio de Janeiro's favelas and public schools.</span>
+        <span class="lang-en">Music education programme for young people from Rio de Janeiro's favelas and public schools.</span><span class="lang-de">Musikalisches Bildungsprogramm für junge Menschen aus den Favelas und öffentlichen Schulen von Rio de Janeiro.</span>
       </p>
       <div class="footer-social">
         <a href="https://www.instagram.com/favela_brass/" target="_blank" rel="noopener">Instagram</a>
@@ -344,32 +348,32 @@
       </div>
     </div>
     <div class="footer-col">
-      <h3><span class="lang-pt">Navegação</span><span class="lang-en">Navigation</span></h3>
-      <a href="sobre.html"><span class="lang-pt">Sobre Nós</span><span class="lang-en">About Us</span></a>
-      <a href="equipe.html"><span class="lang-pt">Nossa Equipe</span><span class="lang-en">Our Team</span></a>
-      <a href="colaborar.html"><span class="lang-pt">Como Colaborar</span><span class="lang-en">Get Involved</span></a>
-      <a href="contato.html"><span class="lang-pt">Contato</span><span class="lang-en">Contact</span></a>
+      <h3><span class="lang-pt">Navegação</span><span class="lang-en">Navigation</span><span class="lang-de">Navigation</span></h3>
+      <a href="sobre.html"><span class="lang-pt">Sobre Nós</span><span class="lang-en">About Us</span><span class="lang-de">Über uns</span></a>
+      <a href="equipe.html"><span class="lang-pt">Nossa Equipe</span><span class="lang-en">Our Team</span><span class="lang-de">Unser Team</span></a>
+      <a href="colaborar.html"><span class="lang-pt">Como Colaborar</span><span class="lang-en">Get Involved</span><span class="lang-de">Mitwirken</span></a>
+      <a href="contato.html"><span class="lang-pt">Contato</span><span class="lang-en">Contact</span><span class="lang-de">Kontakt</span></a>
     </div>
     <div class="footer-col">
-      <h3><span class="lang-pt">Recursos</span><span class="lang-en">Resources</span></h3>
-      <a href="https://curriculo.favelabrass.org" target="_blank" rel="noopener"><span class="lang-pt">Currículo Online</span><span class="lang-en">Online Curriculum</span></a>
-      <a href="https://youtu.be/p9rNCI81UW0" target="_blank" rel="noopener"><span class="lang-pt">O Som do Morro (filme)</span><span class="lang-en">O Som do Morro (film)</span></a>
+      <h3><span class="lang-pt">Recursos</span><span class="lang-en">Resources</span><span class="lang-de">Ressourcen</span></h3>
+      <a href="https://curriculo.favelabrass.org" target="_blank" rel="noopener"><span class="lang-pt">Currículo Online</span><span class="lang-en">Online Curriculum</span><span class="lang-de">Online-Curriculum</span></a>
+      <a href="https://youtu.be/p9rNCI81UW0" target="_blank" rel="noopener"><span class="lang-pt">O Som do Morro (filme)</span><span class="lang-en">O Som do Morro (film)</span><span class="lang-de">O Som do Morro (Film)</span></a>
       <a href="https://www.youtube.com/@favelabrass" target="_blank" rel="noopener">YouTube</a>
-      <a href="https://benfeitoria.com/projeto/favelabrass" target="_blank" rel="noopener"><span class="lang-pt">Doação Recorrente</span><span class="lang-en">Monthly Donation</span></a>
+      <a href="https://benfeitoria.com/projeto/favelabrass" target="_blank" rel="noopener"><span class="lang-pt">Doação Recorrente</span><span class="lang-en">Monthly Donation</span><span class="lang-de">Dauerspende</span></a>
     </div>
     <div class="footer-col">
-      <h3><span class="lang-pt">Relatórios Anuais</span><span class="lang-en">Annual Reports</span></h3>
-      <a href="relatorio-2025/index.html"><span class="lang-pt">Relatório Anual 2025</span><span class="lang-en">Annual Report 2025</span></a>
-      <a href="https://drive.google.com/file/d/1Xqlo27NKx3EgcMlwlj6rUpvtQ4x1BJ4A/view" target="_blank" rel="noopener"><span class="lang-pt">Relatório Anual 2024</span><span class="lang-en">Annual Report 2024</span></a>
-      <a href="https://drive.google.com/file/d/1FXdgCLobWRX9BtrkZaGXES_Gd0uNosoq/view" target="_blank" rel="noopener"><span class="lang-pt">Relatório Anual 2023</span><span class="lang-en">Annual Report 2023</span></a>
-      <a href="docs/relatorio-anual-2022.pdf" target="_blank" rel="noopener"><span class="lang-pt">Relatório Anual 2022</span><span class="lang-en">Annual Report 2022</span></a>
+      <h3><span class="lang-pt">Relatórios Anuais</span><span class="lang-en">Annual Reports</span><span class="lang-de">Jahresberichte</span></h3>
+      <a href="relatorio-2025/index.html"><span class="lang-pt">Relatório Anual 2025</span><span class="lang-en">Annual Report 2025</span><span class="lang-de">Jahresbericht 2025</span></a>
+      <a href="https://drive.google.com/file/d/1Xqlo27NKx3EgcMlwlj6rUpvtQ4x1BJ4A/view" target="_blank" rel="noopener"><span class="lang-pt">Relatório Anual 2024</span><span class="lang-en">Annual Report 2024</span><span class="lang-de">Jahresbericht 2024</span></a>
+      <a href="https://drive.google.com/file/d/1FXdgCLobWRX9BtrkZaGXES_Gd0uNosoq/view" target="_blank" rel="noopener"><span class="lang-pt">Relatório Anual 2023</span><span class="lang-en">Annual Report 2023</span><span class="lang-de">Jahresbericht 2023</span></a>
+      <a href="docs/relatorio-anual-2022.pdf" target="_blank" rel="noopener"><span class="lang-pt">Relatório Anual 2022</span><span class="lang-en">Annual Report 2022</span><span class="lang-de">Jahresbericht 2022</span></a>
     </div>
   </div>
   <div class="footer-bottom">
     <p>Associação Musical Favela Brass &middot; CNPJ 37.332.605/0001-90</p>
     <p>
       <span class="lang-pt">Projeto aprovado pela Lei Federal de Incentivo à Cultura (Lei Rouanet) &middot; PRONAC 254750</span>
-      <span class="lang-en">Project approved under Brazil's Federal Culture Incentive Law (Lei Rouanet) &middot; PRONAC 254750</span>
+      <span class="lang-en">Project approved under Brazil's Federal Culture Incentive Law (Lei Rouanet) &middot; PRONAC 254750</span><span class="lang-de">Projekt anerkannt nach dem brasilianischen Kulturförderungsgesetz (Lei Rouanet) &middot; PRONAC 254750</span>
     </p>
   </div>
 </footer>
@@ -392,15 +396,15 @@ links.querySelectorAll('a:not(.nav-lang)').forEach(a => a.addEventListener('clic
 }));
 
 // Language toggle (persisted)
-function toggleLang() {
-  const en = document.body.classList.toggle('en');
-  document.documentElement.lang = en ? 'en' : 'pt-BR';
-  localStorage.setItem('fb-lang', en ? 'en' : 'pt');
+function setLang(l) {
+  document.body.classList.remove('en', 'de');
+  if (l !== 'pt') document.body.classList.add(l);
+  document.documentElement.lang = l === 'pt' ? 'pt-BR' : l;
+  localStorage.setItem('fb-lang', l);
+  document.querySelectorAll('.nav-langs button').forEach(b => b.classList.toggle('active', b.dataset.lang === l));
 }
-if (localStorage.getItem('fb-lang') === 'en') {
-  document.body.classList.add('en');
-  document.documentElement.lang = 'en';
-}
+var savedLang = localStorage.getItem('fb-lang');
+if (savedLang && savedLang !== 'pt') setLang(savedLang);
 
 // Reveal on scroll
 const io = new IntersectionObserver(es => es.forEach(e => {

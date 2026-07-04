@@ -144,13 +144,17 @@
     <span></span><span></span><span></span>
   </button>
   <div class="nav-links" id="navLinks">
-    <a href="index.html"><span class="lang-pt">Início</span><span class="lang-en">Home</span></a>
-    <a href="sobre.html"><span class="lang-pt">Sobre</span><span class="lang-en">About</span></a>
-    <a href="equipe.html" class="active"><span class="lang-pt">Equipe</span><span class="lang-en">Team</span></a>
-    <a href="colaborar.html"><span class="lang-pt">Colaborar</span><span class="lang-en">Get Involved</span></a>
-    <a href="contato.html"><span class="lang-pt">Contato</span><span class="lang-en">Contact</span></a>
-    <a href="colaborar.html" class="nav-cta"><span class="lang-pt">Apoie</span><span class="lang-en">Donate</span></a>
-    <button type="button" class="nav-lang" aria-pressed="false" onclick="toggleLang()">EN/PT</button>
+    <a href="index.html"><span class="lang-pt">Início</span><span class="lang-en">Home</span><span class="lang-de">Startseite</span></a>
+    <a href="sobre.html"><span class="lang-pt">Sobre</span><span class="lang-en">About</span><span class="lang-de">Über uns</span></a>
+    <a href="equipe.html" class="active"><span class="lang-pt">Equipe</span><span class="lang-en">Team</span><span class="lang-de">Team</span></a>
+    <a href="colaborar.html"><span class="lang-pt">Colaborar</span><span class="lang-en">Get Involved</span><span class="lang-de">Mitmachen</span></a>
+    <a href="contato.html"><span class="lang-pt">Contato</span><span class="lang-en">Contact</span><span class="lang-de">Kontakt</span></a>
+    <a href="colaborar.html" class="nav-cta"><span class="lang-pt">Apoie</span><span class="lang-en">Donate</span><span class="lang-de">Spenden</span></a>
+    <div class="nav-langs" role="group" aria-label="Idioma / Language / Sprache">
+      <button type="button" data-lang="pt" class="active" onclick="setLang('pt')">PT</button>
+      <button type="button" data-lang="en" onclick="setLang('en')">EN</button>
+      <button type="button" data-lang="de" onclick="setLang('de')">DE</button>
+    </div>
   </div>
 </nav>
 
@@ -161,15 +165,15 @@
   <div class="page-hero-inner">
     <p class="hero-kicker anim a1">
       <span class="lang-pt">Nossa Equipe &middot; Favela Brass</span>
-      <span class="lang-en">Our Team &middot; Favela Brass</span>
+      <span class="lang-en">Our Team &middot; Favela Brass</span><span class="lang-de">Unser Team &middot; Favela Brass</span>
     </p>
     <h1 class="anim a2">
       <span class="lang-pt">As pessoas por trás<br class="br-desk"> da <em>música</em></span>
-      <span class="lang-en">The people behind<br class="br-desk"> the <em>music</em></span>
+      <span class="lang-en">The people behind<br class="br-desk"> the <em>music</em></span><span class="lang-de">Die Menschen hinter<br class="br-desk"> der <em>Musik</em></span>
     </h1>
     <p class="page-hero-lede anim a3">
       <span class="lang-pt">Professores, regentes e equipe de apoio que fazem a escola acontecer todos os dias, da primeira aula ao palco.</span>
-      <span class="lang-en">Teachers, conductors and support staff who make the school happen every day, from the first lesson to the stage.</span>
+      <span class="lang-en">Teachers, conductors and support staff who make the school happen every day, from the first lesson to the stage.</span><span class="lang-de">Lehrkräfte, Dirigenten und Mitarbeitende, die die Schule Tag für Tag möglich machen, von der ersten Unterrichtsstunde bis auf die Bühne.</span>
     </p>
   </div>
 </header>
@@ -179,10 +183,10 @@
   <div class="section-head reveal">
     <div class="section-no"><span>01</span><hr></div>
     <div class="section-titles">
-      <h2><span class="lang-pt">Liderança</span><span class="lang-en">Leadership</span></h2>
+      <h2><span class="lang-pt">Liderança</span><span class="lang-en">Leadership</span><span class="lang-de">Leitung</span></h2>
       <p>
         <span class="lang-pt">Quem fundou a escola e quem conduz a música.</span>
-        <span class="lang-en">The school's founder and the director who leads the music.</span>
+        <span class="lang-en">The school's founder and the director who leads the music.</span><span class="lang-de">Wer die Schule gegründet hat und wer die Musik leitet.</span>
       </p>
     </div>
   </div>
@@ -196,11 +200,11 @@
       <h3>Tom Ashe</h3>
       <span class="team-role">
         <span class="lang-pt">Fundador e Diretor Executivo</span>
-        <span class="lang-en">Founder and Executive Director</span>
+        <span class="lang-en">Founder and Executive Director</span><span class="lang-de">Gründer und Geschäftsführer</span>
       </span>
       <p>
         <span class="lang-pt">Trompetista britânico radicado no Rio de Janeiro desde 2008, fundou a Favela Brass em 2014. Em 2026, recebeu a Medalha do Império Britânico (BEM) pelo trabalho à frente do projeto.</span>
-        <span class="lang-en">A British trumpet player based in Rio de Janeiro since 2008, he founded Favela Brass in 2014. In 2026 he was awarded the British Empire Medal (BEM) for his work leading the project.</span>
+        <span class="lang-en">A British trumpet player based in Rio de Janeiro since 2008, he founded Favela Brass in 2014. In 2026 he was awarded the British Empire Medal (BEM) for his work leading the project.</span><span class="lang-de">Der britische Trompeter lebt seit 2008 in Rio de Janeiro und gründete Favela Brass im Jahr 2014. 2026 wurde ihm für seine Arbeit an der Spitze des Projekts die British Empire Medal (BEM) verliehen.</span>
       </p>
     </article>
     <article class="lead-card reveal">
@@ -211,11 +215,11 @@
       <h3>Wesley de Araújo</h3>
       <span class="team-role">
         <span class="lang-pt">Diretor Musical</span>
-        <span class="lang-en">Music Director</span>
+        <span class="lang-en">Music Director</span><span class="lang-de">Musikalischer Leiter</span>
       </span>
       <p>
         <span class="lang-pt">Tubista e eufonista, lidera o programa musical da Favela Brass e rege as bandas avançadas, acompanhando cada aluno da primeira nota ao palco.</span>
-        <span class="lang-en">Tuba and euphonium player, he leads the Favela Brass music programme and conducts the advanced bands, guiding each student from their first note to the stage.</span>
+        <span class="lang-en">Tuba and euphonium player, he leads the Favela Brass music programme and conducts the advanced bands, guiding each student from their first note to the stage.</span><span class="lang-de">Tubist und Euphonist, er leitet das Musikprogramm von Favela Brass, dirigiert die fortgeschrittenen Bands und begleitet jeden Schüler vom ersten Ton bis auf die Bühne.</span>
       </p>
     </article>
   </div>
@@ -226,33 +230,33 @@
   <div class="section-head reveal">
     <div class="section-no"><span>02</span><hr></div>
     <div class="section-titles">
-      <h2><span class="lang-pt">Professores</span><span class="lang-en">Teachers</span></h2>
+      <h2><span class="lang-pt">Professores</span><span class="lang-en">Teachers</span><span class="lang-de">Lehrkräfte</span></h2>
       <p>
         <span class="lang-pt">Músicos profissionais que ensinam sopros, percussão e teoria musical, com o apoio de um luthier e de um intérprete de Libras no dia a dia das aulas. Quatro deles começaram como alunos do projeto.</span>
-        <span class="lang-en">Professional musicians teaching brass, percussion and music theory, supported day to day by a luthier and a Brazilian Sign Language interpreter. Four of them began as students of the project.</span>
+        <span class="lang-en">Professional musicians teaching brass, percussion and music theory, supported day to day by a luthier and a Brazilian Sign Language interpreter. Four of them began as students of the project.</span><span class="lang-de">Professionelle Musikerinnen und Musiker, die Blasinstrumente, Percussion und Musiktheorie unterrichten, im Unterrichtsalltag unterstützt von einem Instrumentenbauer und einem Gebärdensprachdolmetscher. Vier von ihnen haben als Schüler des Projekts angefangen.</span>
       </p>
     </div>
   </div>
 
   <ul class="roster reveal">
-    <li><span class="roster-name">Anderson Clayton</span><span class="roster-role"><span class="lang-pt">Percussão</span><span class="lang-en">Percussion</span></span></li>
-    <li><span class="roster-name">Dan Di Oliveiri</span><span class="roster-role"><span class="lang-pt">Trompete</span><span class="lang-en">Trumpet</span></span></li>
-    <li><span class="roster-name">Darlan Dias</span><span class="roster-role"><span class="lang-pt">Percussão</span><span class="lang-en">Percussion</span></span></li>
-    <li><span class="roster-name">Henri Marzitelli</span><span class="roster-role"><span class="lang-pt">Trombone</span><span class="lang-en">Trombone</span> <span class="ex-aluno-badge"><span class="lang-pt">ex-aluno</span><span class="lang-en">former student</span></span></span></li>
-    <li><span class="roster-name">Joana Saraiva</span><span class="roster-role"><span class="lang-pt">Saxofone</span><span class="lang-en">Saxophone</span></span></li>
-    <li><span class="roster-name">Joe Epstein</span><span class="roster-role"><span class="lang-pt">Trompete</span><span class="lang-en">Trumpet</span></span></li>
-    <li><span class="roster-name">Karina Neves</span><span class="roster-role"><span class="lang-pt">Teoria Musical</span><span class="lang-en">Music Theory</span></span></li>
-    <li><span class="roster-name">Mangueirinha</span><span class="roster-role"><span class="lang-pt">Percussão</span><span class="lang-en">Percussion</span></span></li>
-    <li><span class="roster-name">Marcos Henrique</span><span class="roster-role"><span class="lang-pt">Percussão</span><span class="lang-en">Percussion</span> <span class="ex-aluno-badge"><span class="lang-pt">ex-aluno</span><span class="lang-en">former student</span></span></span></li>
-    <li><span class="roster-name">Nathan Ferreira</span><span class="roster-role"><span class="lang-pt">Trombone</span><span class="lang-en">Trombone</span> <span class="ex-aluno-badge"><span class="lang-pt">ex-aluno</span><span class="lang-en">former student</span></span></span></li>
-    <li><span class="roster-name">Pablo Beato</span><span class="roster-role"><span class="lang-pt">Trombone</span><span class="lang-en">Trombone</span></span></li>
-    <li><span class="roster-name">Raffaella Goi</span><span class="roster-role"><span class="lang-pt">Trompete &middot; Regente</span><span class="lang-en">Trumpet &middot; Conductor</span></span></li>
-    <li><span class="roster-name">Shanso Araújo</span><span class="roster-role"><span class="lang-pt">Trombone &middot; Regente</span><span class="lang-en">Trombone &middot; Conductor</span></span></li>
-    <li><span class="roster-name">Tiago Azevedo</span><span class="roster-role"><span class="lang-pt">Percussão</span><span class="lang-en">Percussion</span></span></li>
-    <li><span class="roster-name">Uyrá La Rosa</span><span class="roster-role"><span class="lang-pt">Percussão</span><span class="lang-en">Percussion</span></span></li>
-    <li><span class="roster-name">Vinicio Pereira</span><span class="roster-role"><span class="lang-pt">Percussão</span><span class="lang-en">Percussion</span> <span class="ex-aluno-badge"><span class="lang-pt">ex-aluno</span><span class="lang-en">former student</span></span></span></li>
-    <li><span class="roster-name">Bernardo Guidolini</span><span class="roster-role"><span class="lang-pt">Luteria</span><span class="lang-en">Instrument Repair</span></span></li>
-    <li><span class="roster-name">André Sena</span><span class="roster-role"><span class="lang-pt">Intérprete de Libras</span><span class="lang-en">Sign Language Interpreter</span></span></li>
+    <li><span class="roster-name">Anderson Clayton</span><span class="roster-role"><span class="lang-pt">Percussão</span><span class="lang-en">Percussion</span><span class="lang-de">Percussion</span></span></li>
+    <li><span class="roster-name">Dan Di Oliveiri</span><span class="roster-role"><span class="lang-pt">Trompete</span><span class="lang-en">Trumpet</span><span class="lang-de">Trompete</span></span></li>
+    <li><span class="roster-name">Darlan Dias</span><span class="roster-role"><span class="lang-pt">Percussão</span><span class="lang-en">Percussion</span><span class="lang-de">Percussion</span></span></li>
+    <li><span class="roster-name">Henri Marzitelli</span><span class="roster-role"><span class="lang-pt">Trombone</span><span class="lang-en">Trombone</span><span class="lang-de">Posaune</span> <span class="ex-aluno-badge"><span class="lang-pt">ex-aluno</span><span class="lang-en">former student</span><span class="lang-de">Ehemaliger Schüler</span></span></span></li>
+    <li><span class="roster-name">Joana Saraiva</span><span class="roster-role"><span class="lang-pt">Saxofone</span><span class="lang-en">Saxophone</span><span class="lang-de">Saxophon</span></span></li>
+    <li><span class="roster-name">Joe Epstein</span><span class="roster-role"><span class="lang-pt">Trompete</span><span class="lang-en">Trumpet</span><span class="lang-de">Trompete</span></span></li>
+    <li><span class="roster-name">Karina Neves</span><span class="roster-role"><span class="lang-pt">Teoria Musical</span><span class="lang-en">Music Theory</span><span class="lang-de">Musiktheorie</span></span></li>
+    <li><span class="roster-name">Mangueirinha</span><span class="roster-role"><span class="lang-pt">Percussão</span><span class="lang-en">Percussion</span><span class="lang-de">Percussion</span></span></li>
+    <li><span class="roster-name">Marcos Henrique</span><span class="roster-role"><span class="lang-pt">Percussão</span><span class="lang-en">Percussion</span><span class="lang-de">Percussion</span> <span class="ex-aluno-badge"><span class="lang-pt">ex-aluno</span><span class="lang-en">former student</span><span class="lang-de">Ehemaliger Schüler</span></span></span></li>
+    <li><span class="roster-name">Nathan Ferreira</span><span class="roster-role"><span class="lang-pt">Trombone</span><span class="lang-en">Trombone</span><span class="lang-de">Posaune</span> <span class="ex-aluno-badge"><span class="lang-pt">ex-aluno</span><span class="lang-en">former student</span><span class="lang-de">Ehemaliger Schüler</span></span></span></li>
+    <li><span class="roster-name">Pablo Beato</span><span class="roster-role"><span class="lang-pt">Trombone</span><span class="lang-en">Trombone</span><span class="lang-de">Posaune</span></span></li>
+    <li><span class="roster-name">Raffaella Goi</span><span class="roster-role"><span class="lang-pt">Trompete &middot; Regente</span><span class="lang-en">Trumpet &middot; Conductor</span><span class="lang-de">Trompete &middot; Dirigent</span></span></li>
+    <li><span class="roster-name">Shanso Araújo</span><span class="roster-role"><span class="lang-pt">Trombone &middot; Regente</span><span class="lang-en">Trombone &middot; Conductor</span><span class="lang-de">Posaune &middot; Dirigent</span></span></li>
+    <li><span class="roster-name">Tiago Azevedo</span><span class="roster-role"><span class="lang-pt">Percussão</span><span class="lang-en">Percussion</span><span class="lang-de">Percussion</span></span></li>
+    <li><span class="roster-name">Uyrá La Rosa</span><span class="roster-role"><span class="lang-pt">Percussão</span><span class="lang-en">Percussion</span><span class="lang-de">Percussion</span></span></li>
+    <li><span class="roster-name">Vinicio Pereira</span><span class="roster-role"><span class="lang-pt">Percussão</span><span class="lang-en">Percussion</span><span class="lang-de">Percussion</span> <span class="ex-aluno-badge"><span class="lang-pt">ex-aluno</span><span class="lang-en">former student</span><span class="lang-de">Ehemaliger Schüler</span></span></span></li>
+    <li><span class="roster-name">Bernardo Guidolini</span><span class="roster-role"><span class="lang-pt">Luteria</span><span class="lang-en">Instrument Repair</span><span class="lang-de">Instrumentenbau</span></span></li>
+    <li><span class="roster-name">André Sena</span><span class="roster-role"><span class="lang-pt">Intérprete de Libras</span><span class="lang-en">Sign Language Interpreter</span><span class="lang-de">Gebärdensprachdolmetscher</span></span></li>
   </ul>
 </section>
 
@@ -261,7 +265,7 @@
   <img src="img/12-recorder-class-pereira-passos-humanacamila.jpg" alt="Aula de iniciação musical com flauta doce em escola municipal parceira" loading="lazy" decoding="async" width="1800" height="1012">
   <figcaption class="photo-cap">
     <span class="lang-pt">E.M. Pereira Passos &middot; Rio de Janeiro</span>
-    <span class="lang-en">Pereira Passos municipal school &middot; Rio de Janeiro</span>
+    <span class="lang-en">Pereira Passos municipal school &middot; Rio de Janeiro</span><span class="lang-de">Städtische Schule Pereira Passos &middot; Rio de Janeiro</span>
   </figcaption>
 </figure>
 
@@ -270,19 +274,19 @@
   <div class="section-head reveal">
     <div class="section-no"><span>03</span><hr></div>
     <div class="section-titles">
-      <h2><span class="lang-pt">Equipe de Operações</span><span class="lang-en">Operations Team</span></h2>
+      <h2><span class="lang-pt">Equipe de Operações</span><span class="lang-en">Operations Team</span><span class="lang-de">Organisationsteam</span></h2>
       <p>
         <span class="lang-pt">Quem cuida das finanças, da produção e da relação com as famílias para que a música aconteça.</span>
-        <span class="lang-en">The people who look after finances, production and family relations so that the music can happen.</span>
+        <span class="lang-en">The people who look after finances, production and family relations so that the music can happen.</span><span class="lang-de">Die Menschen, die sich um Finanzen, Produktion und den Kontakt zu den Familien kümmern, damit die Musik erklingen kann.</span>
       </p>
     </div>
   </div>
 
   <ul class="roster reveal">
-    <li><span class="roster-name">Raíssa Sousa</span><span class="roster-role"><span class="lang-pt">Coordenadora Financeira e Administrativa</span><span class="lang-en">Finance and Administration Coordinator</span></span></li>
-    <li><span class="roster-name">Iris Nascimento</span><span class="roster-role"><span class="lang-pt">Secretária Geral</span><span class="lang-en">General Secretary</span></span></li>
-    <li><span class="roster-name">Lilian Diniz</span><span class="roster-role"><span class="lang-pt">Assistente Social</span><span class="lang-en">Social Worker</span></span></li>
-    <li><span class="roster-name">Welington Santos</span><span class="roster-role"><span class="lang-pt">Assistente de Produção e Logística</span><span class="lang-en">Production and Logistics Assistant</span></span></li>
+    <li><span class="roster-name">Raíssa Sousa</span><span class="roster-role"><span class="lang-pt">Coordenadora Financeira e Administrativa</span><span class="lang-en">Finance and Administration Coordinator</span><span class="lang-de">Finanz- und Verwaltungskoordinatorin</span></span></li>
+    <li><span class="roster-name">Iris Nascimento</span><span class="roster-role"><span class="lang-pt">Secretária Geral</span><span class="lang-en">General Secretary</span><span class="lang-de">Generalsekretärin</span></span></li>
+    <li><span class="roster-name">Lilian Diniz</span><span class="roster-role"><span class="lang-pt">Assistente Social</span><span class="lang-en">Social Worker</span><span class="lang-de">Sozialarbeiterin</span></span></li>
+    <li><span class="roster-name">Welington Santos</span><span class="roster-role"><span class="lang-pt">Assistente de Produção e Logística</span><span class="lang-en">Production and Logistics Assistant</span><span class="lang-de">Produktions- und Logistikassistent</span></span></li>
   </ul>
 </section>
 
@@ -291,21 +295,21 @@
   <div class="section-head reveal">
     <div class="section-no"><span>04</span><hr></div>
     <div class="section-titles">
-      <h2><span class="lang-pt">Conselho Deliberativo</span><span class="lang-en">Board of Directors</span></h2>
+      <h2><span class="lang-pt">Conselho Deliberativo</span><span class="lang-en">Board of Directors</span><span class="lang-de">Beirat</span></h2>
       <p>
         <span class="lang-pt">A associação é governada por um conselho voluntário, que se reúne mensalmente para deliberar sobre decisões estratégicas e aprovar as contas. A gestão do dia a dia fica a cargo da equipe, que responde ao conselho.</span>
-        <span class="lang-en">The association is governed by a volunteer board, which meets monthly to decide on strategy and approve the accounts. Day-to-day management is in the hands of the team, which answers to the board.</span>
+        <span class="lang-en">The association is governed by a volunteer board, which meets monthly to decide on strategy and approve the accounts. Day-to-day management is in the hands of the team, which answers to the board.</span><span class="lang-de">Der Verein wird von einem ehrenamtlichen Beirat geleitet, der monatlich zusammenkommt, um über strategische Entscheidungen zu beraten und die Finanzen zu genehmigen. Das Tagesgeschäft liegt in den Händen des Teams, das dem Beirat Rechenschaft ablegt.</span>
       </p>
     </div>
   </div>
   <ul class="roster reveal">
-    <li><span class="roster-name">Rolf Bateman Hippertt Hatje</span><span class="roster-role"><span class="lang-pt">Presidente</span><span class="lang-en">President</span></span></li>
-    <li><span class="roster-name">Alberto Coralli</span><span class="roster-role"><span class="lang-pt">Vice-Presidente</span><span class="lang-en">Vice-President</span></span></li>
-    <li><span class="roster-name">Norton de Andrade Vieira Fritzsche Junior</span><span class="roster-role"><span class="lang-pt">Tesoureiro</span><span class="lang-en">Treasurer</span></span></li>
-    <li><span class="roster-name">Mirela Rampini</span><span class="roster-role"><span class="lang-pt">Conselheira</span><span class="lang-en">Board member</span></span></li>
-    <li><span class="roster-name">Bruna Fatiche Pavani</span><span class="roster-role"><span class="lang-pt">Conselheira</span><span class="lang-en">Board member</span></span></li>
-    <li><span class="roster-name">Fernanda Debora Gomes</span><span class="roster-role"><span class="lang-pt">Conselheira</span><span class="lang-en">Board member</span></span></li>
-    <li><span class="roster-name">Lucca Elmôr Rizzo Scognamillo</span><span class="roster-role"><span class="lang-pt">Conselheiro</span><span class="lang-en">Board member</span></span></li>
+    <li><span class="roster-name">Rolf Bateman Hippertt Hatje</span><span class="roster-role"><span class="lang-pt">Presidente</span><span class="lang-en">President</span><span class="lang-de">Vorsitzender</span></span></li>
+    <li><span class="roster-name">Alberto Coralli</span><span class="roster-role"><span class="lang-pt">Vice-Presidente</span><span class="lang-en">Vice-President</span><span class="lang-de">Stellvertretender Vorsitzender</span></span></li>
+    <li><span class="roster-name">Norton de Andrade Vieira Fritzsche Junior</span><span class="roster-role"><span class="lang-pt">Tesoureiro</span><span class="lang-en">Treasurer</span><span class="lang-de">Schatzmeister</span></span></li>
+    <li><span class="roster-name">Mirela Rampini</span><span class="roster-role"><span class="lang-pt">Conselheira</span><span class="lang-en">Board member</span><span class="lang-de">Beiratsmitglied</span></span></li>
+    <li><span class="roster-name">Bruna Fatiche Pavani</span><span class="roster-role"><span class="lang-pt">Conselheira</span><span class="lang-en">Board member</span><span class="lang-de">Beiratsmitglied</span></span></li>
+    <li><span class="roster-name">Fernanda Debora Gomes</span><span class="roster-role"><span class="lang-pt">Conselheira</span><span class="lang-en">Board member</span><span class="lang-de">Beiratsmitglied</span></span></li>
+    <li><span class="roster-name">Lucca Elmôr Rizzo Scognamillo</span><span class="roster-role"><span class="lang-pt">Conselheiro</span><span class="lang-en">Board member</span><span class="lang-de">Beiratsmitglied</span></span></li>
   </ul>
 </section>
 
@@ -314,20 +318,20 @@
   <div class="cta-inner reveal">
     <h2>
       <span class="lang-pt">Apoie quem<br>ensina.</span>
-      <span class="lang-en">Support the people<br>who teach.</span>
+      <span class="lang-en">Support the people<br>who teach.</span><span class="lang-de">Unterstützen Sie die,<br>die unterrichten.</span>
     </h2>
     <div class="cta-side">
       <p>
         <span class="lang-pt">Sua contribuição mantém esta equipe em sala de aula e nossos alunos no palco. Colabore como doador, patrocinador ou voluntário.</span>
-        <span class="lang-en">Your contribution keeps this team in the classroom and our students on stage. Get involved as a donor, sponsor, or volunteer.</span>
+        <span class="lang-en">Your contribution keeps this team in the classroom and our students on stage. Get involved as a donor, sponsor, or volunteer.</span><span class="lang-de">Ihr Beitrag hält dieses Team im Unterricht und unsere Schülerinnen und Schüler auf der Bühne. Unterstützen Sie uns als Spenderin oder Spender, als Sponsor oder ehrenamtlich.</span>
       </p>
       <div class="cta-actions">
-        <a href="colaborar.html" class="btn btn-purple"><span class="lang-pt">Saiba Como Apoiar</span><span class="lang-en">Learn How to Help</span></a>
-        <a href="mailto:contato@favelabrass.org" class="btn btn-ink-ghost"><span class="lang-pt">Fale com a gente</span><span class="lang-en">Talk to us</span></a>
+        <a href="colaborar.html" class="btn btn-purple"><span class="lang-pt">Saiba Como Apoiar</span><span class="lang-en">Learn How to Help</span><span class="lang-de">So können Sie helfen</span></a>
+        <a href="mailto:contato@favelabrass.org" class="btn btn-ink-ghost"><span class="lang-pt">Fale com a gente</span><span class="lang-en">Talk to us</span><span class="lang-de">Sprechen Sie mit uns</span></a>
       </div>
       <p class="cta-fine">
         <span class="lang-pt">Empresas e pessoas físicas podem apoiar via Lei Rouanet, com 100% de dedução fiscal &middot; PRONAC 254750</span>
-        <span class="lang-en">Companies and individuals can support via the Lei Rouanet, with a 100% tax deduction &middot; PRONAC 254750</span>
+        <span class="lang-en">Companies and individuals can support via the Lei Rouanet, with a 100% tax deduction &middot; PRONAC 254750</span><span class="lang-de">Unternehmen und Privatpersonen können uns über das brasilianische Kulturförderungsgesetz Lei Rouanet mit 100 % steuerlicher Absetzbarkeit unterstützen &middot; PRONAC 254750</span>
       </p>
     </div>
   </div>
@@ -337,7 +341,7 @@
 <section class="rouanet">
   <p>
     <span class="lang-pt">Projeto aprovado pela Lei Federal de Incentivo à Cultura &middot; PRONAC 254750</span>
-    <span class="lang-en">Approved under Brazil's Federal Culture Incentive Law &middot; PRONAC 254750</span>
+    <span class="lang-en">Approved under Brazil's Federal Culture Incentive Law &middot; PRONAC 254750</span><span class="lang-de">Anerkanntes Projekt nach dem brasilianischen Bundesgesetz zur Kulturförderung &middot; PRONAC 254750</span>
   </p>
   <img src="img/logo-bar.png" alt="Lei Rouanet, Patrocínio PRIO, Ministério da Cultura, Governo Federal">
 </section>
@@ -349,7 +353,7 @@
       <img src="img/logo-white-nav.png" alt="Favela Brass">
       <p>
         <span class="lang-pt">Programa de educação musical para jovens das favelas e escolas públicas do Rio de Janeiro.</span>
-        <span class="lang-en">Music education programme for young people from Rio de Janeiro's favelas and public schools.</span>
+        <span class="lang-en">Music education programme for young people from Rio de Janeiro's favelas and public schools.</span><span class="lang-de">Musikalisches Bildungsprogramm für junge Menschen aus den Favelas und öffentlichen Schulen von Rio de Janeiro.</span>
       </p>
       <div class="footer-social">
         <a href="https://www.instagram.com/favela_brass/" target="_blank" rel="noopener">Instagram</a>
@@ -359,32 +363,32 @@
       </div>
     </div>
     <div class="footer-col">
-      <h3><span class="lang-pt">Navegação</span><span class="lang-en">Navigation</span></h3>
-      <a href="sobre.html"><span class="lang-pt">Sobre Nós</span><span class="lang-en">About Us</span></a>
-      <a href="equipe.html"><span class="lang-pt">Nossa Equipe</span><span class="lang-en">Our Team</span></a>
-      <a href="colaborar.html"><span class="lang-pt">Como Colaborar</span><span class="lang-en">Get Involved</span></a>
-      <a href="contato.html"><span class="lang-pt">Contato</span><span class="lang-en">Contact</span></a>
+      <h3><span class="lang-pt">Navegação</span><span class="lang-en">Navigation</span><span class="lang-de">Navigation</span></h3>
+      <a href="sobre.html"><span class="lang-pt">Sobre Nós</span><span class="lang-en">About Us</span><span class="lang-de">Über uns</span></a>
+      <a href="equipe.html"><span class="lang-pt">Nossa Equipe</span><span class="lang-en">Our Team</span><span class="lang-de">Unser Team</span></a>
+      <a href="colaborar.html"><span class="lang-pt">Como Colaborar</span><span class="lang-en">Get Involved</span><span class="lang-de">Mitmachen</span></a>
+      <a href="contato.html"><span class="lang-pt">Contato</span><span class="lang-en">Contact</span><span class="lang-de">Kontakt</span></a>
     </div>
     <div class="footer-col">
-      <h3><span class="lang-pt">Recursos</span><span class="lang-en">Resources</span></h3>
-      <a href="https://curriculo.favelabrass.org" target="_blank" rel="noopener"><span class="lang-pt">Currículo Online</span><span class="lang-en">Online Curriculum</span></a>
-      <a href="https://youtu.be/p9rNCI81UW0" target="_blank" rel="noopener"><span class="lang-pt">O Som do Morro (filme)</span><span class="lang-en">O Som do Morro (film)</span></a>
+      <h3><span class="lang-pt">Recursos</span><span class="lang-en">Resources</span><span class="lang-de">Ressourcen</span></h3>
+      <a href="https://curriculo.favelabrass.org" target="_blank" rel="noopener"><span class="lang-pt">Currículo Online</span><span class="lang-en">Online Curriculum</span><span class="lang-de">Online-Lehrplan</span></a>
+      <a href="https://youtu.be/p9rNCI81UW0" target="_blank" rel="noopener"><span class="lang-pt">O Som do Morro (filme)</span><span class="lang-en">O Som do Morro (film)</span><span class="lang-de">O Som do Morro (Film)</span></a>
       <a href="https://www.youtube.com/@favelabrass" target="_blank" rel="noopener">YouTube</a>
-      <a href="https://benfeitoria.com/projeto/favelabrass" target="_blank" rel="noopener"><span class="lang-pt">Doação Recorrente</span><span class="lang-en">Monthly Donation</span></a>
+      <a href="https://benfeitoria.com/projeto/favelabrass" target="_blank" rel="noopener"><span class="lang-pt">Doação Recorrente</span><span class="lang-en">Monthly Donation</span><span class="lang-de">Monatliche Spende</span></a>
     </div>
     <div class="footer-col">
-      <h3><span class="lang-pt">Relatórios Anuais</span><span class="lang-en">Annual Reports</span></h3>
-      <a href="relatorio-2025/index.html"><span class="lang-pt">Relatório Anual 2025</span><span class="lang-en">Annual Report 2025</span></a>
-      <a href="https://drive.google.com/file/d/1Xqlo27NKx3EgcMlwlj6rUpvtQ4x1BJ4A/view" target="_blank" rel="noopener"><span class="lang-pt">Relatório Anual 2024</span><span class="lang-en">Annual Report 2024</span></a>
-      <a href="https://drive.google.com/file/d/1FXdgCLobWRX9BtrkZaGXES_Gd0uNosoq/view" target="_blank" rel="noopener"><span class="lang-pt">Relatório Anual 2023</span><span class="lang-en">Annual Report 2023</span></a>
-      <a href="docs/relatorio-anual-2022.pdf" target="_blank" rel="noopener"><span class="lang-pt">Relatório Anual 2022</span><span class="lang-en">Annual Report 2022</span></a>
+      <h3><span class="lang-pt">Relatórios Anuais</span><span class="lang-en">Annual Reports</span><span class="lang-de">Jahresberichte</span></h3>
+      <a href="relatorio-2025/index.html"><span class="lang-pt">Relatório Anual 2025</span><span class="lang-en">Annual Report 2025</span><span class="lang-de">Jahresbericht 2025</span></a>
+      <a href="https://drive.google.com/file/d/1Xqlo27NKx3EgcMlwlj6rUpvtQ4x1BJ4A/view" target="_blank" rel="noopener"><span class="lang-pt">Relatório Anual 2024</span><span class="lang-en">Annual Report 2024</span><span class="lang-de">Jahresbericht 2024</span></a>
+      <a href="https://drive.google.com/file/d/1FXdgCLobWRX9BtrkZaGXES_Gd0uNosoq/view" target="_blank" rel="noopener"><span class="lang-pt">Relatório Anual 2023</span><span class="lang-en">Annual Report 2023</span><span class="lang-de">Jahresbericht 2023</span></a>
+      <a href="docs/relatorio-anual-2022.pdf" target="_blank" rel="noopener"><span class="lang-pt">Relatório Anual 2022</span><span class="lang-en">Annual Report 2022</span><span class="lang-de">Jahresbericht 2022</span></a>
     </div>
   </div>
   <div class="footer-bottom">
     <p>Associação Musical Favela Brass &middot; CNPJ 37.332.605/0001-90</p>
     <p>
       <span class="lang-pt">Projeto aprovado pela Lei Federal de Incentivo à Cultura (Lei Rouanet) &middot; PRONAC 254750</span>
-      <span class="lang-en">Project approved under Brazil's Federal Culture Incentive Law (Lei Rouanet) &middot; PRONAC 254750</span>
+      <span class="lang-en">Project approved under Brazil's Federal Culture Incentive Law (Lei Rouanet) &middot; PRONAC 254750</span><span class="lang-de">Anerkanntes Projekt nach dem brasilianischen Bundesgesetz zur Kulturförderung (Lei Rouanet) &middot; PRONAC 254750</span>
     </p>
   </div>
 </footer>
@@ -407,15 +411,15 @@ links.querySelectorAll('a:not(.nav-lang)').forEach(a => a.addEventListener('clic
 }));
 
 // Language toggle (persisted)
-function toggleLang() {
-  const en = document.body.classList.toggle('en');
-  document.documentElement.lang = en ? 'en' : 'pt-BR';
-  localStorage.setItem('fb-lang', en ? 'en' : 'pt');
+function setLang(l) {
+  document.body.classList.remove('en', 'de');
+  if (l !== 'pt') document.body.classList.add(l);
+  document.documentElement.lang = l === 'pt' ? 'pt-BR' : l;
+  localStorage.setItem('fb-lang', l);
+  document.querySelectorAll('.nav-langs button').forEach(b => b.classList.toggle('active', b.dataset.lang === l));
 }
-if (localStorage.getItem('fb-lang') === 'en') {
-  document.body.classList.add('en');
-  document.documentElement.lang = 'en';
-}
+var savedLang = localStorage.getItem('fb-lang');
+if (savedLang && savedLang !== 'pt') setLang(savedLang);
 
 // Reveal on scroll
 const io = new IntersectionObserver(es => es.forEach(e => {

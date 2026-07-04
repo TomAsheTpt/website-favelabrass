@@ -69,9 +69,36 @@ img { display: block; max-width: 100%; height: auto; }
    Bilingual toggle (PT default, body.en shows English)
    ========================================================================== */
 
-.lang-en { display: none; }
-body.en .lang-pt { display: none; }
+.lang-en, .lang-de { display: none; }
+body.en .lang-pt, body.en .lang-de { display: none; }
 body.en .lang-en { display: inline; }
+body.de .lang-pt, body.de .lang-en { display: none; }
+body.de .lang-de { display: inline; }
+
+/* Segmented language control */
+.nav-langs {
+  display: inline-flex;
+  border: 1px solid var(--rule);
+  border-radius: 100px;
+  overflow: hidden;
+}
+.nav-langs button {
+  font-family: var(--font-sans);
+  background: none;
+  border: 0;
+  cursor: pointer;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--text-dim);
+  padding: 0.4rem 0.68rem;
+  transition: color 0.2s, background 0.2s;
+}
+.nav-langs button:hover { color: var(--yellow); }
+.nav-langs button.active {
+  background: rgba(255, 255, 255, 0.14);
+  color: var(--white);
+}
 
 /* ==========================================================================
    Film grain overlay, very quiet

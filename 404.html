@@ -51,19 +51,20 @@
   <div class="nf-code" aria-hidden="true">404</div>
   <h1>
     <span class="lang-pt">Essa página saiu em cortejo</span>
-    <span class="lang-en">This page has joined the parade</span>
+    <span class="lang-en">This page has joined the parade</span><span class="lang-de">Diese Seite ist im Umzug mitgezogen</span>
   </h1>
   <p>
     <span class="lang-pt">O endereço que você procura não existe ou mudou de lugar. Volte para o início e siga o som da banda.</span>
-    <span class="lang-en">The address you are looking for does not exist or has moved. Head back to the start and follow the sound of the band.</span>
+    <span class="lang-en">The address you are looking for does not exist or has moved. Head back to the start and follow the sound of the band.</span><span class="lang-de">Die Adresse, die Sie suchen, existiert nicht oder ist umgezogen. Kehren Sie zum Start zurück und folgen Sie dem Klang der Band.</span>
   </p>
   <a class="btn btn-yellow" href="/">
     <span class="lang-pt">Voltar ao início</span>
-    <span class="lang-en">Back to the start</span>
+    <span class="lang-en">Back to the start</span><span class="lang-de">Zurück zum Start</span>
   </a>
 </main>
 <script>
-if (localStorage.getItem('fb-lang') === 'en') { document.body.classList.add('en'); document.documentElement.lang = 'en'; }
+var l = localStorage.getItem('fb-lang');
+if (l === 'en' || l === 'de') { document.body.classList.add(l); document.documentElement.lang = l; }
 </script>
 </body>
 </html>

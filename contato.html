@@ -151,13 +151,17 @@ a.sponsor-card:hover { transform: translateY(-4px); border-color: rgba(254, 241,
     <span></span><span></span><span></span>
   </button>
   <div class="nav-links" id="navLinks">
-    <a href="index.html"><span class="lang-pt">Início</span><span class="lang-en">Home</span></a>
-    <a href="sobre.html"><span class="lang-pt">Sobre</span><span class="lang-en">About</span></a>
-    <a href="equipe.html"><span class="lang-pt">Equipe</span><span class="lang-en">Team</span></a>
-    <a href="colaborar.html"><span class="lang-pt">Colaborar</span><span class="lang-en">Get Involved</span></a>
-    <a href="contato.html" class="active"><span class="lang-pt">Contato</span><span class="lang-en">Contact</span></a>
-    <a href="colaborar.html" class="nav-cta"><span class="lang-pt">Apoie</span><span class="lang-en">Donate</span></a>
-    <button type="button" class="nav-lang" aria-pressed="false" onclick="toggleLang()">EN/PT</button>
+    <a href="index.html"><span class="lang-pt">Início</span><span class="lang-en">Home</span><span class="lang-de">Start</span></a>
+    <a href="sobre.html"><span class="lang-pt">Sobre</span><span class="lang-en">About</span><span class="lang-de">Über uns</span></a>
+    <a href="equipe.html"><span class="lang-pt">Equipe</span><span class="lang-en">Team</span><span class="lang-de">Team</span></a>
+    <a href="colaborar.html"><span class="lang-pt">Colaborar</span><span class="lang-en">Get Involved</span><span class="lang-de">Mitmachen</span></a>
+    <a href="contato.html" class="active"><span class="lang-pt">Contato</span><span class="lang-en">Contact</span><span class="lang-de">Kontakt</span></a>
+    <a href="colaborar.html" class="nav-cta"><span class="lang-pt">Apoie</span><span class="lang-en">Donate</span><span class="lang-de">Spenden</span></a>
+    <div class="nav-langs" role="group" aria-label="Idioma / Language / Sprache">
+      <button type="button" data-lang="pt" class="active" onclick="setLang('pt')">PT</button>
+      <button type="button" data-lang="en" onclick="setLang('en')">EN</button>
+      <button type="button" data-lang="de" onclick="setLang('de')">DE</button>
+    </div>
   </div>
 </nav>
 
@@ -168,15 +172,15 @@ a.sponsor-card:hover { transform: translateY(-4px); border-color: rgba(254, 241,
   <div class="page-hero-inner">
     <p class="hero-kicker anim a1">
       <span class="lang-pt"><span class="nb">Associação Musical Favela Brass &middot;</span> <span class="nb">Rio de Janeiro</span></span>
-      <span class="lang-en"><span class="nb">Associação Musical Favela Brass &middot;</span> <span class="nb">Rio de Janeiro</span></span>
+      <span class="lang-en"><span class="nb">Associação Musical Favela Brass &middot;</span> <span class="nb">Rio de Janeiro</span></span><span class="lang-de"><span class="nb">Associação Musical Favela Brass &middot;</span> <span class="nb">Rio de Janeiro</span></span>
     </p>
     <h1 class="anim a2">
       <span class="lang-pt">Vamos <em>conversar</em></span>
-      <span class="lang-en">Let's <em>talk</em></span>
+      <span class="lang-en">Let's <em>talk</em></span><span class="lang-de">Lassen Sie uns <em>reden</em></span>
     </h1>
     <p class="page-hero-lede anim a3">
       <span class="lang-pt">Entre em contato para saber mais sobre o projeto, parcerias ou patrocínio. Respondemos com prazer.</span>
-      <span class="lang-en">Get in touch to learn more about the project, partnerships or sponsorship. We are always happy to hear from you.</span>
+      <span class="lang-en">Get in touch to learn more about the project, partnerships or sponsorship. We are always happy to hear from you.</span><span class="lang-de">Nehmen Sie Kontakt auf, um mehr über das Projekt, Partnerschaften oder Sponsoring zu erfahren. Wir antworten gerne.</span>
     </p>
   </div>
 </header>
@@ -186,10 +190,10 @@ a.sponsor-card:hover { transform: translateY(-4px); border-color: rgba(254, 241,
   <div class="section-head reveal">
     <div class="section-no"><span>01</span><hr></div>
     <div class="section-titles">
-      <h2><span class="lang-pt">Fale com a gente</span><span class="lang-en">Reach us directly</span></h2>
+      <h2><span class="lang-pt">Fale com a gente</span><span class="lang-en">Reach us directly</span><span class="lang-de">Kontakt aufnehmen</span></h2>
       <p>
         <span class="lang-pt">Escolha o canal que preferir. Todos chegam à nossa equipe no Rio de Janeiro.</span>
-        <span class="lang-en">Pick whichever channel you prefer. They all reach our team in Rio de Janeiro.</span>
+        <span class="lang-en">Pick whichever channel you prefer. They all reach our team in Rio de Janeiro.</span><span class="lang-de">Wählen Sie den Kanal, der Ihnen am liebsten ist. Alle erreichen unser Team in Rio de Janeiro.</span>
       </p>
     </div>
   </div>
@@ -200,7 +204,7 @@ a.sponsor-card:hover { transform: translateY(-4px); border-color: rgba(254, 241,
       <span class="contact-value">contato@favelabrass.org</span>
       <p class="contact-note">
         <span class="lang-pt">Para dúvidas gerais sobre o projeto, matrículas e visitas.</span>
-        <span class="lang-en">For general questions about the project, enrolment and visits.</span>
+        <span class="lang-en">For general questions about the project, enrolment and visits.</span><span class="lang-de">Für allgemeine Fragen zum Projekt, zu Anmeldungen und Besuchen.</span>
       </p>
       <span class="contact-arrow" aria-hidden="true">&#8599;</span>
     </a>
@@ -209,7 +213,7 @@ a.sponsor-card:hover { transform: translateY(-4px); border-color: rgba(254, 241,
       <span class="contact-value">+55 (21) 99109-4882</span>
       <p class="contact-note">
         <span class="lang-pt">Envie uma mensagem para a nossa equipe.</span>
-        <span class="lang-en">Send our team a message.</span>
+        <span class="lang-en">Send our team a message.</span><span class="lang-de">Schreiben Sie unserem Team eine Nachricht.</span>
       </p>
       <span class="contact-arrow" aria-hidden="true">&#8599;</span>
     </a>
@@ -218,7 +222,7 @@ a.sponsor-card:hover { transform: translateY(-4px); border-color: rgba(254, 241,
       <span class="contact-value">@favela_brass</span>
       <p class="contact-note">
         <span class="lang-pt">Acompanhe o dia a dia das aulas e das apresentações.</span>
-        <span class="lang-en">Follow the day-to-day of classes and performances.</span>
+        <span class="lang-en">Follow the day-to-day of classes and performances.</span><span class="lang-de">Begleiten Sie den Alltag unserer Kurse und Auftritte.</span>
       </p>
       <span class="contact-arrow" aria-hidden="true">&#8599;</span>
     </a>
@@ -227,7 +231,7 @@ a.sponsor-card:hover { transform: translateY(-4px); border-color: rgba(254, 241,
       <span class="contact-value">@favelabrass</span>
       <p class="contact-note">
         <span class="lang-pt">Assista às apresentações e aos vídeos da banda.</span>
-        <span class="lang-en">Watch the band's performances and videos.</span>
+        <span class="lang-en">Watch the band's performances and videos.</span><span class="lang-de">Sehen Sie sich die Auftritte und Videos der Band an.</span>
       </p>
       <span class="contact-arrow" aria-hidden="true">&#8599;</span>
     </a>
@@ -239,7 +243,7 @@ a.sponsor-card:hover { transform: translateY(-4px); border-color: rgba(254, 241,
   <img src="img/16-santa-teresa-street.jpg" alt="Banda da Favela Brass tocando na rua para o público em Santa Teresa" loading="lazy" decoding="async" width="1600" height="900">
   <figcaption class="photo-cap">
     <span class="lang-pt">Santa Teresa &middot; Rio de Janeiro</span>
-    <span class="lang-en">Santa Teresa &middot; Rio de Janeiro</span>
+    <span class="lang-en">Santa Teresa &middot; Rio de Janeiro</span><span class="lang-de">Santa Teresa &middot; Rio de Janeiro</span>
   </figcaption>
 </figure>
 
@@ -248,10 +252,10 @@ a.sponsor-card:hover { transform: translateY(-4px); border-color: rgba(254, 241,
   <div class="section-head reveal">
     <div class="section-no"><span>02</span><hr></div>
     <div class="section-titles">
-      <h2><span class="lang-pt">Empresas e patrocinadores</span><span class="lang-en">Companies and sponsors</span></h2>
+      <h2><span class="lang-pt">Empresas e patrocinadores</span><span class="lang-en">Companies and sponsors</span><span class="lang-de">Unternehmen und Sponsoren</span></h2>
       <p>
         <span class="lang-pt">Interessado em patrocinar via Lei Rouanet ou estabelecer uma parceria? Fale diretamente com o nosso diretor.</span>
-        <span class="lang-en">Interested in sponsoring via the Lei Rouanet or establishing a partnership? Speak directly with our director.</span>
+        <span class="lang-en">Interested in sponsoring via the Lei Rouanet or establishing a partnership? Speak directly with our director.</span><span class="lang-de">Interessiert an einem Sponsoring über die Lei Rouanet oder an einer Partnerschaft? Sprechen Sie direkt mit unserem Direktor.</span>
       </p>
     </div>
   </div>
@@ -261,17 +265,17 @@ a.sponsor-card:hover { transform: translateY(-4px); border-color: rgba(254, 241,
       <span class="sponsor-name">Tom Ashe</span>
       <span class="sponsor-role">
         <span class="lang-pt">Fundador e diretor executivo</span>
-        <span class="lang-en">Founder and executive director</span>
+        <span class="lang-en">Founder and executive director</span><span class="lang-de">Gründer und Geschäftsführer</span>
       </span>
       <span class="sponsor-email">contato@favelabrass.org</span>
     </div>
     <span class="sponsor-action">
       <span class="btn btn-yellow">
-        <span class="lang-pt">Enviar Email</span><span class="lang-en">Send an Email</span>
+        <span class="lang-pt">Enviar Email</span><span class="lang-en">Send an Email</span><span class="lang-de">E-Mail senden</span>
       </span>
       <span class="sponsor-fine">
         <span class="lang-pt">Empresas e pessoas físicas podem apoiar via Lei Rouanet, com 100% de dedução fiscal &middot; PRONAC 254750</span>
-        <span class="lang-en">Companies and individuals can support via the Lei Rouanet, with a 100% tax deduction &middot; PRONAC 254750</span>
+        <span class="lang-en">Companies and individuals can support via the Lei Rouanet, with a 100% tax deduction &middot; PRONAC 254750</span><span class="lang-de">Unternehmen und Privatpersonen können über die Lei Rouanet mit 100% Steuerabzug unterstützen &middot; PRONAC 254750</span>
       </span>
     </span>
   </a>
@@ -282,20 +286,20 @@ a.sponsor-card:hover { transform: translateY(-4px); border-color: rgba(254, 241,
   <div class="cta-inner reveal">
     <h2>
       <span class="lang-pt">Prefere WhatsApp?<br>Chame a gente.</span>
-      <span class="lang-en">Prefer WhatsApp?<br>Message us.</span>
+      <span class="lang-en">Prefer WhatsApp?<br>Message us.</span><span class="lang-de">Lieber WhatsApp?<br>Schreiben Sie uns.</span>
     </h2>
     <div class="cta-side">
       <p>
         <span class="lang-pt">Envie uma mensagem e comece a conversa agora mesmo. Nossa equipe responde direto do Rio de Janeiro.</span>
-        <span class="lang-en">Send a message and start the conversation right away. Our team replies directly from Rio de Janeiro.</span>
+        <span class="lang-en">Send a message and start the conversation right away. Our team replies directly from Rio de Janeiro.</span><span class="lang-de">Senden Sie eine Nachricht und beginnen Sie das Gespräch direkt. Unser Team antwortet direkt aus Rio de Janeiro.</span>
       </p>
       <div class="cta-actions">
-        <a href="https://wa.me/5521991094882" target="_blank" rel="noopener" class="btn btn-purple"><span class="lang-pt">Chamar no WhatsApp</span><span class="lang-en">Message on WhatsApp</span></a>
-        <a href="mailto:contato@favelabrass.org" class="btn btn-ink-ghost"><span class="lang-pt">Enviar Email</span><span class="lang-en">Send an Email</span></a>
+        <a href="https://wa.me/5521991094882" target="_blank" rel="noopener" class="btn btn-purple"><span class="lang-pt">Chamar no WhatsApp</span><span class="lang-en">Message on WhatsApp</span><span class="lang-de">Per WhatsApp schreiben</span></a>
+        <a href="mailto:contato@favelabrass.org" class="btn btn-ink-ghost"><span class="lang-pt">Enviar Email</span><span class="lang-en">Send an Email</span><span class="lang-de">E-Mail senden</span></a>
       </div>
       <p class="cta-fine">
         <span class="lang-pt">Empresas e pessoas físicas podem apoiar via Lei Rouanet, com 100% de dedução fiscal &middot; PRONAC 254750</span>
-        <span class="lang-en">Companies and individuals can support via the Lei Rouanet, with a 100% tax deduction &middot; PRONAC 254750</span>
+        <span class="lang-en">Companies and individuals can support via the Lei Rouanet, with a 100% tax deduction &middot; PRONAC 254750</span><span class="lang-de">Unternehmen und Privatpersonen können über die Lei Rouanet mit 100% Steuerabzug unterstützen &middot; PRONAC 254750</span>
       </p>
     </div>
   </div>
@@ -305,7 +309,7 @@ a.sponsor-card:hover { transform: translateY(-4px); border-color: rgba(254, 241,
 <section class="rouanet">
   <p>
     <span class="lang-pt">Projeto aprovado pela Lei Federal de Incentivo à Cultura &middot; PRONAC 254750</span>
-    <span class="lang-en">Approved under Brazil's Federal Culture Incentive Law &middot; PRONAC 254750</span>
+    <span class="lang-en">Approved under Brazil's Federal Culture Incentive Law &middot; PRONAC 254750</span><span class="lang-de">Anerkannt nach dem brasilianischen Kulturfördergesetz &middot; PRONAC 254750</span>
   </p>
   <img src="img/logo-bar.png" alt="Lei Rouanet, Patrocínio PRIO, Ministério da Cultura, Governo Federal">
 </section>
@@ -317,7 +321,7 @@ a.sponsor-card:hover { transform: translateY(-4px); border-color: rgba(254, 241,
       <img src="img/logo-white-nav.png" alt="Favela Brass">
       <p>
         <span class="lang-pt">Programa de educação musical para jovens das favelas e escolas públicas do Rio de Janeiro.</span>
-        <span class="lang-en">Music education programme for young people from Rio de Janeiro's favelas and public schools.</span>
+        <span class="lang-en">Music education programme for young people from Rio de Janeiro's favelas and public schools.</span><span class="lang-de">Musikalisches Bildungsprogramm für junge Menschen aus den Favelas und öffentlichen Schulen von Rio de Janeiro.</span>
       </p>
       <div class="footer-social">
         <a href="https://www.instagram.com/favela_brass/" target="_blank" rel="noopener">Instagram</a>
@@ -327,32 +331,32 @@ a.sponsor-card:hover { transform: translateY(-4px); border-color: rgba(254, 241,
       </div>
     </div>
     <div class="footer-col">
-      <h3><span class="lang-pt">Navegação</span><span class="lang-en">Navigation</span></h3>
-      <a href="sobre.html"><span class="lang-pt">Sobre Nós</span><span class="lang-en">About Us</span></a>
-      <a href="equipe.html"><span class="lang-pt">Nossa Equipe</span><span class="lang-en">Our Team</span></a>
-      <a href="colaborar.html"><span class="lang-pt">Como Colaborar</span><span class="lang-en">Get Involved</span></a>
-      <a href="contato.html"><span class="lang-pt">Contato</span><span class="lang-en">Contact</span></a>
+      <h3><span class="lang-pt">Navegação</span><span class="lang-en">Navigation</span><span class="lang-de">Navigation</span></h3>
+      <a href="sobre.html"><span class="lang-pt">Sobre Nós</span><span class="lang-en">About Us</span><span class="lang-de">Über uns</span></a>
+      <a href="equipe.html"><span class="lang-pt">Nossa Equipe</span><span class="lang-en">Our Team</span><span class="lang-de">Unser Team</span></a>
+      <a href="colaborar.html"><span class="lang-pt">Como Colaborar</span><span class="lang-en">Get Involved</span><span class="lang-de">Mitmachen</span></a>
+      <a href="contato.html"><span class="lang-pt">Contato</span><span class="lang-en">Contact</span><span class="lang-de">Kontakt</span></a>
     </div>
     <div class="footer-col">
-      <h3><span class="lang-pt">Recursos</span><span class="lang-en">Resources</span></h3>
-      <a href="https://curriculo.favelabrass.org" target="_blank" rel="noopener"><span class="lang-pt">Currículo Online</span><span class="lang-en">Online Curriculum</span></a>
-      <a href="https://youtu.be/p9rNCI81UW0" target="_blank" rel="noopener"><span class="lang-pt">O Som do Morro (filme)</span><span class="lang-en">O Som do Morro (film)</span></a>
+      <h3><span class="lang-pt">Recursos</span><span class="lang-en">Resources</span><span class="lang-de">Ressourcen</span></h3>
+      <a href="https://curriculo.favelabrass.org" target="_blank" rel="noopener"><span class="lang-pt">Currículo Online</span><span class="lang-en">Online Curriculum</span><span class="lang-de">Online-Lehrplan</span></a>
+      <a href="https://youtu.be/p9rNCI81UW0" target="_blank" rel="noopener"><span class="lang-pt">O Som do Morro (filme)</span><span class="lang-en">O Som do Morro (film)</span><span class="lang-de">O Som do Morro (Film)</span></a>
       <a href="https://www.youtube.com/@favelabrass" target="_blank" rel="noopener">YouTube</a>
-      <a href="https://benfeitoria.com/projeto/favelabrass" target="_blank" rel="noopener"><span class="lang-pt">Doação Recorrente</span><span class="lang-en">Monthly Donation</span></a>
+      <a href="https://benfeitoria.com/projeto/favelabrass" target="_blank" rel="noopener"><span class="lang-pt">Doação Recorrente</span><span class="lang-en">Monthly Donation</span><span class="lang-de">Regelmäßige Spende</span></a>
     </div>
     <div class="footer-col">
-      <h3><span class="lang-pt">Relatórios Anuais</span><span class="lang-en">Annual Reports</span></h3>
-      <a href="relatorio-2025/index.html"><span class="lang-pt">Relatório Anual 2025</span><span class="lang-en">Annual Report 2025</span></a>
-      <a href="https://drive.google.com/file/d/1Xqlo27NKx3EgcMlwlj6rUpvtQ4x1BJ4A/view" target="_blank" rel="noopener"><span class="lang-pt">Relatório Anual 2024</span><span class="lang-en">Annual Report 2024</span></a>
-      <a href="https://drive.google.com/file/d/1FXdgCLobWRX9BtrkZaGXES_Gd0uNosoq/view" target="_blank" rel="noopener"><span class="lang-pt">Relatório Anual 2023</span><span class="lang-en">Annual Report 2023</span></a>
-      <a href="docs/relatorio-anual-2022.pdf" target="_blank" rel="noopener"><span class="lang-pt">Relatório Anual 2022</span><span class="lang-en">Annual Report 2022</span></a>
+      <h3><span class="lang-pt">Relatórios Anuais</span><span class="lang-en">Annual Reports</span><span class="lang-de">Jahresberichte</span></h3>
+      <a href="relatorio-2025/index.html"><span class="lang-pt">Relatório Anual 2025</span><span class="lang-en">Annual Report 2025</span><span class="lang-de">Jahresbericht 2025</span></a>
+      <a href="https://drive.google.com/file/d/1Xqlo27NKx3EgcMlwlj6rUpvtQ4x1BJ4A/view" target="_blank" rel="noopener"><span class="lang-pt">Relatório Anual 2024</span><span class="lang-en">Annual Report 2024</span><span class="lang-de">Jahresbericht 2024</span></a>
+      <a href="https://drive.google.com/file/d/1FXdgCLobWRX9BtrkZaGXES_Gd0uNosoq/view" target="_blank" rel="noopener"><span class="lang-pt">Relatório Anual 2023</span><span class="lang-en">Annual Report 2023</span><span class="lang-de">Jahresbericht 2023</span></a>
+      <a href="docs/relatorio-anual-2022.pdf" target="_blank" rel="noopener"><span class="lang-pt">Relatório Anual 2022</span><span class="lang-en">Annual Report 2022</span><span class="lang-de">Jahresbericht 2022</span></a>
     </div>
   </div>
   <div class="footer-bottom">
     <p>Associação Musical Favela Brass &middot; CNPJ 37.332.605/0001-90</p>
     <p>
       <span class="lang-pt">Projeto aprovado pela Lei Federal de Incentivo à Cultura (Lei Rouanet) &middot; PRONAC 254750</span>
-      <span class="lang-en">Project approved under Brazil's Federal Culture Incentive Law (Lei Rouanet) &middot; PRONAC 254750</span>
+      <span class="lang-en">Project approved under Brazil's Federal Culture Incentive Law (Lei Rouanet) &middot; PRONAC 254750</span><span class="lang-de">Anerkannt nach dem brasilianischen Kulturfördergesetz (Lei Rouanet) &middot; PRONAC 254750</span>
     </p>
   </div>
 </footer>
@@ -375,15 +379,15 @@ links.querySelectorAll('a:not(.nav-lang)').forEach(a => a.addEventListener('clic
 }));
 
 // Language toggle (persisted)
-function toggleLang() {
-  const en = document.body.classList.toggle('en');
-  document.documentElement.lang = en ? 'en' : 'pt-BR';
-  localStorage.setItem('fb-lang', en ? 'en' : 'pt');
+function setLang(l) {
+  document.body.classList.remove('en', 'de');
+  if (l !== 'pt') document.body.classList.add(l);
+  document.documentElement.lang = l === 'pt' ? 'pt-BR' : l;
+  localStorage.setItem('fb-lang', l);
+  document.querySelectorAll('.nav-langs button').forEach(b => b.classList.toggle('active', b.dataset.lang === l));
 }
-if (localStorage.getItem('fb-lang') === 'en') {
-  document.body.classList.add('en');
-  document.documentElement.lang = 'en';
-}
+var savedLang = localStorage.getItem('fb-lang');
+if (savedLang && savedLang !== 'pt') setLang(savedLang);
 
 // Reveal on scroll
 const io = new IntersectionObserver(es => es.forEach(e => {
