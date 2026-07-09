@@ -806,8 +806,12 @@ function setLang(l) {
   localStorage.setItem('fb-lang', l);
   document.querySelectorAll('.nav-langs button').forEach(b => b.classList.toggle('active', b.dataset.lang === l));
 }
+var urlLang = new URLSearchParams(location.search).get('lang');
 var savedLang = localStorage.getItem('fb-lang');
-if (savedLang && savedLang !== 'pt') setLang(savedLang);
+var browserLang = (navigator.language || '').slice(0, 2);
+var initLang = ['pt','en','de'].indexOf(urlLang) > -1 ? urlLang
+  : (savedLang || (['en','de'].indexOf(browserLang) > -1 ? browserLang : 'pt'));
+if (initLang !== 'pt' || savedLang === 'pt') setLang(initLang);
 
 // Reveal on scroll
 const io = new IntersectionObserver(es => es.forEach(e => {
