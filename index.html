@@ -203,6 +203,18 @@
       </div>
     </article>
   </div>
+
+  <figure class="live-video reveal">
+    <a class="video-thumb" href="https://youtu.be/Vf5oCGwwxH4" target="_blank" rel="noopener" data-yt="Vf5oCGwwxH4" aria-label="Assistir: Banda Preta ao vivo na Praça Mauá">
+      <img src="img/video-medley-museu.jpg" alt="Banda Preta da Favela Brass tocando ao vivo em frente ao Museu do Amanhã" loading="lazy" decoding="async" width="1280" height="720">
+      <span class="video-play" aria-hidden="true"></span>
+    </a>
+    <figcaption class="live-video-cap">
+      <span class="lang-pt">Ao vivo: a Banda Preta toca seu medley de funk em frente ao Museu do Amanhã, na Praça Mauá (12 min). Regência de Wesley de Araújo, arranjos de Tom Ashe.</span>
+      <span class="lang-en">Live: Banda Preta plays its funk medley outside the Museum of Tomorrow at Praça Mauá (12 min). Conducted by Wesley de Araújo, arranged by Tom Ashe.</span>
+      <span class="lang-de">Live: Die Banda Preta spielt ihr Funk-Medley vor dem Museu do Amanhã an der Praça Mauá (12 Min.). Leitung Wesley de Araújo, Arrangements Tom Ashe.</span>
+    </figcaption>
+  </figure>
 </section>
 
 <!-- ===================== PHOTO BREAK ===================== -->
@@ -442,6 +454,16 @@ const io = new IntersectionObserver(es => es.forEach(e => {
   if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
 }), {threshold: 0.12});
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// Click-to-play YouTube facade (fallback: plain link)
+document.querySelectorAll('.video-thumb[data-yt]').forEach(a => {
+  a.addEventListener('click', e => {
+    e.preventDefault();
+    a.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + a.dataset.yt +
+      '?autoplay=1&rel=0" title="YouTube" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
+    a.removeAttribute('href');
+  }, { once: true });
+});
 </script>
 </body>
 </html>

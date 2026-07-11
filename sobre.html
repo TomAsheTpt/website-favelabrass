@@ -212,34 +212,6 @@
   gap: clamp(1.5rem, 3vw, 2.75rem);
   align-items: start;
 }
-.video-thumb {
-  position: relative;
-  display: block;
-  border-radius: 8px;
-  overflow: hidden;
-  aspect-ratio: 16 / 9;
-  background: var(--purple-deep);
-}
-.video-thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s var(--ease); }
-.video-thumb:hover img { transform: scale(1.03); }
-.video-thumb iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
-.video-play {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(180deg, rgba(31,5,47,0) 55%, rgba(31,5,47,0.55) 100%);
-}
-.video-play::after {
-  content: "";
-  width: 68px; height: 68px;
-  border-radius: 50%;
-  background: var(--yellow) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M9 6.5v11l9-5.5z' fill='%231F052F'/%3E%3C/svg%3E") center/38px no-repeat;
-  box-shadow: 0 10px 30px rgba(31, 5, 47, 0.45);
-  transition: transform 0.25s var(--ease);
-}
-.video-thumb:hover .video-play::after { transform: scale(1.08); }
 .video-card h3 {
   font-family: var(--font-display);
   font-optical-sizing: auto;
