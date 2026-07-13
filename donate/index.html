@@ -1,13 +1,272 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Favela Brass</title>
-<link rel="canonical" href="https://favelabrass.org/colaborar.html">
-<meta http-equiv="refresh" content="0; url=/colaborar.html">
-<meta name="robots" content="noindex">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donate to Favela Brass · Support from anywhere in the world</title>
+<meta name="description" content="Favela Brass teaches young people from Rio de Janeiro's favelas to play brass and percussion, free of charge, since 2014. Give once or monthly from anywhere, in any currency, by card or PayPal.">
+<meta property="og:title" content="Support Favela Brass from anywhere">
+<meta property="og:description" content="Free music education for young people from Rio's favelas since 2014. Give once or monthly, in any currency, by card or PayPal.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://favelabrass.org/img/og-donate.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://favelabrass.org/donate/">
+<meta property="og:site_name" content="Favela Brass">
+<meta property="og:locale" content="en_GB">
+<meta name="theme-color" content="#1F052F">
+<link rel="canonical" href="https://favelabrass.org/donate/">
+<link rel="preload" as="image" href="/img/01-paraty-street-humanacamila.jpg">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/img/favicon-48.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300..1000&family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add("js")</script>
+<link rel="stylesheet" href="/shared/fb-website.css">
+
+<!-- ================================================================
+     DONATE PAGE (English, for supporters outside Brazil)
+     Deliberately simple per Judi's feedback (Jul 2026): one-off or
+     monthly, one PayPal button (recurringEnabled confirmed on the
+     hosted button), no Rouanet, no PIX, no tiers, no promises.
+     Facts verified Jul 2026 against the DB: 198 active students,
+     800+ since 2014, 5 partner schools, 53 performances planned 2026.
+     Brazilians get /colaborar.html (linked at the bottom).
+     ================================================================ -->
+
+<style>
+/* ===== Page-specific: donate (EN) ===== */
+
+.donate-box {
+  border: 1px solid rgba(254, 241, 0, 0.4);
+  border-radius: 10px;
+  background: linear-gradient(130deg, rgba(254, 241, 0, 0.07) 0%, rgba(255, 255, 255, 0.02) 55%);
+  padding: clamp(2rem, 4vw, 3.4rem);
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: clamp(2rem, 4vw, 4rem);
+  align-items: center;
+}
+.donate-box h3 {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 480;
+  line-height: 1.1;
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+.donate-box .db-copy p { color: var(--text-dim); max-width: 54ch; margin-bottom: 1rem; }
+.donate-box .db-copy p strong { color: var(--white); }
+.db-aside {
+  text-align: center;
+  border-left: 1px solid var(--rule);
+  padding: 0.6rem 0 0.6rem clamp(1.6rem, 3vw, 3rem);
+}
+.db-aside .btn { width: 100%; }
+.db-monthly {
+  margin-top: 1.3rem;
+  font-size: 0.86rem;
+  line-height: 1.6;
+  color: var(--text-dim);
+}
+.db-fine {
+  margin-top: 1.2rem;
+  font-size: 0.8rem;
+  line-height: 1.55;
+  color: var(--text-faint);
+}
+.db-fine a { color: var(--yellow); }
+
+@media (max-width: 900px) {
+  .donate-box { grid-template-columns: 1fr; }
+  .db-aside {
+    border-left: 0;
+    border-top: 1px solid var(--rule);
+    padding: 1.8rem 0 0;
+  }
+}
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CN4VGSPB3Z"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-CN4VGSPB3Z');</script>
+<script defer src="/shared/fb-analytics.js"></script>
 </head>
 <body>
-<p>Esta p&aacute;gina mudou de endere&ccedil;o: <a href="/colaborar.html">favelabrass.org/colaborar.html</a></p>
+
+<div class="grain" aria-hidden="true"></div>
+
+<nav class="nav" id="nav">
+  <a href="/" class="nav-logo"><img src="/img/logo-white-nav.png" alt="Favela Brass"></a>
+  <button class="nav-burger" id="navBurger" aria-label="Menu" aria-controls="navLinks" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-links" id="navLinks">
+    <a href="/sobre.html?lang=en">About us</a>
+    <a href="/relatorio-2025/en/">Annual report</a>
+    <a href="/contato.html?lang=en">Contact</a>
+    <a href="#donate" class="nav-cta">Donate</a>
+  </div>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<header class="hero">
+  <div class="hero-photo" style="background-image: url('/img/01-paraty-street-humanacamila.jpg')" role="img" aria-label="Favela Brass students parading through the streets of Paraty"></div>
+  <div class="hero-scrim"></div>
+  <div class="hero-inner">
+    <p class="hero-kicker anim a1">For supporters outside Brazil</p>
+    <h1 class="anim a2">Support Favela Brass<br>from <em>anywhere</em></h1>
+    <p class="hero-lede anim a3">Favela Brass teaches young people from Rio de Janeiro's favelas and public schools to play brass and percussion, free of charge, since 2014. If you live outside Brazil, this is the simple way to help: a one-off gift or a monthly contribution, in any currency, by card or PayPal.</p>
+    <div class="hero-ctas anim a5">
+      <a href="#donate" class="btn btn-yellow">Donate now</a>
+      <a href="/sobre.html?lang=en" class="btn btn-ghost">More about us</a>
+    </div>
+  </div>
+  <div class="hero-credit anim a5">
+    <span class="photo-cap">Bourbon Festival Paraty</span>
+  </div>
+</header>
+
+<!-- ===================== NUMBERS ===================== -->
+<section class="numbers">
+  <p class="numbers-cap">Favela Brass in numbers · July 2026</p>
+  <div class="numbers-grid">
+    <div class="num reveal"><span class="num-fig">198</span><span class="num-label">active students today</span></div>
+    <div class="num reveal"><span class="num-fig">800<i>+</i></span><span class="num-label">young people taught since 2014</span></div>
+    <div class="num reveal"><span class="num-fig">5</span><span class="num-label">partner public schools</span></div>
+    <div class="num reveal"><span class="num-fig">53</span><span class="num-label">performances planned for 2026</span></div>
+  </div>
+</section>
+
+<!-- ===================== 01 WHAT YOUR GIFT DOES ===================== -->
+<section class="section" id="what">
+  <div class="section-head reveal">
+    <div class="section-no"><span>01</span><hr></div>
+    <div class="section-titles">
+      <h2>What your gift does</h2>
+      <p>Everything we teach is free for the students. Donations pay for teachers, instruments and the day-to-day running of the programme.</p>
+    </div>
+  </div>
+
+  <div class="grid-3">
+    <div class="card reveal">
+      <h3>Music lessons in public schools</h3>
+      <p>Weekly brass and percussion classes inside five partner public schools in Rio, for children who would otherwise never touch an instrument.</p>
+    </div>
+    <div class="card reveal">
+      <h3>An advanced course in the favela</h3>
+      <p>Five sessions a week in Pereira da Silva, the community where the project began: individual lessons, music theory and band rehearsals.</p>
+    </div>
+    <div class="card reveal">
+      <h3>Instruments to take home</h3>
+      <p>Students borrow trumpets, trombones, saxophones and drums to practise at home, and perform across the city all year round.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PHOTO BREAK ===================== -->
+<figure class="break">
+  <img src="/img/06-joe-epstein-teaching-brass.jpg" alt="A brass lesson at Favela Brass" loading="lazy" decoding="async" width="1400" height="933">
+  <figcaption class="photo-cap">Brass lesson · Rio de Janeiro</figcaption>
+</figure>
+
+<!-- ===================== 02 DONATE ===================== -->
+<section class="section" id="donate">
+  <div class="section-head reveal">
+    <div class="section-no"><span>02</span><hr></div>
+    <div class="section-titles">
+      <h2>Give once, or monthly</h2>
+      <p>One button covers both. Any amount, any currency, from any country.</p>
+    </div>
+  </div>
+
+  <div class="donate-box reveal">
+    <div class="db-copy">
+      <h3>Donate by card or PayPal</h3>
+      <p>Your donation goes to <strong>Associação Musical Favela Brass</strong>, the Brazilian nonprofit association that runs the project. PayPal handles the currency conversion, so you can give in pounds, euros, dollars or anything else.</p>
+      <p>To become a monthly supporter, tick <strong>"Make this a monthly donation"</strong> on the payment page. Monthly gifts are what let us plan ahead.</p>
+    </div>
+    <div class="db-aside">
+      <a class="btn btn-yellow" href="https://www.paypal.com/donate?hosted_button_id=5AYPUD7U7UGK2" target="_blank" rel="noopener">Donate now</a>
+      <p class="db-monthly">One-off or monthly: choose on the next page.</p>
+      <p class="db-fine">For a larger gift, a bank transfer or any question, write to <a href="mailto:tom@favelabrass.org">tom@favelabrass.org</a>. Donations are tax-deductible in Brazil only.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA ===================== -->
+<section class="cta">
+  <div class="cta-inner reveal">
+    <h2>Your donation<br>becomes music.</h2>
+    <div class="cta-side">
+      <p>From a first trumpet lesson in a public school to the stage of a festival, every step of a student's journey is funded by people who decided to help. Wherever you are, you can be one of them.</p>
+      <div class="cta-actions">
+        <a href="https://www.paypal.com/donate?hosted_button_id=5AYPUD7U7UGK2" target="_blank" rel="noopener" class="btn btn-purple">Donate now</a>
+        <a href="mailto:tom@favelabrass.org" class="btn btn-ink-ghost">Write to us</a>
+      </div>
+      <p class="cta-fine">Associação Musical Favela Brass · Rio de Janeiro, Brazil · CNPJ 37.332.605/0001-90</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="/img/logo-white-nav.png" alt="Favela Brass">
+      <p>Music education programme for young people from Rio de Janeiro's favelas and public schools, since 2014.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/favela_brass/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.youtube.com/@favelabrass" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://www.facebook.com/favelabrass" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h3>Favela Brass</h3>
+      <a href="/sobre.html?lang=en">About us</a>
+      <a href="/equipe.html?lang=en">Our team</a>
+      <a href="/relatorio-2025/en/">Annual Report 2025</a>
+      <a href="/contato.html?lang=en">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h3>Donate</h3>
+      <a href="https://www.paypal.com/donate?hosted_button_id=5AYPUD7U7UGK2" target="_blank" rel="noopener">By card or PayPal</a>
+      <a href="mailto:tom@favelabrass.org">Larger gifts</a>
+    </div>
+    <div class="footer-col">
+      <h3>No Brasil?</h3>
+      <a href="/colaborar.html">Veja todas as formas de colaborar</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>Associação Musical Favela Brass · CNPJ 37.332.605/0001-90</p>
+    <p>A Brazilian nonprofit association · Rio de Janeiro</p>
+  </div>
+</footer>
+
+<script>
+// Nav scroll state
+const nav = document.getElementById('nav');
+addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 40), {passive:true});
+
+// Mobile menu
+const burger = document.getElementById('navBurger');
+const links = document.getElementById('navLinks');
+burger.addEventListener('click', () => {
+  links.classList.toggle('open');
+  burger.classList.toggle('open');
+  burger.setAttribute('aria-expanded', links.classList.contains('open'));
+});
+links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  links.classList.remove('open'); burger.classList.remove('open');
+}));
+
+// Reveal on scroll
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+}), {threshold: 0.12});
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
 </body>
 </html>
