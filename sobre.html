@@ -458,8 +458,8 @@
           
         </h3>
         <p>
-          <span class="lang-pt">197 alunos ativos, 5 escolas municipais parceiras, mais de 250 instrumentos no acervo e um calendário com mais de 50 apresentações. O intercâmbio com Bad Kissingen segue vivo, e a história continua.</span>
-          <span class="lang-en">197 active students, 5 partner municipal schools, more than 250 instruments and a calendar with more than 50 performances. The Bad Kissingen exchange is alive and well, and the story continues.</span><span class="lang-de">197 aktive Schülerinnen und Schüler, 5 städtische Partnerschulen, über 250 Instrumente im Bestand und ein Kalender mit mehr als 50 Auftritten. Der Austausch mit Bad Kissingen ist lebendig wie eh und je, und die Geschichte geht weiter.</span>
+          <span class="lang-pt">197 alunos ativos, 5 escolas municipais parceiras, mais de 250 instrumentos no acervo e um calendário com mais de 50 apresentações. Em julho, Tom Ashe retribui a visita dos alemães: em uma semana, os jovens músicos de Bad Kissingen viram um bloco de rua carioca no palco do Rakoczy-Fest (<a href="#assista">assista ao filme</a>). E a história continua.</span>
+          <span class="lang-en">197 active students, 5 partner municipal schools, more than 250 instruments and a calendar with more than 50 performances. In July, Tom Ashe returned the Germans' visit: in one week, Bad Kissingen's young musicians became a Rio street bloco on the Rakoczy Fest stage (<a href="#assista">watch the film</a>). And the story continues.</span><span class="lang-de">197 aktive Schülerinnen und Schüler, 5 städtische Partnerschulen, über 250 Instrumente im Bestand und ein Kalender mit mehr als 50 Auftritten. Im Juli erwidert Tom Ashe den Besuch: In einer Woche werden die jungen Musikerinnen und Musiker aus Bad Kissingen zum Straßenbloco aus Rio auf der Bühne des Rakoczy-Fests (<a href="#assista">hier ist der Film</a>). Und die Geschichte geht weiter.</span>
         </p>
       </div>
     </div>
@@ -620,6 +620,18 @@
     </div>
     <div class="video-side">
     <div class="video-card reveal">
+      <a class="video-thumb" id="freunde-film-link" href="https://youtu.be/MvPqGS3cAAw" target="_blank" rel="noopener" data-yt="MvPqGS3cAAw" aria-label="Assistir: Freunde von Favela Brass">
+        <img src="img/video-freunde-bk.jpg" alt="Jovens músicos de Bad Kissingen tocando no cortejo do Rakoczy-Fest" loading="lazy" decoding="async" width="1280" height="720">
+        <span class="video-play" aria-hidden="true"></span>
+      </a>
+      <h3><span class="lang-pt">Freunde von Favela Brass</span><span class="lang-en">Freunde von Favela Brass</span><span class="lang-de">Freunde von Favela Brass</span></h3>
+      <p class="video-meta"><span class="lang-pt">Document&aacute;rio &middot; 7 min &middot; 2026</span><span class="lang-en">Documentary &middot; 7 min &middot; 2026</span><span class="lang-de">Dokumentarfilm &middot; 7 Min. &middot; 2026</span></p>
+      <p>
+        <span class="lang-pt">A visita retribu&iacute;da: uma semana em Bad Kissingen para transformar os jovens m&uacute;sicos da cidade em um bloco de rua carioca, com cortejo e concerto no Rakoczy-Fest. Legendado em portugu&ecirc;s.</span>
+        <span class="lang-en">The return visit: one week in Bad Kissingen turning the town&#39;s young musicians into a Rio street bloco, ending with a parade and a concert at the Rakoczy Fest. English subtitles.</span><span class="lang-de">Der Gegenbesuch: eine Woche in Bad Kissingen, in der aus den jungen Musikerinnen und Musikern der Stadt ein Stra&szlig;enbloco aus Rio wird, mit Umzug und Konzert beim Rakoczy-Fest.</span>
+      </p>
+    </div>
+    <div class="video-card reveal">
       <a class="video-thumb" href="https://youtu.be/1so2WVYAAvs" target="_blank" rel="noopener" data-yt="1so2WVYAAvs" aria-label="Assistir: Jugendmusikkorps e Favela Brass">
         <img src="img/video-jmk-exchange.jpg" alt="As duas bandas tocando juntas no intercâmbio de 2024" loading="lazy" decoding="async" width="1280" height="720">
         <span class="video-play" aria-hidden="true"></span>
@@ -777,6 +789,9 @@ function setLang(l) {
   document.documentElement.lang = l === 'pt' ? 'pt-BR' : l;
   localStorage.setItem('fb-lang', l);
   document.querySelectorAll('.nav-langs button').forEach(b => b.classList.toggle('active', b.dataset.lang === l));
+  var filmIds = { pt: 'MvPqGS3cAAw', en: 'MoDjrg6jL1Q', de: 'E4sKJYel63c' };
+  var filmLink = document.getElementById('freunde-film-link');
+  if (filmLink) { filmLink.href = 'https://youtu.be/' + filmIds[l]; filmLink.dataset.yt = filmIds[l]; }
 }
 var urlLang = new URLSearchParams(location.search).get('lang');
 var savedLang = localStorage.getItem('fb-lang');
