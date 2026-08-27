@@ -137,8 +137,7 @@
   </div>
   <p class="media-line reveal">
     <span class="lang-pt">Na mídia:</span><span class="lang-en">In the media:</span><span class="lang-de">Aus der Presse:</span>
-    <!-- TODO: swap for official Globo link when it arrives -->
-    <a href="https://youtu.be/pfy9J4O22yk" target="_blank" rel="noopener">GloboNews</a>
+    <a class="js-globo-link" href="https://www.youtube.com/watch?v=_ONXcOJ_-EM" target="_blank" rel="noopener">GloboNews</a>
     &middot; TV Globo &middot; BBC &middot; The Guardian &middot; O Globo &middot; ONU Brasil
   </p>
 </section>
@@ -153,8 +152,7 @@
         <span class="lang-pt">Um caminho completo, da primeira nota à carreira profissional: a prova de que jovens das favelas alcançam padrão internacional em música.</span>
         <span class="lang-en">A complete path from the first note to a professional career: proof that young people from the favelas reach an international standard in music.</span><span class="lang-de">Ein durchgängiger Weg von der ersten Note bis zur Profikarriere: der Beweis, dass junge Menschen aus den Favelas in der Musik internationales Niveau erreichen.</span>
       </p>
-      <a class="feature-video-link" href="https://youtu.be/pfy9J4O22yk" target="_blank" rel="noopener">
-        <!-- TODO: swap for official Globo link when it arrives -->
+      <a class="feature-video-link js-globo-link" href="https://www.youtube.com/watch?v=_ONXcOJ_-EM" target="_blank" rel="noopener">
         <span aria-hidden="true">&#9654;</span>
         <span class="lang-pt">A GloboNews contou essa história: Jornal das Dez, julho de 2026 (11 min)</span>
         <span class="lang-en">GloboNews told this story: Jornal das Dez, July 2026 (11 min)</span><span class="lang-de">GloboNews: Jornal das Dez, Juli 2026 (11 Min., mit deutschen Untertiteln)</span>
@@ -441,6 +439,11 @@ function setLang(l) {
   document.documentElement.lang = l === 'pt' ? 'pt-BR' : l;
   localStorage.setItem('fb-lang', l);
   document.querySelectorAll('.nav-langs button').forEach(b => b.classList.toggle('active', b.dataset.lang === l));
+  var globoId = l === 'pt' ? '_ONXcOJ_-EM' : 'pfy9J4O22yk';
+  document.querySelectorAll('.js-globo-link').forEach(function (a) {
+    a.href = 'https://www.youtube.com/watch?v=' + globoId;
+    if (a.dataset.yt) a.dataset.yt = globoId;
+  });
 }
 var urlLang = new URLSearchParams(location.search).get('lang');
 var savedLang = localStorage.getItem('fb-lang');

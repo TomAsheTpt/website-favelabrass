@@ -264,8 +264,7 @@
         <span class="lang-en">Three routes, from corporate sponsorship to a monthly donation. Each one sustains a part of the programme.</span><span class="lang-de">Drei Wege, vom Unternehmenssponsoring bis zur monatlichen Spende. Jeder trägt einen Teil des Programms.</span>
       </p>
       <p class="midia-note">
-        <!-- TODO: swap for official Globo link when it arrives -->
-        <a href="https://youtu.be/pfy9J4O22yk" target="_blank" rel="noopener"><span class="lang-pt">Como visto na GloboNews &middot; Jornal das Dez, julho de 2026</span><span class="lang-en">As seen on Brazilian national TV (GloboNews) &middot; Jornal das Dez, July 2026</span><span class="lang-de">Im brasilianischen Fernsehen (GloboNews) &middot; Jornal das Dez, Juli 2026</span></a>
+        <a class="js-globo-link" href="https://www.youtube.com/watch?v=_ONXcOJ_-EM" target="_blank" rel="noopener"><span class="lang-pt">Como visto na GloboNews &middot; Jornal das Dez, julho de 2026</span><span class="lang-en">As seen on Brazilian national TV (GloboNews) &middot; Jornal das Dez, July 2026</span><span class="lang-de">Im brasilianischen Fernsehen (GloboNews) &middot; Jornal das Dez, Juli 2026</span></a>
       </p>
     </div>
   </div>
@@ -564,6 +563,11 @@ function setLang(l) {
   document.documentElement.lang = l === 'pt' ? 'pt-BR' : l;
   localStorage.setItem('fb-lang', l);
   document.querySelectorAll('.nav-langs button').forEach(b => b.classList.toggle('active', b.dataset.lang === l));
+  var globoId = l === 'pt' ? '_ONXcOJ_-EM' : 'pfy9J4O22yk';
+  document.querySelectorAll('.js-globo-link').forEach(function (a) {
+    a.href = 'https://www.youtube.com/watch?v=' + globoId;
+    if (a.dataset.yt) a.dataset.yt = globoId;
+  });
 }
 var urlLang = new URLSearchParams(location.search).get('lang');
 var savedLang = localStorage.getItem('fb-lang');

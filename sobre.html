@@ -228,6 +228,7 @@
   margin: 0.35rem 0 0.7rem;
 }
 .video-card > p:last-child { color: var(--text-dim); font-size: 0.98rem; max-width: 56ch; }
+.video-main { display: grid; gap: clamp(2.2rem, 4vw, 3.2rem); align-content: start; }
 .video-side { display: grid; gap: 2.2rem; align-content: start; }
 .video-side .video-card h3 { font-size: 1.2rem; }
 .video-side .video-card > p:last-child { font-size: 0.92rem; }
@@ -606,6 +607,7 @@
   </div>
 
   <div class="video-grid">
+    <div class="video-main">
     <div class="video-card video-card--main reveal">
       <a class="video-thumb" href="https://youtu.be/p9rNCI81UW0" target="_blank" rel="noopener" data-yt="p9rNCI81UW0" aria-label="Assistir: O Som do Morro">
         <img src="img/video-som-do-morro.jpg" alt="Cena do documentário O Som do Morro" loading="lazy" decoding="async" width="1280" height="720">
@@ -617,6 +619,19 @@
         <span class="lang-pt">Em um mosaico de música ao vivo e entrevistas, o filme conta a história da Favela Brass: dez anos de imagens que culminam em uma celebração no Circo Voador, com uma grande batalha das bandas e apresentações inesquecíveis dos alunos. Exibido no Festival do Rio em 2025.</span>
         <span class="lang-en">In a vibrant collage of live music and interviews, the film tells the story of Favela Brass: ten years of footage culminating in a celebration at Circo Voador, with a huge battle of the bands and unforgettable performances from the students. Screened at the Rio Film Festival in 2025.</span><span class="lang-de">In einem Mosaik aus Livemusik und Interviews erzählt der Film die Geschichte von Favela Brass: zehn Jahre Aufnahmen, die in einer Feier im Circo Voador gipfeln, mit einer großen Battle der Bands und unvergesslichen Auftritten der Schülerinnen und Schüler. Gezeigt beim Festival do Rio 2025.</span>
       </p>
+    </div>
+    <div class="video-card video-card--main reveal">
+      <a class="video-thumb js-globo-link" href="https://www.youtube.com/watch?v=_ONXcOJ_-EM" target="_blank" rel="noopener" data-yt="_ONXcOJ_-EM" aria-label="Assistir: Extraordinários, GloboNews">
+        <img src="img/video-globonews.jpg" alt="Chamada da GloboNews: Extraordinários, os metais preciosos do Favela Brass" loading="lazy" decoding="async" width="1280" height="720">
+        <span class="video-play" aria-hidden="true"></span>
+      </a>
+      <h3><span class="lang-pt">Extraordinários</span><span class="lang-en">Extraordinários</span><span class="lang-de">Extraordinários</span></h3>
+      <p class="video-meta"><span class="lang-pt">GloboNews &middot; 11 min &middot; 2026</span><span class="lang-en">GloboNews &middot; 11 min &middot; 2026</span><span class="lang-de">GloboNews &middot; 11 Min. &middot; 2026</span></p>
+      <p>
+        <span class="lang-pt">O Jornal das Dez dedicou onze minutos à Favela Brass, em reportagem de Aline Midlej: a rotina das aulas, o ensaio da banda e a gravação do clipe da Copa.</span>
+        <span class="lang-en">Jornal das Dez gave Favela Brass eleven minutes, in a report by Aline Midlej: the classes, the band rehearsal and the making of the World Cup video. With English subtitles.</span><span class="lang-de">Jornal das Dez widmete Favela Brass elf Minuten, in einem Beitrag von Aline Midlej: der Unterricht, die Bandprobe und die Dreharbeiten zum WM-Video. Mit deutschen Untertiteln.</span>
+      </p>
+    </div>
     </div>
     <div class="video-side">
     <div class="video-card reveal">
@@ -657,12 +672,6 @@
     </div>
     </div>
   </div>
-  <a class="feature-video-link reveal" href="https://youtu.be/pfy9J4O22yk" target="_blank" rel="noopener">
-    <!-- TODO: swap for official Globo link when it arrives -->
-    <span aria-hidden="true">&#9654;</span>
-    <span class="lang-pt">Na TV: "Extraordinários", Jornal das Dez, com Aline Midlej (GloboNews, 11 min, julho de 2026)</span>
-    <span class="lang-en">On TV: "Extraordinários", Jornal das Dez, with Aline Midlej (GloboNews, 11 min, July 2026, English subtitles available)</span><span class="lang-de">Im Fernsehen: „Extraordinários", Jornal das Dez, mit Aline Midlej (GloboNews, 11 Min., Juli 2026, mit deutschen Untertiteln)</span>
-  </a>
   <a class="feature-video-link reveal" href="https://youtu.be/SDekMLt3GH8" target="_blank" rel="noopener">
     <span aria-hidden="true">&#9654;</span>
     <span class="lang-pt">Na TV: a reportagem do RJ1 sobre o projeto, de Fábio Judice (TV Globo, 10 min, 2024)</span>
@@ -789,6 +798,11 @@ function setLang(l) {
   document.documentElement.lang = l === 'pt' ? 'pt-BR' : l;
   localStorage.setItem('fb-lang', l);
   document.querySelectorAll('.nav-langs button').forEach(b => b.classList.toggle('active', b.dataset.lang === l));
+  var globoId = l === 'pt' ? '_ONXcOJ_-EM' : 'pfy9J4O22yk';
+  document.querySelectorAll('.js-globo-link').forEach(function (a) {
+    a.href = 'https://www.youtube.com/watch?v=' + globoId;
+    if (a.dataset.yt) a.dataset.yt = globoId;
+  });
   var filmIds = { pt: 'MvPqGS3cAAw', en: 'MoDjrg6jL1Q', de: 'E4sKJYel63c' };
   var filmLink = document.getElementById('freunde-film-link');
   if (filmLink) { filmLink.href = 'https://youtu.be/' + filmIds[l]; filmLink.dataset.yt = filmIds[l]; }
