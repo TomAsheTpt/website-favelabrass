@@ -370,16 +370,16 @@
           <span class="lang-en">Prefer to give directly?</span><span class="lang-de">Möchten Sie lieber direkt spenden?</span>
         </h2>
         <p>
-          <span class="lang-pt">Toda doação, de qualquer valor, é bem-vinda. A chave PIX da associação é o nosso CNPJ.</span>
-          <span class="lang-en">Every donation, of any size, is welcome. The association's PIX key is our company registration number (CNPJ).</span><span class="lang-de">Jede Spende ist willkommen, unabhängig von der Höhe. Der PIX-Schlüssel unseres Vereins (PIX ist das brasilianische Sofortzahlungssystem) ist unsere CNPJ, die brasilianische Steuernummer.</span>
+          <span class="lang-pt">Toda doação, de qualquer valor, é bem-vinda. A chave PIX da associação é pix@favelabrass.org.</span>
+          <span class="lang-en">Every donation, of any size, is welcome. The association's PIX key is pix@favelabrass.org.</span><span class="lang-de">Jede Spende ist willkommen, unabhängig von der Höhe. Der PIX-Schlüssel unseres Vereins (PIX ist das brasilianische Sofortzahlungssystem) ist pix@favelabrass.org.</span>
         </p>
       </div>
     </div>
     <div class="pix-card reveal">
       <img class="pix-qr" src="img/pix-qr.png" alt="QR Code Pix para doação à Favela Brass" loading="lazy" decoding="async" width="470" height="470">
       <div class="pix-details">
-        <span class="pix-label"><span class="lang-pt">Chave PIX (CNPJ)</span><span class="lang-en">PIX key (CNPJ)</span><span class="lang-de">PIX-Schlüssel (CNPJ)</span></span>
-        <span class="pix-key">37.332.605/0001-90</span>
+        <span class="pix-label"><span class="lang-pt">Chave PIX (e-mail)</span><span class="lang-en">PIX key (email)</span><span class="lang-de">PIX-Schlüssel (E-Mail)</span></span>
+        <span class="pix-key">pix@favelabrass.org</span>
         <div class="pix-actions">
           <button type="button" class="btn btn-purple pix-copy" onclick="copyPix(this)">
             <span class="lang-pt">Copiar código Pix</span>
@@ -583,10 +583,10 @@ const io = new IntersectionObserver(es => es.forEach(e => {
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
 function copyPix(btn) {
-  navigator.clipboard.writeText('00020126640014br.gov.bcb.pix0114373326050001900224Doacao para Favela Brass5204000053039865802BR5912FAVELA BRASS6014RIO DE JANEIRO622905251XqOu2YOzsguozXfTV3hROJZU630415E1').then(() => {
+  navigator.clipboard.writeText('00020126690014br.gov.bcb.pix0119pix@favelabrass.org0224Doacao para Favela Brass5204000053039865802BR5912FAVELA BRASS6014RIO DE JANEIRO622905251XqOu2YOzsguozXfTV3hROJZU63046E98').then(() => {
     btn.querySelectorAll('span').forEach(sp => sp.textContent = document.body.classList.contains('en') ? 'Copied!' : document.body.classList.contains('de') ? 'Kopiert!' : 'Copiado!');
     setTimeout(() => {
-      btn.innerHTML = '<span class="lang-pt">Copiar código Pix</span><span class="lang-en">Copy Pix code</span><span class="lang-de">PIX-Code kopieren</span><span class="lang-de">PIX-Code kopieren</span>';
+      btn.innerHTML = '<span class="lang-pt">Copiar código Pix</span><span class="lang-en">Copy Pix code</span><span class="lang-de">PIX-Code kopieren</span>';
     }, 1800);
   });
 }
