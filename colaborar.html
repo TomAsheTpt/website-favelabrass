@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Como Colaborar · Favela Brass</title>
-<meta name="description" content="Apoie a Favela Brass: patrocínio via Lei Rouanet com 100% de dedução fiscal, doação recorrente a partir de R$ 20/mês e parcerias corporativas.">
+<meta name="description" content="Apoie a Favela Brass: doe por Pix (pix@favelabrass.org), todo mês pela Benfeitoria ou, de fora do Brasil, pelo PayPal.">
 <meta property="og:title" content="Como Colaborar · Favela Brass">
-<meta property="og:description" content="Apoie a Favela Brass: patrocínio via Lei Rouanet com 100% de dedução fiscal, doação recorrente a partir de R$ 20/mês e parcerias corporativas.">
+<meta property="og:description" content="Apoie a Favela Brass: doe por Pix (pix@favelabrass.org), todo mês pela Benfeitoria ou, de fora do Brasil, pelo PayPal.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://favelabrass.org/img/13-bourbon-paraty-stage.jpg">
 <meta property="og:url" content="https://favelabrass.org/colaborar.html">
@@ -27,105 +27,61 @@
 <style>
 /* ===== Page-specific: colaborar ===== */
 
-/* Featured Lei Rouanet card */
-.rouanet-card {
-  position: relative;
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  gap: clamp(2rem, 4vw, 4.5rem);
-  align-items: center;
-  border: 1px solid rgba(254, 241, 0, 0.4);
-  border-radius: 10px;
-  background: linear-gradient(130deg, rgba(254, 241, 0, 0.07) 0%, rgba(255, 255, 255, 0.02) 55%);
-  padding: clamp(2rem, 4vw, 3.6rem);
-  margin-bottom: clamp(1.6rem, 3vw, 2.6rem);
+/* Shorter hero so the donation box sits near the top */
+.page-hero--short { padding-bottom: clamp(2.4rem, 4.5vw, 3.6rem); }
+.interlude--first { margin-top: 0; padding-top: clamp(3.2rem, 6vw, 5rem); }
+#doar, #rouanet { scroll-margin-top: 4.5rem; }
+
+/* Light give cards (Benfeitoria, PayPal) inside the interlude */
+.give-grid { margin-top: 1.6rem; }
+.give-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: var(--white);
+  border: 1px solid var(--ink-rule);
+  border-radius: 8px;
+  padding: 1.9rem 2.1rem;
+  box-shadow: 0 14px 40px rgba(31, 5, 47, 0.07);
 }
-.donate-badge {
-  display: inline-block;
-  background: var(--yellow);
-  color: var(--purple-ink);
+.give-kicker {
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  padding: 0.42rem 0.95rem;
-  border-radius: 3px;
-  margin-bottom: 1.4rem;
+  color: var(--ink-faint);
+  margin-bottom: 0.8rem;
 }
-.rouanet-card h3 {
+.give-card h3 {
   font-family: var(--font-display);
   font-optical-sizing: auto;
-  font-size: clamp(1.9rem, 3vw, 2.7rem);
+  font-size: 1.45rem;
   font-weight: 480;
-  line-height: 1.1;
-  letter-spacing: -0.01em;
-  color: var(--white);
-  margin-bottom: 1rem;
+  line-height: 1.2;
+  margin-bottom: 0.7rem;
 }
-.rouanet-card .rc-copy p {
-  color: var(--text-dim);
-  max-width: 54ch;
-}
-.rc-aside {
-  text-align: center;
-  border-left: 1px solid var(--rule);
-  padding: 0.6rem 0 0.6rem clamp(1.6rem, 3vw, 3rem);
-}
-.rc-deduction {
-  display: block;
-  font-family: var(--font-display);
-  font-optical-sizing: auto;
-  font-size: clamp(3.4rem, 6vw, 5rem);
-  font-weight: 450;
-  line-height: 1;
-  letter-spacing: -0.02em;
-  color: var(--yellow);
-}
-.rc-deduction-label {
-  display: block;
-  margin-top: 0.7rem;
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--text-dim);
-}
-.rc-aside .btn { margin-top: 1.7rem; }
-.rc-fine {
-  margin-top: 1.2rem;
-  font-size: 0.8rem;
-  line-height: 1.55;
-  color: var(--text-faint);
-}
+.give-card p { font-size: 0.98rem; margin-bottom: 1.4rem; }
+.give-card .btn { margin-top: auto; padding: 0.75rem 1.7rem; font-size: 0.9rem; }
 
-/* Secondary pathway cards: bottom-anchored button */
-.donate-card {
+/* Rouanet pointer cards: bottom-anchored button */
+.rouanet-link {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.donate-card .donate-kicker {
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--text-faint);
-  margin-bottom: 1rem;
+.rouanet-link p { margin-bottom: 1.6rem; }
+.rouanet-link .btn { margin-top: auto; padding: 0.75rem 1.7rem; font-size: 0.9rem; }
+
+/* Direct-donation caveat under the Pix details */
+.pix-note {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--ink-dim);
+  max-width: 60ch;
+  border-top: 1px solid var(--ink-rule);
+  padding-top: 0.8rem;
 }
-.donate-card h3 { font-size: 1.35rem; }
-.donate-card p { margin-bottom: 1.6rem; }
-.donate-card .btn {
-  margin-top: auto;
-  padding: 0.75rem 1.7rem;
-  font-size: 0.9rem;
-}
-.donate-card .donate-detail {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: 1.05rem;
-  color: var(--yellow);
-  margin-bottom: 0.9rem;
-}
+.pix-note a { color: var(--purple); text-decoration: underline; text-underline-offset: 3px; }
 
 /* Direct PIX donation card (inside the light interlude) */
 .pix-card {
@@ -182,17 +138,12 @@
   text-decoration-thickness: 1px;
 }
 
-@media (max-width: 900px) {
-  .rouanet-card { grid-template-columns: 1fr; }
-  .rc-aside {
-    border-left: 0;
-    border-top: 1px solid var(--rule);
-    padding: 1.8rem 0 0;
-    text-align: left;
-  }
-}
 @media (max-width: 820px) {
   .pix-card { padding: 1.8rem 1.6rem; }
+  /* On a phone the copy button is the useful action; the QR is for a second screen */
+  .pix-card .pix-qr { order: 2; }
+  .page-hero--short { padding-top: 7.5rem; }
+  .interlude--first { padding-top: 2.4rem; }
 }
 .midia-note {
   margin-top: 1rem;
@@ -234,144 +185,38 @@
 </nav>
 
 <!-- ===================== PAGE HERO ===================== -->
-<header class="page-hero">
+<header class="page-hero page-hero--short">
   <div class="page-hero-photo" style="background-image: url('img/13-bourbon-paraty-stage.jpg')" role="img" aria-label="Banda da Favela Brass no palco do Bourbon Festival Paraty"></div>
   <div class="page-hero-scrim"></div>
   <div class="page-hero-inner">
     <p class="hero-kicker anim a1">
-      <span class="lang-pt">Apoie a Favela Brass</span>
-      <span class="lang-en">Support Favela Brass</span><span class="lang-de">Unterstützen Sie Favela Brass</span>
+      <span class="lang-pt">Como colaborar</span>
+      <span class="lang-en">Get involved</span><span class="lang-de">So können Sie mitwirken</span>
     </p>
     <h1 class="anim a2">
-      <span class="lang-pt">Como <em>colaborar</em></span>
-      <span class="lang-en">How to <em>get involved</em></span><span class="lang-de">So können Sie <em>mitwirken</em></span>
+      <span class="lang-pt">Apoie a <em>Favela Brass</em></span>
+      <span class="lang-en">Support <em>Favela Brass</em></span><span class="lang-de">Unterstützen Sie <em>Favela Brass</em></span>
     </h1>
     <p class="page-hero-lede anim a3">
-      <span class="lang-pt">Existem várias formas de apoiar a Favela Brass e fazer parte dessa transformação. Escolha a sua abaixo.</span>
-      <span class="lang-en">There are several ways to support Favela Brass and be part of this transformation. Choose yours below.</span><span class="lang-de">Es gibt viele Möglichkeiten, Favela Brass zu unterstützen und Teil dieser Veränderung zu werden. Wählen Sie unten Ihren Weg.</span>
+      <span class="lang-pt">As aulas são de graça para os alunos, e as doações pagam professores, instrumentos e o dia a dia do programa. Você pode doar agora por Pix, todo mês pela Benfeitoria ou, de fora do Brasil, pelo PayPal.</span>
+      <span class="lang-en">Lessons are free for the students, and donations pay for teachers, instruments and the day-to-day running of the programme. You can give now by Pix, monthly through Benfeitoria or, from outside Brazil, by PayPal.</span><span class="lang-de">Der Unterricht ist für die Schülerinnen und Schüler kostenlos, und Spenden finanzieren Lehrkräfte, Instrumente und den laufenden Betrieb des Programms. Sie können sofort per PIX spenden, monatlich über Benfeitoria oder, von außerhalb Brasiliens, per PayPal.</span>
     </p>
   </div>
 </header>
 
-<!-- ===================== 01 FORMAS DE APOIAR ===================== -->
-<section class="section" id="formas">
-  <div class="section-head reveal">
-    <div class="section-no"><span>01</span><hr></div>
-    <div class="section-titles">
-      <h2><span class="lang-pt">Formas de apoiar</span><span class="lang-en">Ways to support</span><span class="lang-de">Möglichkeiten der Unterstützung</span></h2>
-      <p>
-        <span class="lang-pt">Três caminhos, do patrocínio empresarial à doação mensal. Cada um sustenta uma parte do programa.</span>
-        <span class="lang-en">Three routes, from corporate sponsorship to a monthly donation. Each one sustains a part of the programme.</span><span class="lang-de">Drei Wege, vom Unternehmenssponsoring bis zur monatlichen Spende. Jeder trägt einen Teil des Programms.</span>
-      </p>
-      <p class="midia-note">
-        <a class="js-globo-link" href="https://www.youtube.com/watch?v=_ONXcOJ_-EM" target="_blank" rel="noopener"><span class="lang-pt">Como visto na GloboNews &middot; Jornal das Dez, julho de 2026</span><span class="lang-en">As seen on Brazilian national TV (GloboNews) &middot; Jornal das Dez, July 2026</span><span class="lang-de">Im brasilianischen Fernsehen (GloboNews) &middot; Jornal das Dez, Juli 2026</span></a>
-      </p>
-    </div>
-  </div>
-
-  <!-- Lei Rouanet: featured -->
-  <article class="rouanet-card reveal">
-    <div class="rc-copy">
-      <span class="donate-badge">
-        <span class="lang-pt">Empresas e pessoas físicas &middot; Incentivo fiscal</span>
-        <span class="lang-en">Companies and individuals &middot; Tax incentive</span><span class="lang-de">Unternehmen und Privatpersonen &middot; Steuerliche Förderung</span>
-      </span>
-      <h3>Lei Rouanet</h3>
-      <p>
-        <span class="lang-pt">Empresas podem destinar até 4% do Imposto de Renda devido, e pessoas físicas até 6% na declaração completa, com dedução de 100% do valor apoiado. Para empresas, é a chance de associar sua marca a um dos projetos de educação musical mais visíveis do Rio.</span>
-        <span class="lang-en">Companies can direct up to 4% of their income tax due, and individuals up to 6% on the full tax return, with 100% of the amount deducted. For companies, it is the chance to associate your brand with one of Rio's most visible music education projects.</span><span class="lang-de">Unternehmen mit Steuerpflicht in Brasilien können bis zu 4 % ihrer geschuldeten Einkommensteuer zuweisen, Privatpersonen bis zu 6 % in der vollständigen Steuererklärung, wobei 100 % des Förderbetrags steuerlich absetzbar sind (nach brasilianischem Recht). Für Unternehmen ist es die Gelegenheit, ihre Marke mit einem der sichtbarsten Musikbildungsprojekte Rios zu verbinden.</span>
-      </p>
-    </div>
-    <div class="rc-aside">
-      <span class="rc-deduction">100%</span>
-      <span class="rc-deduction-label">
-        <span class="lang-pt">de dedução fiscal</span>
-        <span class="lang-en">tax deduction</span><span class="lang-de">steuerlich absetzbar (in Brasilien)</span>
-      </span>
-      <a href="mailto:contato@favelabrass.org" class="btn btn-yellow">
-        <span class="lang-pt">Fale com a gente</span>
-        <span class="lang-en">Talk to us</span><span class="lang-de">Kontakt aufnehmen</span>
-      </a>
-      <p class="rc-fine">
-        <span class="lang-pt">Projeto aprovado pela Lei Federal de Incentivo à Cultura &middot; PRONAC 254750</span>
-        <span class="lang-en">Approved under Brazil's Federal Culture Incentive Law &middot; PRONAC 254750</span><span class="lang-de">Anerkanntes Projekt nach dem brasilianischen Kulturförderungsgesetz (Lei Rouanet) &middot; PRONAC 254750</span>
-      </p>
-    </div>
-  </article>
-
-  <div class="grid-2">
-    <!-- Benfeitoria -->
-    <article class="card donate-card reveal">
-      <span class="donate-kicker">
-        <span class="lang-pt">Pessoas físicas</span>
-        <span class="lang-en">Individuals</span><span class="lang-de">Privatpersonen</span>
-      </span>
-      <h3>
-        <span class="lang-pt">Doação Recorrente</span>
-        <span class="lang-en">Monthly Donation</span><span class="lang-de">Monatliche Spende</span>
-      </h3>
-      <span class="donate-detail">
-        <span class="lang-pt">a partir de R$ 20/mês</span>
-        <span class="lang-en">from R$ 20/month</span><span class="lang-de">ab R$ 20 pro Monat</span>
-      </span>
-      <p>
-        <span class="lang-pt">Contribua mensalmente pela plataforma Benfeitoria e ajude a sustentar o projeto a longo prazo. A partir de R$ 20 por mês você já faz a diferença na vida de um jovem músico.</span>
-        <span class="lang-en">Contribute monthly through the Benfeitoria platform and help sustain the project long-term. From R$ 20 a month you can make a difference in a young musician's life.</span><span class="lang-de">Spenden Sie monatlich über die Plattform Benfeitoria und helfen Sie, das Projekt langfristig zu tragen. Schon ab R$ 20 pro Monat machen Sie einen Unterschied im Leben eines jungen Musikers.</span>
-      </p>
-      <a href="https://benfeitoria.com/projeto/favelabrass" target="_blank" rel="noopener" class="btn btn-yellow">
-        <span class="lang-pt">Doar Mensalmente</span>
-        <span class="lang-en">Donate Monthly</span><span class="lang-de">Monatlich spenden</span>
-      </a>
-    </article>
-
-    <!-- Corporate partnerships -->
-    <article class="card donate-card reveal">
-      <span class="donate-kicker">
-        <span class="lang-pt">Empresas e marcas</span>
-        <span class="lang-en">Companies and brands</span><span class="lang-de">Unternehmen und Marken</span>
-      </span>
-      <h3>
-        <span class="lang-pt">Parcerias Corporativas</span>
-        <span class="lang-en">Corporate Partnerships</span><span class="lang-de">Unternehmenspartnerschaften</span>
-      </h3>
-      <span class="donate-detail">
-        <span class="lang-pt">pacotes sob medida</span>
-        <span class="lang-en">tailored packages</span><span class="lang-de">maßgeschneiderte Pakete</span>
-      </span>
-      <p>
-        <span class="lang-pt">Patrocínio de eventos, associação de marca e programas de voluntariado corporativo. Os parceiros recebem visibilidade em eventos e materiais, convites VIP, apresentações exclusivas para equipes e relatórios de impacto trimestrais.</span>
-        <span class="lang-en">Event sponsorship, brand association and corporate volunteering programmes. Partners receive visibility at events and in materials, VIP invitations, exclusive performances for their teams and quarterly impact reports.</span><span class="lang-de">Eventsponsoring, Markenpartnerschaften und Corporate-Volunteering-Programme. Partner erhalten Sichtbarkeit bei Veranstaltungen und in Materialien, VIP-Einladungen, exklusive Auftritte für ihre Teams und vierteljährliche Wirkungsberichte.</span>
-      </p>
-      <a href="mailto:contato@favelabrass.org" class="btn btn-ghost">
-        <span class="lang-pt">Quero Ser Parceiro</span>
-        <span class="lang-en">Become a Partner</span><span class="lang-de">Partner werden</span>
-      </a>
-    </article>
-  </div>
-</section>
-
-<!-- ===================== PHOTO BREAK ===================== -->
-<figure class="break">
-  <img src="img/14-baile-brass-group.jpg" alt="Alunos e professores da Favela Brass reunidos com seus instrumentos no Baile Brass" loading="lazy" decoding="async" width="1600" height="1200">
-  <figcaption class="photo-cap">
-    <span class="lang-pt">Baile Brass &middot; Rio de Janeiro</span>
-    <span class="lang-en">Baile Brass &middot; Rio de Janeiro</span><span class="lang-de">Baile Brass &middot; Rio de Janeiro</span>
-  </figcaption>
-</figure>
-
-<!-- ===================== 02 DOAÇÃO DIRETA (light interlude) ===================== -->
-<section class="interlude" id="doacao-direta">
+<!-- ===================== 01 DOE AGORA (light interlude) ===================== -->
+<section class="interlude interlude--first" id="doar">
   <div class="interlude-inner">
     <div class="section-head reveal">
-      <div class="section-no"><span>02</span><hr></div>
+      <div class="section-no"><span>01</span><hr></div>
       <div class="section-titles">
         <h2>
-          <span class="lang-pt">Prefere doar direto?</span>
-          <span class="lang-en">Prefer to give directly?</span><span class="lang-de">Möchten Sie lieber direkt spenden?</span>
+          <span class="lang-pt">Doe agora</span>
+          <span class="lang-en">Give now</span><span class="lang-de">Jetzt spenden</span>
         </h2>
         <p>
-          <span class="lang-pt">Toda doação, de qualquer valor, é bem-vinda. A chave PIX da associação é pix@favelabrass.org.</span>
-          <span class="lang-en">Every donation, of any size, is welcome. The association's PIX key is pix@favelabrass.org.</span><span class="lang-de">Jede Spende ist willkommen, unabhängig von der Höhe. Der PIX-Schlüssel unseres Vereins (PIX ist das brasilianische Sofortzahlungssystem) ist pix@favelabrass.org.</span>
+          <span class="lang-pt">Toda doação, de qualquer valor, é bem-vinda.</span>
+          <span class="lang-en">Every donation, of any size, is welcome.</span><span class="lang-de">Jede Spende ist willkommen, unabhängig von der Höhe. PIX ist das brasilianische Sofortzahlungssystem.</span>
         </p>
       </div>
     </div>
@@ -390,23 +235,95 @@
           <span class="lang-pt">Transferência bancária: Associação Musical Favela Brass &middot; Banco do Brasil &middot; Agência 3118-6 &middot; Conta corrente 43386-1 &middot; CNPJ 37.332.605/0001-90</span>
           <span class="lang-en">Bank transfer: Associação Musical Favela Brass &middot; Banco do Brasil &middot; Agência 3118-6 &middot; Conta corrente 43386-1 &middot; CNPJ 37.332.605/0001-90</span><span class="lang-de">Banküberweisung: Associação Musical Favela Brass &middot; Banco do Brasil &middot; Agência 3118-6 &middot; Conta corrente 43386-1 &middot; CNPJ 37.332.605/0001-90</span>
         </p>
+        <p class="pix-note">
+          <span class="lang-pt">Esta é uma doação direta: ela não gera recibo de mecenato nem dedução no Imposto de Renda. Para doar pela Lei Rouanet e deduzir do IR, o depósito vai para outra conta (veja <a href="#rouanet">Lei Rouanet</a>, no fim da página).</span>
+          <span class="lang-en">This is a direct donation: it does not generate a Rouanet receipt (recibo de mecenato) or a Brazilian income tax deduction. To give through the Lei Rouanet and deduct it from your income tax, the deposit goes to a different account (see <a href="#rouanet">Lei Rouanet</a>, at the end of the page).</span><span class="lang-de">Dies ist eine direkte Spende: Sie erhalten dafür keine Rouanet-Quittung (recibo de mecenato) und keinen Abzug von der brasilianischen Einkommensteuer. Wer über die Lei Rouanet spenden und den Betrag absetzen möchte, überweist auf ein anderes Konto (siehe <a href="#rouanet">Lei Rouanet</a>, am Ende der Seite).</span>
+        </p>
       </div>
     </div>
-    <div class="pix-card pix-card--intl reveal">
-      <div class="pix-details">
-        <span class="pix-label"><span class="lang-pt">De fora do Brasil?</span><span class="lang-en">Outside Brazil?</span><span class="lang-de">Außerhalb Brasiliens?</span></span>
-        <p class="intl-text">
-          <span class="lang-pt">Doações internacionais em qualquer moeda, com cartão ou conta PayPal.</span>
-          <span class="lang-en">International donations in any currency, by card or PayPal account.</span>
-          <span class="lang-de">Internationale Spenden in jeder Währung, per Karte oder PayPal-Konto.</span>
+    <div class="grid-2 give-grid">
+      <article class="give-card reveal">
+        <span class="give-kicker"><span class="lang-pt">Todo mês</span><span class="lang-en">Every month</span><span class="lang-de">Jeden Monat</span></span>
+        <h3>
+          <span class="lang-pt">Doação mensal pela Benfeitoria</span>
+          <span class="lang-en">Monthly through Benfeitoria</span><span class="lang-de">Monatlich über Benfeitoria</span>
+        </h3>
+        <p>
+          <span class="lang-pt">Uma assinatura no cartão, a partir de R$ 15 por mês. É a doação mensal que nos deixa planejar o ano.</span>
+          <span class="lang-en">A card subscription, from R$ 15 a month. Monthly gifts are what let us plan the year ahead.</span><span class="lang-de">Ein Kartenabo ab R$ 15 pro Monat. Monatliche Spenden machen es möglich, das Jahr zu planen.</span>
+        </p>
+        <a href="https://benfeitoria.com/projeto/favelabrass" target="_blank" rel="noopener" class="btn btn-purple">
+          <span class="lang-pt">Doar todo mês</span>
+          <span class="lang-en">Give monthly</span><span class="lang-de">Monatlich spenden</span>
+        </a>
+      </article>
+      <article class="give-card reveal">
+        <span class="give-kicker"><span class="lang-pt">De fora do Brasil</span><span class="lang-en">Outside Brazil</span><span class="lang-de">Außerhalb Brasiliens</span></span>
+        <h3>
+          <span class="lang-pt">PayPal, em qualquer moeda</span>
+          <span class="lang-en">PayPal, in any currency</span><span class="lang-de">PayPal, in jeder Währung</span>
+        </h3>
+        <p>
+          <span class="lang-pt">Uma vez ou todo mês, com cartão ou conta PayPal. O PayPal faz a conversão da moeda.</span>
+          <span class="lang-en">Once or monthly, by card or PayPal account. PayPal handles the currency conversion.</span><span class="lang-de">Einmalig oder monatlich, per Karte oder PayPal-Konto. PayPal übernimmt die Währungsumrechnung.</span>
         </p>
         <a class="btn btn-purple" href="https://www.paypal.com/donate?hosted_button_id=5AYPUD7U7UGK2" target="_blank" rel="noopener">
           <span class="lang-pt">Doar com PayPal</span><span class="lang-en">Donate with PayPal</span><span class="lang-de">Mit PayPal spenden</span>
         </a>
-      </div>
+      </article>
     </div>
   </div>
 </section>
+
+<!-- ===================== 02 O QUE A DOAÇÃO PAGA ===================== -->
+<section class="section" id="para-que">
+  <div class="section-head reveal">
+    <div class="section-no"><span>02</span><hr></div>
+    <div class="section-titles">
+      <h2><span class="lang-pt">O que a sua doação paga</span><span class="lang-en">What your gift pays for</span><span class="lang-de">Was Ihre Spende bewirkt</span></h2>
+      <p>
+        <span class="lang-pt">Tudo o que ensinamos é de graça para os alunos. As doações pagam professores, instrumentos e o funcionamento do programa.</span>
+        <span class="lang-en">Everything we teach is free for the students. Donations pay for teachers, instruments and the running of the programme.</span><span class="lang-de">Alles, was wir unterrichten, ist für die Schülerinnen und Schüler kostenlos. Spenden finanzieren Lehrkräfte, Instrumente und den Betrieb des Programms.</span>
+      </p>
+      <p class="midia-note">
+        <a class="js-globo-link" href="https://www.youtube.com/watch?v=_ONXcOJ_-EM" target="_blank" rel="noopener"><span class="lang-pt">Como visto na GloboNews &middot; Jornal das Dez, julho de 2026</span><span class="lang-en">As seen on Brazilian national TV (GloboNews) &middot; Jornal das Dez, July 2026</span><span class="lang-de">Im brasilianischen Fernsehen (GloboNews) &middot; Jornal das Dez, Juli 2026</span></a>
+      </p>
+    </div>
+  </div>
+
+  <div class="grid-3">
+    <div class="card reveal">
+      <h3><span class="lang-pt">Aulas nas escolas públicas</span><span class="lang-en">Lessons in public schools</span><span class="lang-de">Unterricht an öffentlichen Schulen</span></h3>
+      <p>
+        <span class="lang-pt">Aulas semanais de sopro e percussão dentro de escolas públicas parceiras do Rio. É ali que muitos alunos começam.</span>
+        <span class="lang-en">Weekly brass and percussion classes inside partner public schools in Rio. That is where many students start.</span><span class="lang-de">Wöchentlicher Blech- und Schlagzeugunterricht an öffentlichen Partnerschulen in Rio. Dort fangen viele Schülerinnen und Schüler an.</span>
+      </p>
+    </div>
+    <div class="card reveal">
+      <h3><span class="lang-pt">Bandas e aulas individuais</span><span class="lang-en">Bands and individual lessons</span><span class="lang-de">Bands und Einzelunterricht</span></h3>
+      <p>
+        <span class="lang-pt">Quem segue estudando tem aulas individuais, teoria musical e ensaios semanais com uma das bandas da Favela Brass.</span>
+        <span class="lang-en">Students who carry on get individual lessons, music theory and weekly rehearsals with one of the Favela Brass bands.</span><span class="lang-de">Wer weitermacht, bekommt Einzelunterricht, Musiktheorie und wöchentliche Proben mit einer der Bands von Favela Brass.</span>
+      </p>
+    </div>
+    <div class="card reveal">
+      <h3><span class="lang-pt">Instrumentos para levar para casa</span><span class="lang-en">Instruments to take home</span><span class="lang-de">Instrumente für zu Hause</span></h3>
+      <p>
+        <span class="lang-pt">Os alunos levam trompetes, trombones, saxofones e tambores emprestados para estudar em casa, e tocam com as bandas pela cidade o ano inteiro.</span>
+        <span class="lang-en">Students borrow trumpets, trombones, saxophones and drums to practise at home, and play with the bands across the city all year round.</span><span class="lang-de">Die Schülerinnen und Schüler leihen Trompeten, Posaunen, Saxofone und Trommeln aus, um zu Hause zu üben, und spielen das ganze Jahr über mit den Bands in der ganzen Stadt.</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PHOTO BREAK ===================== -->
+<figure class="break">
+  <img src="img/14-baile-brass-group.jpg" alt="Alunos e professores da Favela Brass reunidos com seus instrumentos no Baile Brass" loading="lazy" decoding="async" width="1600" height="1200">
+  <figcaption class="photo-cap">
+    <span class="lang-pt">Baile Brass &middot; Rio de Janeiro</span>
+    <span class="lang-en">Baile Brass &middot; Rio de Janeiro</span><span class="lang-de">Baile Brass &middot; Rio de Janeiro</span>
+  </figcaption>
+</figure>
 
 <!-- ===================== 03 OUTRAS FORMAS DE AJUDAR ===================== -->
 <section class="section" id="outras">
@@ -444,6 +361,43 @@
   </div>
 </section>
 
+<!-- ===================== 04 LEI ROUANET (pointers only) ===================== -->
+<section class="section" id="rouanet">
+  <div class="section-head reveal">
+    <div class="section-no"><span>04</span><hr></div>
+    <div class="section-titles">
+      <h2>Lei Rouanet</h2>
+      <p>
+        <span class="lang-pt">Empresas e pessoas que fazem a declaração completa do Imposto de Renda também podem apoiar a Favela Brass com parte do imposto devido.</span>
+        <span class="lang-en">Companies, and individuals who file the full Brazilian income tax return, can also support Favela Brass with part of the tax they owe.</span><span class="lang-de">Unternehmen und Privatpersonen, die in Brasilien die vollständige Einkommensteuererklärung abgeben, können Favela Brass auch mit einem Teil ihrer geschuldeten Steuer fördern.</span>
+      </p>
+    </div>
+  </div>
+
+  <div class="grid-2">
+    <article class="card rouanet-link reveal">
+      <h3><span class="lang-pt">Empresas</span><span class="lang-en">Companies</span><span class="lang-de">Unternehmen</span></h3>
+      <p>
+        <span class="lang-pt">Empresas no lucro real podem patrocinar o projeto com até 4% do Imposto de Renda devido. A apresentação do projeto está no nosso site da Lei Rouanet.</span>
+        <span class="lang-en">Companies taxed on actual profit (lucro real) can sponsor the project with up to 4% of the income tax they owe. The project presentation is on our Lei Rouanet site.</span><span class="lang-de">Unternehmen, die in Brasilien nach dem tatsächlichen Gewinn (lucro real) besteuert werden, können das Projekt mit bis zu 4 % ihrer geschuldeten Einkommensteuer fördern. Die Projektpräsentation finden Sie auf unserer Lei-Rouanet-Seite.</span>
+      </p>
+      <a href="https://rouanet.favelabrass.org/" target="_blank" rel="noopener" class="btn btn-ghost">
+        <span class="lang-pt">Ver o projeto</span><span class="lang-en">See the project</span><span class="lang-de">Zum Projekt</span>
+      </a>
+    </article>
+    <article class="card rouanet-link reveal">
+      <h3><span class="lang-pt">Pessoas físicas</span><span class="lang-en">Individuals</span><span class="lang-de">Privatpersonen</span></h3>
+      <p>
+        <span class="lang-pt">Quem faz a declaração completa pode destinar até 6% do Imposto de Renda devido. O depósito identificado vai para a conta de captação do projeto, não para o Pix acima, e é ele que gera o recibo de mecenato.</span>
+        <span class="lang-en">If you file the full return, you can direct up to 6% of the income tax you owe. The identified deposit goes to the project's fundraising account, not to the Pix above, and that deposit is what generates the recibo de mecenato.</span><span class="lang-de">Wer die vollständige Erklärung abgibt, kann bis zu 6 % der geschuldeten Einkommensteuer zuweisen. Die Einzahlung geht auf das Spendenkonto des Projekts, nicht an die PIX-Adresse oben, und nur diese Einzahlung erzeugt die Rouanet-Quittung (recibo de mecenato).</span>
+      </p>
+      <a href="https://rouanet.favelabrass.org/pessoas-fisicas/" target="_blank" rel="noopener" class="btn btn-ghost">
+        <span class="lang-pt">Passo a passo</span><span class="lang-en">Step by step</span><span class="lang-de">Schritt für Schritt</span>
+      </a>
+    </article>
+  </div>
+</section>
+
 <!-- ===================== CTA ===================== -->
 <section class="cta">
   <div class="cta-inner reveal">
@@ -453,17 +407,13 @@
     </h2>
     <div class="cta-side">
       <p>
-        <span class="lang-pt">Sua contribuição viabiliza o acesso à educação musical para mais jovens do Rio de Janeiro. Comece hoje com uma doação mensal ou fale direto com a nossa equipe.</span>
-        <span class="lang-en">Your contribution makes music education accessible to more young people in Rio de Janeiro. Start today with a monthly donation or talk directly to our team.</span><span class="lang-de">Ihr Beitrag ermöglicht mehr jungen Menschen in Rio de Janeiro den Zugang zu musikalischer Bildung. Beginnen Sie noch heute mit einer monatlichen Spende oder sprechen Sie direkt mit unserem Team.</span>
+        <span class="lang-pt">Sua contribuição leva educação musical a mais jovens do Rio de Janeiro. Qualquer valor ajuda, uma vez ou todo mês.</span>
+        <span class="lang-en">Your contribution brings music education to more young people in Rio de Janeiro. Any amount helps, once or every month.</span><span class="lang-de">Ihr Beitrag bringt mehr jungen Menschen in Rio de Janeiro musikalische Bildung. Jeder Betrag hilft, einmalig oder jeden Monat.</span>
       </p>
       <div class="cta-actions">
-        <a href="https://benfeitoria.com/projeto/favelabrass" target="_blank" rel="noopener" class="btn btn-purple"><span class="lang-pt">Doar Mensalmente</span><span class="lang-en">Donate Monthly</span><span class="lang-de">Monatlich spenden</span></a>
-        <a href="mailto:contato@favelabrass.org" class="btn btn-ink-ghost"><span class="lang-pt">Fale com a gente</span><span class="lang-en">Talk to us</span><span class="lang-de">Kontakt aufnehmen</span></a>
+        <a href="#doar" class="btn btn-purple"><span class="lang-pt">Doar por Pix</span><span class="lang-en">Give by Pix</span><span class="lang-de">Per PIX spenden</span></a>
+        <a href="https://benfeitoria.com/projeto/favelabrass" target="_blank" rel="noopener" class="btn btn-ink-ghost"><span class="lang-pt">Doar todo mês</span><span class="lang-en">Give monthly</span><span class="lang-de">Monatlich spenden</span></a>
       </div>
-      <p class="cta-fine">
-        <span class="lang-pt">Empresas e pessoas físicas podem apoiar via Lei Rouanet, com 100% de dedução fiscal &middot; PRONAC 254750</span>
-        <span class="lang-en">Companies and individuals can support via the Lei Rouanet, with a 100% tax deduction &middot; PRONAC 254750</span><span class="lang-de">Unternehmen und Privatpersonen mit Steuerpflicht in Brasilien können über das brasilianische Kulturförderungsgesetz (Lei Rouanet) fördern, zu 100 % absetzbar von der brasilianischen Einkommensteuer &middot; PRONAC 254750</span>
-      </p>
     </div>
   </div>
 </section>
@@ -481,15 +431,6 @@
       <button type="submit" class="btn btn-yellow"><span class="lang-pt">Assinar</span><span class="lang-en">Subscribe</span><span class="lang-de">Abonnieren</span></button>
     </form>
   </div>
-</section>
-
-<!-- ===================== ROUANET ===================== -->
-<section class="rouanet">
-  <p>
-    <span class="lang-pt">Projeto aprovado pela Lei Federal de Incentivo à Cultura &middot; PRONAC 254750</span>
-    <span class="lang-en">Approved under Brazil's Federal Culture Incentive Law &middot; PRONAC 254750</span><span class="lang-de">Anerkanntes Projekt nach dem brasilianischen Kulturförderungsgesetz (Lei Rouanet) &middot; PRONAC 254750</span>
-  </p>
-  <img src="img/logo-bar.png" alt="Lei Rouanet, Patrocínio PRIO, Ministério da Cultura, Governo Federal">
 </section>
 
 <!-- ===================== FOOTER ===================== -->
