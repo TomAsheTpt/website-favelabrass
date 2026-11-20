@@ -502,6 +502,7 @@ body.de .lang-de { display: inline; }
 
 /* Wide live-performance video card (homepage, provisional) */
 .live-video { margin-top: clamp(2.5rem, 5vw, 4rem); }
+.follow-ig { margin-top: 1.75rem; }
 .live-video .video-thumb { border-radius: 8px; }
 .live-video-cap {
   margin-top: 1rem;
